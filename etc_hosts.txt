@@ -1,0 +1,21 @@
+# Local dns entries
+
+
+
+## System reserved
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+
+
+
+### the main hostname of the project
+
+127.0.0.1      sandbox.brightday.email
+::1            sandbox.brightday.email
+
+
+
+
+
+
