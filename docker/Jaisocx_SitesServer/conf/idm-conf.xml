@@ -1,0 +1,25 @@
+<conf-idm>
+
+  <!--  <user id="Loader" password="5" granted-roles="READER" />-->
+  <user id="Loader" password="òªMÃ~9oYjÌa7ßFßNÞÃínî¼×A÷¡P¢ÏË¸ô«dX" granted-roles="READER" />
+
+  <role id="READER">
+    <!-- with docker, here should be the port, set in the http-conf.xml (:443), and not the outer docker container port, when another, for example (:2291) -->
+
+    <granted-alias
+        url="31.10.149.255:33223/protected_images/Ultra_Prestigious.png"
+        methods="GET,HEAD,OPTIONS"
+    />
+
+    <granted-alias
+        url="31.10.149.255:33223/protected_resources/software_packages/mdUJQveEAnr5vFTdfV7jDcA5y5vFuaLasmV4Y7c2mp2RCzcXVJQpncQR7NDWeAX7mEiYZEapL9zdCUiDKgrgRucMAiM2L9b9vpwSSUJCHAqPnPHm7r2s5faWtorjYMYoymmQLg93FguxguAuiiK2uAu5gdckeRPK4Vk37SiYVSQPENguyWKVFNwbnCYxJZtecJUX5qnoqYueroJrci39FzWgXzhZbRxQ2Zk4cviWrmEJHSeUeRpFSae/JaisocxSoftware_for_RAV_and_Unia_Formular_AngabenDerVersichertenPerson.tar.gz"
+        methods="GET,HEAD,OPTIONS"
+    />
+
+  </role>
+
+</conf-idm>
+
+
+
+

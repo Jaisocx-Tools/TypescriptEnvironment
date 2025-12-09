@@ -1,0 +1,130 @@
+services:
+
+  cypress:
+    build:
+      context: "./docker/cypress"
+    volumes:
+      - "./workspace/ts/Jaisocx_SitesTools/:/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/"
+      - "./cypress/:/var/cypress/"
+    environment:
+      # - "CYPRESS_BASE_URL=https://sandbox.brightday.email:${NODE_HTTP_FLAT_PORT}/"
+      - "CYPRESS_BASE_URL=https://sandbox.brightday.email:${NODE_HTTPS_PORT}/"
+    networks:
+      - jaisocx_typescript_environment_network
+    extra_hosts:
+      - "sandbox.brightday.email:host-gateway"
+
+
+
+  #  mysql:
+  #    image: mysql:8.0
+  #    command: --default-authentication-plugin=mysql_native_password
+  #    restart: always
+  #    ports:
+  #      - "${MYSQL_PORT}:3306"
+  #    volumes:
+  #      - ./docker/MySQL/data/:/var/lib/mysq/
+  #      - ./docker/MySQL/docker-entrypoint-initdb.d/:/docker-entrypoint-initdb.d/
+  #      - ./docker/MySQL/conf/:/etc/mysql/mysql.conf.d/
+  #    environment:
+  #      MYSQL_DATABASE: "${MYSQL_DATABASE}"
+  #      MYSQL_USER: "${MYSQL_USER}"
+  #      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+  #      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+  #      MYSQL_PORT: "${MYSQL_PORT}"
+  #    networks:
+  #      - jaisocx_typescript_environment_network
+
+
+
+  # the dockerized service with nodejs and npm fixed ver
+  # to develop in typescript and javascript
+  # and to build npm dependencies and Your js code with Webpack
+  # to bundle.js having .css already available just via <script src="bundle.js" />
+  # for usage in html files on sites.
+  ts:
+    build:
+      context: "./docker/ts"
+      args:
+        A_TIME_ZONE: "${TIME_ZONE}"
+        A_GROUP_USERS_ID: "${GROUP_USERS_ID}"
+        A_GROUP_USERS_NAME: "${GROUP_USERS_NAME}"
+        A_USER_ID: "${USER_ID}"
+        A_USER_NAME: "${USER_NAME}"
+        A_NODE_LATEST_LTS: "${NODE_LATEST_LTS}"
+        A_NODE_LATEST_RELEASE: "${NODE_LATEST_RELEASE}"
+        A_NODE_VERSION: "${NODE_VERSION}"
+        A_YARN_VERSION: "${YARN_VERSION}"
+        A_PROJECT_VOLUME: "${PROJECT_VOLUME}"
+        A_IN_DOCKER_PROJECT_VOLUME: "${IN_DOCKER_PROJECT_VOLUME}"
+        A_EXPRESS_PORT: "${EXPRESS_PORT}"
+        A_NODE_HTTP_FLAT_PORT: "${NODE_HTTP_FLAT_PORT}"
+        A_NODE_HTTPS_PORT: "${NODE_HTTPS_PORT}"
+    volumes:
+      - "${PROJECT_VOLUME}/:${IN_DOCKER_PROJECT_VOLUME}/"
+    ports:
+      # - "80:80"
+      # - "443:443"
+      - "${NODE_HTTP_FLAT_PORT}:${NODE_HTTP_FLAT_PORT}"
+      - "${NODE_HTTPS_PORT}:${NODE_HTTPS_PORT}"
+      - "${EXPRESS_PORT}:${EXPRESS_PORT}"
+    networks:
+      - jaisocx_typescript_environment_network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+
+
+#  php:
+#    build:
+#      context: ./docker/php
+#    volumes:
+#      - ./docker/php/logs/:/php-logs/
+#      - ./workspace/php/:/opt/jaisocx/sites_tools/workspace/php/
+#    environment:
+#      TIMEZONE: "${TIMEZONE}"
+#    ports:
+#      - 9000:9000
+#    networks:
+#      - jaisocx_typescript_environment_network
+#    extra_hosts:
+#      - "host.docker.internal:host-gateway"
+
+
+
+# the dockerized https service to build the endpoint for publishing sites.
+# To develop locally, You need to add a text line in file /etc/hosts like this:
+# 127.0.0.1    sandbox.brightday.email
+# where 127.0.0.1 is the address of Your machine known by Your browser on Your machine.
+# works in MS Windows WSL, Unix and Linux OS, MacOS.
+#  jaisocx:
+#    build:
+#      context: ./docker/Jaisocx_SitesServer
+#    volumes:
+#      - ./docker/Jaisocx_SitesServer/conf/:/usr/lib/jaisocx-http/apps/congratulations/conf/
+#      - ./docker/Jaisocx_SitesServer/etc/:/usr/lib/jaisocx-http/etc/
+#      - ./docker/Jaisocx_SitesServer/ssl/:/usr/lib/jaisocx-http/ssl/
+#      - ./docker/Jaisocx_SitesServer/logs/:/usr/lib/jaisocx-http/logs/
+#      - ./workspace/ts/Jaisocx_SitesTools/:/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/
+#      - ./workspace/php/:/opt/jaisocx/sites_tools/workspace/php/
+#      - "./cdn/:${tsServicePathCdn}/"
+#    ports:
+#      # - 80:80
+#      # - 443:443
+#      - "${JAISOCX_HTTP_FLAT_PORT}:${JAISOCX_HTTP_FLAT_PORT}"
+#      - "${JAISOCX_HTTPS_PORT}:${JAISOCX_HTTPS_PORT}"
+#    networks:
+#      - jaisocx_typescript_environment_network
+#    environment:
+#      JAVA_XMS: "200m"
+#      JAVA_XMX: "200m"
+#      PHP_FPM_HOST: "php:9000"
+#  #      php hostname like php service name="php", port from docker/php/conf/php-fpm.d/www.conf "listen" directive (listen = 127.0.0.1:9000)
+
+
+
+networks:
+  jaisocx_typescript_environment_network:
+    driver: bridge
+
+

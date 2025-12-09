@@ -1,0 +1,43 @@
+# in the .env file in the root of this project are Your project's settings,
+# and therefore it is advised not to keep in open source repositories.
+# the .env file in .gitignore isn't published then in Your git repo.
+/.env
+/temp/
+
+
+
+/node_modules
+/**/node_modules
+/**/vendor
+
+/**/.DS_Store
+/.idea
+
+
+
+/cypress/cypress/screenshots
+/docker/MySQL/data
+
+/docker/Jaisocx_SitesServer/s2sl
+/docker/Jaisocx_SitesServer/logs
+/docker/Jaisocx_SitesServer/etc/ip-lists
+/docker/php/logs
+
+
+
+/workspace/ts/Jaisocx_SiteTools/
+/docker/ts/tarball/*.tar.xz
+
+
+
+/workspace/ts/build_tools/ReadmeToHtml/
+
+/workspace/ts/Jaisocx_SitesTools/examples_html/emails/temp/
+/workspace/ts/Jaisocx_SitesTools/packages/CharcodeConverter/tmp_data_gitignored/
+/workspace/ts/Jaisocx_SitesTools/gen_Countries_and_languges_code_and_name.html
+/workspace/ts/Jaisocx_SitesTools/gen_LanguagesCodes_and_Countries.html
+/workspace/ts/Jaisocx_SitesTools/gen_UnicodeCharsFilteredData.html
+/workspace/ts/Jaisocx_SitesTools/tmp.html
+
+/someBashExamples.sh
+

@@ -1,0 +1,22 @@
+FROM node:24.4.1-alpine3.21
+
+USER root
+
+WORKDIR /opt/jaisocx/sites_tools/workspace/ts
+
+RUN apk add --no-cache bash
+RUN apk add --no-cache curl
+
+# Verify installation
+RUN node -v && npm -v
+RUN npm install pm2
+
+RUN corepack enable
+
+# Set the desired Yarn version
+# 4.9.1 advised on site https://yarnpkg.com/ on the 18th of April 2025.
+ENV yarnVersion="4.9.1"
+RUN corepack prepare "yarn@${yarnVersion}" --activate
+
+# Verify Yarn installation
+RUN yarn --version
