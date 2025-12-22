@@ -4,6 +4,37 @@
 
 
 
+## News: 22nd of December 2025
+
+For now in reconstruction, I appologize.
+
+Promised to align the few preview .html pages accordingly. 
+
+The reconstruction aimed to apply for all sites tools the normal previews already available for @jaisocx/css-table,
+prove and code review of base packages like css-importer where bugs were found,
+review of unused numbers of hardcopies of deps installed for every package preview several times,
+bugfixes in ESlint plugin for code formatting.
+
+I dropped all examples first 
+and was occupied with the code review and refactoring 
+in order to enable somehow normal previews for packages installed to node_modules.
+
+for now I guess most of sites tools available with yarn add or npm i remained as pair of weeks before.
+
+1. in the bash script "./setup_Jaisocx_SitesTools.sh" fast added several calls to install node_modules for the preview after have cloned Jaisocx_SitesTools
+
+2. TypeScript development enabled with just One single dockerized service "ts" 
+     where NodeJS is installed, 
+     along with flat http and secured https endpoints examples,
+     and the Express http endpoint example for coding backend tasks in JavaScript or TypeScript both.
+     The thing is, for Typescript Node docker service is needed first.
+     The ts docker service allows work with http in browser having instlled just one single docker service.
+
+3. Nevertheless, I've tested dockerized Jaisocx https endpoint, it has worked.
+     On Your demand, Jaisocx docker service costs 200MB Java install in JDK Docker image and several MB Jaisocx install.
+
+
+
 ## News: 24th of September 2025
 
 
