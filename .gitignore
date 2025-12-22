@@ -26,17 +26,18 @@
 
 
 /workspace/ts/Jaisocx_SiteTools/
+
 /docker/ts/tarball/*.tar.xz
+/workspace/ts/build_tools/command/tsvm/node_tarballs/*.tar.xz
+/workspace/ts/build_tools/command/tsvm/yarn
 
 
 
 /workspace/ts/build_tools/ReadmeToHtml/
 
+/workspace/ts/Jaisocx_SitesTools
 /workspace/ts/Jaisocx_SitesTools/examples_html/emails/temp/
 /workspace/ts/Jaisocx_SitesTools/packages/CharcodeConverter/tmp_data_gitignored/
-/workspace/ts/Jaisocx_SitesTools/gen_Countries_and_languges_code_and_name.html
-/workspace/ts/Jaisocx_SitesTools/gen_LanguagesCodes_and_Countries.html
-/workspace/ts/Jaisocx_SitesTools/gen_UnicodeCharsFilteredData.html
 /workspace/ts/Jaisocx_SitesTools/tmp.html
 
 /someBashExamples.sh
