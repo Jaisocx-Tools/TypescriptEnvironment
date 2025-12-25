@@ -5,8 +5,14 @@
 In development
 
 
+**Updated**: Wednesday, the 24th of December 2025
+
 
 ## News
+
+
+[docs/md/news.md](./docs/md/news.md)
+
 
 `Mon Dec 22 11:09:55 CET 2025`
 
@@ -31,8 +37,8 @@ for now I guess most of sites tools available with yarn add or npm i remained as
    where NodeJS is installed,
    along with flat http and secured https endpoints examples,
    and the Express http endpoint example for coding backend tasks in JavaScript or TypeScript both.
-   The thing is, for Typescript Node docker service is needed first.
-   The ts docker service allows work with http in browser having instlled just one single docker service.
+   The thing is, for coding in Typescript, the Node docker service is needed first.
+   And after having installed NodeJS in the `ts` docker service, You have `node_modules` InetSites servers with InetSites Server Express framework for backend scripting in NodeJS.
 
 3. Nevertheless, I've tested dockerized Jaisocx https endpoint, it has worked.
    On Your demand, Jaisocx docker service costs 200MB Java install in JDK Docker image and several MB Jaisocx install.
@@ -48,10 +54,6 @@ for now I guess most of sites tools available with yarn add or npm i remained as
 
 
 
-**Updated**: Wednesday, the 24th of September 2025
-
-
-[docs/md/news.md](./docs/md/news.md)
 
 
 

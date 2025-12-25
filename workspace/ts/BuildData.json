@@ -202,7 +202,7 @@
       "path": "packages/CssImporter",
       "name": "css-importer",
       "update-published": "Sat Sep 27 15:28:55 CEST 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": false,
       "dependencies": [
         {
@@ -314,7 +314,7 @@
       "build": false,
       "build-simple-enable": false,
       "css-importer": {
-        "build": true,
+        "build": false,
         "cssFilePath": "MediaAndStyles/CssTable_main_Webpack.css",
         "cssTargetFilePath": "MediaAndStyles/CssTable_main_resolved.css"
       },
@@ -625,7 +625,7 @@
       "build": false,
       "build-simple-enable": true,
       "css-importer": {
-        "build": true,
+        "build": false,
         "cssFilePath": "MediaAndStyles/CssTableOrdered_main_Webpack.css",
         "cssTargetFilePath": "MediaAndStyles/CssTableOrdered_main_resolved.css"
       },
@@ -844,6 +844,24 @@
         "constants/ThemeTurnOnConstants.js",
         "theme_turn_on/ThemeTurnOn.js"
       ]
+    },
+    {
+      "path": "console/JsInvoke",
+      "name": "console-js-invoke",
+      "update-published": "Thu Dec 25 14:56:53 CET 2025",
+      "build": false,
+      "build-simple-enable": false,
+      "dependencies": [
+        {
+          "name": "@jaisocx/command-line",
+          "path": "packages/CommandLine"
+        },
+        {
+          "name": "@jaisocx/css-importer",
+          "path": "packages/CssImporter"
+        }
+      ],
+      "build-files": []
     }
   ]
 }

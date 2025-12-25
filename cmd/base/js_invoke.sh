@@ -60,7 +60,7 @@ if [[ "${debug}" == "--debug" ]]; then
   debugInspectOption="--inspect-brk=0.0.0.0:9229"
 fi
 
-
+echo "debugInspectOption: ${debugInspectOption}"
 
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && node ${debugInspectOption} "./${transpiledJsSourcesLocalPathInPackage}/${script}""
 
