@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Define your domain name
-DOMAIN="jaisocx.com"
+DOMAIN="brightday.email"
 
 # Generate a private key
 openssl genpkey -algorithm RSA -out "${DOMAIN}.key" -pkeyopt rsa_keygen_bits:2048
