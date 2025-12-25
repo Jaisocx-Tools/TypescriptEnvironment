@@ -18,7 +18,7 @@
 /cypress/cypress/screenshots
 /docker/MySQL/data
 
-/docker/Jaisocx_SitesServer/s2sl
+/docker/Jaisocx_SitesServer/ssl/Linux/SSLCertificatesBashScripts/Step2_JavaKeyStoreAndCertificateChain/PurchasedCertificates/Jaisocx_com
 /docker/Jaisocx_SitesServer/logs
 /docker/Jaisocx_SitesServer/etc/ip-lists
 /docker/php/logs
