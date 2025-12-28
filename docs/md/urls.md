@@ -20,9 +20,9 @@
 
 ### 2. Webpack and @jaisocx/css-importer @Aliases Resolving Types
 
-    2.1. To Include Hardcoded
+    2.1. To include hardcoded imported styles and scripts to `bundle.js`.
     
-    2.2. Resolve Reference By URL Relative To The Produced `bundle.js`
+    2.2. To rewrite url in `bundle.js` Javascript code, and to save the Hardcopies of the Linked Resources in the folder of the `bundle.js`. 
 
 
 

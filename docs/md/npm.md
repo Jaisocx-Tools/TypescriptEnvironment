@@ -6,8 +6,6 @@
 
 
 
-
-
 ## Understanding NPM Version Symbols
 
 ### For what:
