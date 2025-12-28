@@ -15,19 +15,39 @@ git clone "ssh://git@github.com/Jaisocx-Tools/Jaisocx_SitesTools.git"
 
 cd -
 
-docker compose build
-docker compose up ts -d
+### .env file is not on the GitRepo. decomment this line,
+###     or just copy .env.example to .env, if You don't have.
+###; cp "./.env.example" "./.env"
+###; cp "./workspace/ts/.env.example.dynamic" "./workspace/ts/.env.dynamic"
 
-docker compose start
+docker compose stop ts
+docker compose rm ts
+docker compose build ts
 
-cp "./.env.example" "./.env"
+### `docker compose up ts` without -d to see the infos of ts dockerized service start.
+###  keypress CTRL+C to stop, then starting and restarting with these commands:
+###; docker compose stop ts
+###; docker compose start ts
+###; docker compose restart ts
+
+docker compose up ts
+exit 3
+
+
+
+###; docker compose build ts
+###; docker compose up ts
+
+###; docker compose stop ts
+###; docker compose start ts
+###; docker compose restart ts
 
 set -e
-. "./.env"
+source "./.env"
 
 
 
-### the temporary fast-n-dirty to install npm deps for preview after have cloned SitesTools typescript code
+### the temporary fast-n-dirty block of code to install npm deps for preview after have cloned SitesTools typescript code
 
 packagePath="Jaisocx_SitesTools"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
