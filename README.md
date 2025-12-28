@@ -5,6 +5,7 @@
 In development
 
 
+
 **Updated**: Wednesday, the 24th of December 2025
 
 
@@ -82,35 +83,16 @@ rendering data from database with our Sites Tools.
 
 
 
-
-## STATUS OF THE PROJECT
-
-In development
-
-Updated: September 2025
+---
 
 
-
-
-
-**Good day.**
-
-I appologize for oft renamings. This project is still under development in May 2025, and is not a published and developed earlier ready, tested and proved library.
-
-Why already published: the several js tools are ready, nevertheless.
-
-
-
-
-## Navigation
-
-### A) Aim Of The Setup
+## A) Aim Of The Setup
 
 [docs/md/aim_of_the_setup.md](./docs/md/aim_of_the_setup.md)
 
 
 
-### B) Watch in Action
+## B) Watch in Action
 
 #### Addresses of Sites Tools Examples
 
@@ -123,30 +105,19 @@ Why already published: the several js tools are ready, nevertheless.
 
 
 
-### C) News
-
-[docs/md/news.md](./docs/md/news.md)
-
-
-
-### D) Features
+## C) Features
 
 [docs/md/features.md](./docs/md/features.md)
 
 
 
+## D) Workarounds for sites and sites quality improvals
 
 
 
-### E) Workarounds for sites and sites quality improvals
-
-
-
-#### E2) Fonts like set by designer in tasks, and minimizing traffic.
+#### D2) Fonts like set by designer in tasks, and minimizing traffic.
 
 [docs/md/preloader_font_loading_once.md](./docs/md/preloader_font_loading_once.md)
-
-
 
 
 
@@ -169,18 +140,23 @@ Why already published: the several js tools are ready, nevertheless.
 
 
 
-### F) Webpack
+
+
+
+## F) Webpack
+
+#### F1) Webpack
 
 [docs/md/webpack.md](./docs/md/webpack.md)
 
 
 
-#### F1) CDN When Building A Sites Tool with Webpack
+#### F2) CDN When Building A Sites Tool with Webpack
 
 [docs/md/workaround_npm_github_webpack_cdn_explained.md](./docs/md/workaround_npm_github_webpack_cdn_explained.md)
 
 
-#### F2) setup in a Javascript lib for usage later with webpack
+#### F3) setup in a Javascript lib for usage later with webpack
 
 [docs/md/enable_webpack_feature_in_a_package.md](./docs/md/enable_webpack_feature_in_a_package.md)
 
@@ -188,7 +164,9 @@ Why already published: the several js tools are ready, nevertheless.
 
 
 
-### G) Command Line
+
+
+## G) Command Line
 
 #### G1) Scripts in the cmd folder
 
@@ -196,7 +174,7 @@ Why already published: the several js tools are ready, nevertheless.
 
 
 
-#### G2) Npm Install a Sites Tool with Preview
+#### G2) npm install Sites Tool Preview
 
 [docs/md/install_sites_tool_with_preview.md](./docs/md/install_sites_tool_with_preview.md)
 
@@ -208,38 +186,40 @@ Why already published: the several js tools are ready, nevertheless.
 
 
 
-### H) NPM
-
-[docs/md/npm.md](./docs/md/npm.md)
 
 
-
-### H1) Npm index.preview.html
-
-[docs/md/install_sites_tool_with_preview.md](./docs/md/install_sites_tool_with_preview.md)
 
 
 ## Theory
 
-### Computer Calculations and Data Types
 
-[docs/md/Computer_calculations_and_data_types.md](./docs/md/Computer_calculations_and_data_types.md)
-
-
-### Arts Of Javascript
+#### Arts Of Javascript
 
 [docs/md/ArtsOfJavascript.md](./docs/md/ArtsOfJavascript.md)
 
 
-### URL ( Unified Ressource Link ) types. For Navigation and Loading on Site.
+
+#### URL ( Unified Ressource Link ) types. For Navigation and Loading on Site.
 
 [docs/md/urls.md](./docs/md/urls.md)
 
 
-### Timeline of the Protocol HTTP for Sites Browsers and Servers
+
+#### Computer Calculations and Data Types
+
+[docs/md/Computer_calculations_and_data_types.md](./docs/md/Computer_calculations_and_data_types.md)
+
+
+
+#### Timeline of the Protocol HTTP for Sites Browsers and Servers
 
 [docs/md/http_timeline.md](./docs/md/http_timeline.md)
 
+
+
+#### npm versioning in package.json
+
+[docs/md/npm.md](./docs/md/npm.md)
 
 
 
