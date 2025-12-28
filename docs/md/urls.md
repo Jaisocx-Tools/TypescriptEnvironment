@@ -132,7 +132,18 @@ The request headers, relevant to a url, sent by a sites browser:
 
 
 
-## Examples Of URLs
+
+
+
+
+
+
+---
+
+
+
+# Examples
+
 
 ### 1.1. Sites Browser Resolving Types Of References
 
