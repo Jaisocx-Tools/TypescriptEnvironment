@@ -217,15 +217,27 @@ Why already published: the several js tools are ready, nevertheless.
 ### H1) Npm index.preview.html
 
 
+
 ## Theory
 
-### URLs
+### Arts Of Javascript
+
+[ArtsOfJavascript.md](./ArtsOfJavascript.md)
+
+
+### URL ( Unified Ressource Link ) types. For Navigation and Loading on Site.
 
 [docs/md/urls.md](./docs/md/urls.md)
+
 
 ### Timeline of the Protocol HTTP for Sites Browsers and Servers
 
 [http_timeline.md](./http_timeline.md)
+
+
+### Computer Calculations and Data Types
+
+[Computer_calculations_and_data_types.md](./Computer_calculations_and_data_types.md)
 
 
 

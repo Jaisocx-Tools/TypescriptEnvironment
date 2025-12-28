@@ -1,5 +1,9 @@
 # Preloads
 
+[README.md HOME](./../../README.md)
+
+
+
 ## Aim Of The Setup
 
 To improve sites quality and minimize traffic required with same site quality achieved.

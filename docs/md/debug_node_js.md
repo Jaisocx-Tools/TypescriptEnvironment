@@ -1,5 +1,9 @@
 # DEBUG NODE JS
 
+[README.md HOME](./../../README.md)
+
+
+
 ## Server side scripts
 
 ### VSCode

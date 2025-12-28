@@ -1,6 +1,5 @@
 # HOW TO develop in typescript with ProjectBuilder
 
-
 [README.md HOME](./../../README.md)
 
 

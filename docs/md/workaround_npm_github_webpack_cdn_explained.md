@@ -1,5 +1,9 @@
 # Workaround in this project to align Your projects with npm, github, webpack.
 
+[README.md HOME](./../../README.md)
+
+
+
 ## 1. npm and github resources usage save up
 
 in the open source projects, published on npm and github, there is the rule, not to push to these services copies of files of 3rd parties dependencies, these are already published there, in order to avoid growth of hardcopies number of these files.

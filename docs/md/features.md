@@ -4,9 +4,6 @@
 
 
 
-
-
-
 1. The infrastructure for **development of Typescript libraries**.
 
 2. The intercative **sites tools** packages in `workspace/ts/Jaisocx_SitesTools` catalog, however still under development.
