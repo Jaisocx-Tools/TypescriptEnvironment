@@ -233,14 +233,14 @@ And otherwise, letter **c** will be always saved to computer as number **99** ( 
 ```
 1100 0110
 
-2^0 = 1
-2^1 = 2
-0
-0
-0
-2^5 = 32
-2^6 = 64
-0
+1: bit_0:   2^0 = 1
+2: bit_1:   2^1 = 2
+3: bit_2:   0
+4: bit_3:   0
+5: bit_4:   0
+6: bit_5:   2^5 = 32
+7: bit_6:   2^6 = 64
+8: bit_7:   0
 
 1 + 2 + 0 + 0 + 0 + 32 + 64 + 0 = 99 
 ```
