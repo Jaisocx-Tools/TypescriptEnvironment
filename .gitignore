@@ -2,6 +2,7 @@
 # and therefore it is advised not to keep in open source repositories.
 # the .env file in .gitignore isn't published then in Your git repo.
 /.env
+/workspace/ts/.env.dynamic
 /temp/
 
 
