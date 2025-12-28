@@ -8,43 +8,43 @@
 
 
 
-## Types Of URLs
+## 1. Types Of URLs
 
-### 1. Sites Browser Resolving Types Of References
+### 1.1. Sites Browser Resolving Types Of References
 
-    1.1. Reference By URL
+    1.1.1. Reference By URL: https://cdn.example.com/images/image.webp
     
-    1.2. Hardcoded Resources Contents Base64 Encoded
+    1.1.2. Hardcoded Resources Contents Base64 Encoded: data:image/png;base64,iVBORw0...
 
 
 
-### 2. Webpack and @jaisocx/css-importer @Aliases Resolving Types
+### 1.2. Webpack and @jaisocx/css-importer @Aliases Resolving Types
 
-    2.1. To include hardcoded imported styles and scripts to `bundle.js`.
+    1.2.1. To include hardcoded imported styles and scripts to `bundle.js`.
     
-    2.2. To rewrite url in `bundle.js` Javascript code, and to save the Hardcopies of the Linked Resources in the folder of the `bundle.js`. 
+    1.2.2. To rewrite urls in `bundle.js` Javascript code, and to save the Hardcopies of the Linked Resources in the folder of the `bundle.js`. 
 
 
 
-### 3. Addressing Types of URLs
+### 1.3. Addressing Types of URLs
 
-    3.1. Relative
+    1.3.1. Relative: image.webp
     
-    3.2. Absolute
+    1.3.2. Absolute
     
-       3.2.1. Slash Started
+       1.3.2.1. Slash Started: /images/image.webp
     
-       3.2.2. Protocol and DomainName Started
+       1.3.2.2. Protocol and DomainName Started: https://cdn.example.com/images/image.webp
 
 
 
-## Resolving Relative URLs
+## 2. Resolving Relative URLs
 
 When a sites browser loads a site and styles from a sites server,
 then the relative URLs in these files
 are resolved with this logique:
 
-### 1. In HTML Pages
+### 2.1. In HTML Pages
 
 - For URLs in HTML files:
   Relative URLs are resolved relative to the HTML file's location
@@ -74,7 +74,8 @@ https://site.com/application/images/image.webp
 ```
 
 
-### 1. In CSS Stylesheets
+
+### 2.2. In CSS Stylesheets
 
 - For URLs in CSS files:
   If the CSS was loaded
@@ -106,11 +107,12 @@ https://site.com/application/styles/fonts/fonts-imports.css
 ```
 
 
-## Sites Server Response Headers
+
+## 3. Sites Server's Request Headers
 
   [http_timeline.md](./http_timeline.md)
 
-### 1. HTTP/1.1
+### 3.1. HTTP/1.1
 
 The first request line sent by a sites browser:
 ```http/1.1
@@ -119,7 +121,7 @@ GET /sites_tools/js_tools/Tree/tree_preview_dev.html HTTP/1.1
 
 
 
-### 2. HTTP/2, HTTP/3
+### 3.2. HTTP/2, HTTP/3
 
 The request headers, relevant to a url, sent by a sites browser:
 ```http/2
@@ -130,11 +132,11 @@ The request headers, relevant to a url, sent by a sites browser:
 
 
 
-## Types Of URLs Examples
+## Examples Of URLs
 
-### 1. Sites Browser Resolving Types Of References
+### 1.1. Sites Browser Resolving Types Of References
 
-#### 1.1. Reference By URL
+#### 1.1.1. Reference By URL
 
 **Few Examples**
 
@@ -184,7 +186,7 @@ background-image: url("image.webp");
 
 
 
-#### 1.2. Hardcoded Resources Contents Base64 Encoded
+#### 1.1.2. Hardcoded Resources Contents Base64 Encoded
 
 Format:
 ```javascript
@@ -211,9 +213,9 @@ Image
 
 
 
-### 2. Webpack and @jaisocx/css-importer @Aliases Resolving Types
+### 1.2. Webpack and @jaisocx/css-importer @Aliases Resolving Types
 
-#### 2.1. To Include Hardcoded
+#### 1.2.1. To Include Hardcoded
 
 *.css*
 ```css
@@ -222,7 +224,7 @@ Image
 
 
 
-#### 2.2. Resolve Reference By URL Relative To The Produced `bundle.js`
+#### 1.2.2. Resolve Reference By URL Relative To The Produced `bundle.js`
 
 *.css*
 ```css
@@ -231,9 +233,9 @@ Image
 
 
 
-### 3. Addressing Types of URLs
+### 1.3. Addressing Types of URLs
 
-#### 3.1. Relative URL
+#### 1.3.1. Relative URL
 
 Image
 
@@ -253,9 +255,9 @@ Image
 ```
 
 
-#### 3.2. Absolute URL
+#### 1.3.2. Absolute URL
 
-##### 3.2.1. Slash Started Absolute URL
+##### 1.3.2.1. Slash Started Absolute URL
 
 Image
 
@@ -265,7 +267,7 @@ Image
 ```
 
 
-##### 3.2.2. Protocol and DomainName Started Absolute URL
+##### 1.3.2.2. Protocol and DomainName Started Absolute URL
 
 Image
 
