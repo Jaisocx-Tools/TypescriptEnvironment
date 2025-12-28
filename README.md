@@ -221,6 +221,11 @@ Why already published: the several js tools are ready, nevertheless.
 
 ## Theory
 
+### Computer Calculations and Data Types
+
+[docs/md/Computer_calculations_and_data_types.md](./docs/md/Computer_calculations_and_data_types.md)
+
+
 ### Arts Of Javascript
 
 [docs/md/ArtsOfJavascript.md](./docs/md/ArtsOfJavascript.md)
@@ -235,10 +240,6 @@ Why already published: the several js tools are ready, nevertheless.
 
 [docs/md/http_timeline.md](./docs/md/http_timeline.md)
 
-
-### Computer Calculations and Data Types
-
-[docs/md/Computer_calculations_and_data_types.md](./docs/md/Computer_calculations_and_data_types.md)
 
 
 
