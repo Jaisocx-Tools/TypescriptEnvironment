@@ -1,4 +1,4 @@
-`Theories`
+`Theory`
 
 # URL 
 

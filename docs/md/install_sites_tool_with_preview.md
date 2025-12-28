@@ -10,9 +10,9 @@
 
 #### For what:
 
-ts sites tools can have npm dependencies, for example @jaisocx/css-clean-start-2 for the site's look and feel in the index.example.html
+ts sites tools can have npm dependencies, for example @jaisocx/css-clean-start-2 for the site's look and feel in the index.preview.html
 
-when the npm lib was installed, its npm dependencies from `package.json` are not always installed in the nested `node_modules`, and then the `index.example.html` isn't rendering in browser the right way.
+when the npm lib was installed, its npm dependencies from `package.json` are not always installed in the nested `node_modules`, and then the `index.preview.html` isn't rendering in browser the right way.
 
 the script just installs the npm lib and dependencies
 
@@ -32,7 +32,7 @@ You can just copy this script file standalone and install later by npm any sites
 #### Required:
 1. NodeJS locally, not under Docker
 
-2. index.example.html in the published npm package (for now, on npm in @jaisocx namespace just the css-clean-start-2, css-table and css-table-ordered)
+2. index.preview.html in the published npm package (for now, on npm in @jaisocx namespace just the css-clean-start-2, css-table and css-table-ordered)
 
 
 
