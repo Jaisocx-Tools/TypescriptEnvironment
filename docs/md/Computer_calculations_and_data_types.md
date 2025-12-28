@@ -231,18 +231,24 @@ then number **98** will mean letter **b**, and **99** means **c**.
 And otherwise, letter **c** will be always saved to computer as number **99** ( 1100 0110 ).
 
 ```
-1100 0110
+Letter c in US_ASCII noted bitwise:   1100 0110
 
-1: bit_0:   2^0 = 1
-2: bit_1:   2^1 = 2
+bit magnecie set on position:   0  1  2  3    4  5  6  7
+                                ^  ^  ^  ^    ^  ^  ^  ^
+bit magnecie available:         1  1  0  0    0  1  1  0
+bit theoretique value:          1  2  0  0    0 32 64  0
+
+Two raised by power of:
+1: bit_0:   2 ^ 0 = 1
+2: bit_1:   2 ^ 1 = 2
 3: bit_2:   0
 4: bit_3:   0
 5: bit_4:   0
-6: bit_5:   2^5 = 32
-7: bit_6:   2^6 = 64
+6: bit_5:   2 ^ 5 = 32
+7: bit_6:   2 ^ 6 = 64
 8: bit_7:   0
 
-1 + 2 + 0 + 0 + 0 + 32 + 64 + 0 = 99 
+SUM: 1 + 2 + 32 + 64 = 99 
 ```
 
 
