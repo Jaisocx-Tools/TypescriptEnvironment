@@ -4,7 +4,7 @@
 /.env
 /workspace/ts/.env.dynamic
 /temp/
-
+/docs/md/temp
 
 
 /node_modules
