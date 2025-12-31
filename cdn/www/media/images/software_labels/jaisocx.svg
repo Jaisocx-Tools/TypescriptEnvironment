@@ -23,24 +23,12 @@
                 ry="3"
             />
 
-
-
-<!--            <rect-->
-<!--                x="1"-->
-<!--                y="1"-->
-<!--                width="300"-->
-<!--                height="20"-->
-<!--                fill="#ee2222"-->
-<!--                rx="3"-->
-<!--                ry="3"-->
-<!--            />-->
-
             <rect
                 x="1"
                 y="1"
                 width="100"
                 height="20"
-                fill="steelblue"
+                fill="navy"
             />
 
             <rect
@@ -48,7 +36,7 @@
                 y="1"
                 width="150"
                 height="20"
-                fill="navy"
+                fill="#030240"
             />
 
         </g>
@@ -65,7 +53,7 @@
               <text
                   x="120"
                   y="148"
-                  fill="white"
+                  fill="#c5c5c5"
                   textLength="490" >
                     Jaisocx
               </text>
@@ -73,7 +61,7 @@
               <text
                   x="1150"
                   y="148"
-                  fill="white"
+                  fill="#e5e5e5"
                   textLength="400" >
                     3.0.16
               </text>

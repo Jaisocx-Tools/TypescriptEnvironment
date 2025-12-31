@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 # TSVM Alpine Docker Service
 
 [README.md HOME](./../../README.md)

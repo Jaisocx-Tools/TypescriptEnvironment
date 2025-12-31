@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 # INSTALL SITES TOOL WITH THE PREVIEW
 
 [README.md HOME](./../../README.md)

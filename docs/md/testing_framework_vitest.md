@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 # Vitest Testing Framework applied in this project.
 
 [README.md HOME](./../../README.md)

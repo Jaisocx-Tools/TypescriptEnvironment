@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 # Workaround in this project to align Your projects with npm, github, webpack.
 
 [README.md HOME](./../../README.md)

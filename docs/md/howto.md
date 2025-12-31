@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 # HOW TO develop in typescript with ProjectBuilder
 
 [README.md HOME](./../../README.md)

@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 # Watch Sites Tools in Action
 
 NO LINKS FOR NOW WORK. MAINTENANCE ON PREVIEW ENDPOINTS.
