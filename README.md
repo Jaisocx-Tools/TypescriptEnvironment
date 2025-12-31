@@ -1,3 +1,5 @@
+![jaisocx.svg](cdn/www/media/images/software_labels/jaisocx.svg)
+
 # JAISOCX TYPESCRIPT TOOLS BUILDER
 
 ## STATUS OF THE PROJECT
