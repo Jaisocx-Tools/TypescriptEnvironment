@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 # DEBUG NODE JS
 
 [README.md HOME](./../../README.md)

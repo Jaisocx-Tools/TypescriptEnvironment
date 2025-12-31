@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 # Command line tools in this Project
 
 [README.md HOME](./../../README.md)

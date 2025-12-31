@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 `Theory`
 
 # Computer calculations and data types

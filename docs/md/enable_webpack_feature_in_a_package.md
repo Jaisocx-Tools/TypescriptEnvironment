@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 # Enable Webpack Feature in a package
 
 [README.md HOME](./../../README.md)

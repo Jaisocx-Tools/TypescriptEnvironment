@@ -1,3 +1,4 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
 
 # Alpine Linux Directories, relevant to software installs.
 

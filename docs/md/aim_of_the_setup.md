@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 # The Aim Of The Setup
 
 [README.md HOME](./../../README.md)

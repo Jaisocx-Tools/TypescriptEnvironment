@@ -1,3 +1,5 @@
+![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+
 # ESLint
 
 [README.md HOME](./../../README.md)
