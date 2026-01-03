@@ -4,6 +4,6 @@ FROM cypress/included:15.6.0
 
 WORKDIR "/var/cypress"
 
-CMD ["cypress", "run"]
+CMD [ "cypress", "run" ]
 
 

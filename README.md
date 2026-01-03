@@ -1,75 +1,36 @@
 ![jaisocx.svg](cdn/www/media/images/software_labels/jaisocx.svg)
 
-# JAISOCX TYPESCRIPT TOOLS BUILDER
-
-## STATUS OF THE PROJECT
-
-In development
 
 
+# JAISOCX TYPESCRIPT ENVIRONMENT
 
-**Updated**: Wednesday, the 24th of December 2025
+**Updated**: Thursday, the 01st of January 2026
 
+In reconstruction, not all examples do and bugfixed.
 
-## News
+One Typescript dockerized service `ts` needed to work with NodeJS for Javascript or Typescript development under local https endpoints.
 
-
-[docs/md/news.md](./docs/md/news.md)
-
-
-`Mon Dec 22 11:09:55 CET 2025`
-
-For now in reconstruction, I appologize.
-
-Promised to align the few preview .html pages accordingly.
-
-The reconstruction aimed to apply for all sites tools the normal previews already available for @jaisocx/css-table,
-prove and code review of base packages like css-importer where bugs were found,
-review of unused numbers of hardcopies of deps installed for every package preview several times,
-bugfixes in ESlint plugin for code formatting.
-
-I dropped all examples first
-and was occupied with the code review and refactoring
-in order to enable somehow normal previews for packages installed to node_modules.
-
-for now I guess most of sites tools available with yarn add or npm i remained as pair of weeks before.
-
-1. in the bash script "./setup_Jaisocx_SitesTools.sh" fast added several calls to install node_modules for the preview after have cloned Jaisocx_SitesTools
-
-2. TypeScript development enabled with just One single dockerized service "ts"
-   where NodeJS is installed,
-   along with flat http and secured https endpoints examples,
-   and the Express http endpoint example for coding backend tasks in JavaScript or TypeScript both.
-   The thing is, for coding in Typescript, the Node docker service is needed first.
-   And after having installed NodeJS in the `ts` docker service, You have `node_modules` InetSites servers with InetSites Server Express framework for backend scripting in NodeJS.
-
-3. Nevertheless, I've tested dockerized Jaisocx https endpoint, it has worked.
-   On Your demand, Jaisocx docker service costs 200MB Java install in JDK Docker image and several MB Jaisocx install.
-
-
-
-
-`Wed Sep 24 06:43:29 CEST 2025`
-
-1. NO Links in `Watch In Action` examples working in the moment. Reconstruction...
-
-2. Temporary maintenance on the preview domain `sandbox.brightday.email`.
+On Your demand, feel free to remove comments in `${root}/docker-compose.yml` from dockerized services confs to enable for command `docker compose start`: 
+1. `PHP` server side interpreting programming language, 
+2. `Jaisocx` Sites Server, 
+3. `MySQL Database`.
 
 
 
 
 
-
-###  WARNING about "Database Lost Unattended" when runs under Docker and then Docker conf was updated.
+---
+### WARNING about "Database Lost Unattended" when runs under Docker and then Docker conf was updated.
 
 *This Project is with a dockerized MYSQL DATABASE Instance. 
 Before every git pull to update this project, 
 even without checking whether Docker settings were changed, 
-first do **MySQL db dump** and db dump **backup**. 
+first do **MySQL db dump** and db dump **backup**.
+
 The dockerized db services sometimes 
 can recreate a fresh and clean db instance, 
 when some Docker config file was changed, 
-and after "git pull && docker compose restart", too.*
+and after `git pull && docker compose restart`, too.*
 
 *I leave the above warning here for good 
 for js developers, first learned docker and databases.*
@@ -82,10 +43,16 @@ I knew once this docker option, and still work with databases.
 We for sure will have here nice examples published, 
 rendering data from database with our Sites Tools.
 
-
-
-
 ---
+
+
+
+
+
+## News
+
+[docs/md/news.md](./docs/md/news.md)
+
 
 
 ## A) Aim Of The Setup
@@ -170,19 +137,25 @@ rendering data from database with our Sites Tools.
 
 ## G) Command Line
 
-#### G1) Scripts in the cmd folder
+#### G1) Bash example with node debug
+
+[console/JsInvoke/README.md](workspace/ts/Jaisocx_SitesTools/console/JsInvoke/README.md)
+
+
+
+#### G2) Scripts in the cmd folder
 
 [docs/md/cmd.md](./docs/md/cmd.md)
 
 
 
-#### G2) npm install Sites Tool Preview
+#### G3) npm install Sites Tool Preview
 
 [docs/md/install_sites_tool_with_preview.md](./docs/md/install_sites_tool_with_preview.md)
 
 
 
-#### G3) Debug .ts or .js scripts
+#### G4) Debug .ts or .js scripts ( seems to be outdated, look into console/JsInvoke )
 
 [docs/md/debug_node_js.md](./docs/md/debug_node_js.md)
 

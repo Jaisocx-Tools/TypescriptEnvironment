@@ -1,18 +1,18 @@
 services:
 
-  cypress:
-    build:
-      context: "./docker/cypress"
-    volumes:
-      - "./workspace/ts/Jaisocx_SitesTools/:/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/"
-      - "./cypress/:/var/cypress/"
-    environment:
-      # - "CYPRESS_BASE_URL=https://sandbox.brightday.email:${NODE_HTTP_FLAT_PORT}/"
-      - "CYPRESS_BASE_URL=https://sandbox.brightday.email:${NODE_HTTPS_PORT}/"
-    networks:
-      - jaisocx_typescript_environment_network
-    extra_hosts:
-      - "sandbox.brightday.email:host-gateway"
+#  cypress:
+#    build:
+#      context: "./docker/cypress"
+#    volumes:
+#      - "./workspace/ts/Jaisocx_SitesTools/:/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/"
+#      - "./cypress/:/var/cypress/"
+#    environment:
+#      # - "CYPRESS_BASE_URL=https://sandbox.brightday.email:${NODE_HTTP_FLAT_PORT}/"
+#      - "CYPRESS_BASE_URL=https://sandbox.brightday.email:${NODE_HTTPS_PORT}/"
+#    networks:
+#      - jaisocx_typescript_environment_network
+#    extra_hosts:
+#      - "sandbox.brightday.email:host-gateway"
 
 
 
