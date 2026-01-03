@@ -4,6 +4,32 @@
 
 [README.md HOME](./../../README.md)
 
+**Sat Jan  3 14:34:37 CET 2026**
+
+## News: 03rd of January 2026
+
+The very nice example 
+to invoke **in console a typescript file**, 
+written for a custom use of a javascript package,
+installed to `node_modules`.
+
+```bash
+    ### You need custom script for package @jaisocx/css-importer
+    ### Invokes in console like this:
+$_ ./cmd/cssImporter.sh --debug
+```
+
+
+
+
+**The documentation, linked in README.md**: 
+
+### G) Command Line
+#### G1) Bash example with node debug
+
+[console/JsInvoke/README.md](./../../workspace/ts/Jaisocx_SitesTools/console/JsInvoke/README.md)
+
+
 
 
 ## News: 22nd of December 2025

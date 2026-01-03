@@ -4,16 +4,47 @@
 
 # JAISOCX TYPESCRIPT ENVIRONMENT
 
-**Updated**: Thursday, the 01st of January 2026
+**Sat Jan  3 14:34:37 CET 2026**
+
 
 In reconstruction, not all examples do and bugfixed.
 
 One Typescript dockerized service `ts` needed to work with NodeJS for Javascript or Typescript development under local https endpoints.
 
-On Your demand, feel free to remove comments in `${root}/docker-compose.yml` from dockerized services confs to enable for command `docker compose start`: 
-1. `PHP` server side interpreting programming language, 
-2. `Jaisocx` Sites Server, 
+On Your demand, feel free to remove comments in `${root}/docker-compose.yml` from dockerized services confs to enable for command `docker compose start`:
+1. `PHP` server side interpreting programming language,
+2. `Jaisocx` Sites Server,
 3. `MySQL Database`.
+
+
+
+## News: 03rd of January 2026
+
+1. **New example** page for local preview
+[sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html](./workspace/ts/Jaisocx_SitesTools/sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html)
+
+
+
+2. The very nice example
+to invoke **in console a typescript file**,
+written for a custom use of a javascript package,
+installed to `node_modules`.
+
+```bash
+    ### You need custom script for package @jaisocx/css-importer
+    ### Invokes in console like this:
+$_ ./cmd/cssImporter.sh --debug
+```
+
+
+
+
+**The documentation, linked in README.md**:
+
+### G) Command Line
+#### G1) Bash example with node debug
+
+[console/JsInvoke/README.md](./../../workspace/ts/Jaisocx_SitesTools/console/JsInvoke/README.md)
 
 
 
