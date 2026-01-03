@@ -44,9 +44,11 @@ $_ ./cmd/cssImporter.sh --debug
 ### G) Command Line
 #### G1) Bash example with node debug
 
-[console/JsInvoke/README.md](./../../workspace/ts/Jaisocx_SitesTools/console/JsInvoke/README.md)
+GitHub link:
+[console/JsInvoke/README.md](https://github.com/Jaisocx-Tools/Jaisocx_SitesTools/tree/main/console/JsInvoke/README.md)
 
-
+The same link on local install: 
+[console/JsInvoke/README.md](workspace/ts/Jaisocx_SitesTools/console/JsInvoke/README.md)
 
 
 
