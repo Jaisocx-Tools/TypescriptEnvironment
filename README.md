@@ -20,8 +20,13 @@ On Your demand, feel free to remove comments in `${root}/docker-compose.yml` fro
 
 ## News: 03rd of January 2026
 
-1. **New example** page for local preview
-[sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html](./workspace/ts/Jaisocx_SitesTools/sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html)
+1. **New example** page for local preview.
+
+GitHub link:
+[sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html](https://github.com/Jaisocx-Tools/Jaisocx_SitesTools/tree/main/sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html)
+
+The same link on local install:
+[sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html](workspace/ts/Jaisocx_SitesTools/sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html)
 
 
 
