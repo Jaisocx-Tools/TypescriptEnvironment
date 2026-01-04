@@ -20,7 +20,7 @@ On Your demand, feel free to remove comments in `${root}/docker-compose.yml` fro
 
 ## News: 03rd of January 2026
 
-1. **New example** page for local preview.
+### 1. New example page for local preview.
 
 GitHub link:
 [sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html](https://github.com/Jaisocx-Tools/Jaisocx_SitesTools/tree/main/sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html)
@@ -30,7 +30,8 @@ The same link on local install:
 
 
 
-2. The very nice example
+### 2. New package for command line shell
+The very nice example
 to invoke **in console a typescript file**,
 written for a custom use of a javascript package,
 installed to `node_modules`.
@@ -41,13 +42,9 @@ installed to `node_modules`.
 $_ ./cmd/cssImporter.sh --debug
 ```
 
+#### The documentation, linked in README.md:
 
-
-
-**The documentation, linked in README.md**:
-
-### G) Command Line
-#### G1) Bash example with node debug
+**G) Command Line G1) Bash example with node debug**
 
 GitHub link:
 [console/JsInvoke/README.md](https://github.com/Jaisocx-Tools/Jaisocx_SitesTools/tree/main/console/JsInvoke/README.md)
