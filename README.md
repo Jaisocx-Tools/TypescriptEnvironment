@@ -1,13 +1,45 @@
 ![jaisocx.svg](cdn/www/media/images/software_labels/jaisocx.svg)
 
+---
+
+### Warning "Database Lost Unattended" if Docker conf was updated.
+
+**Before** every `git pull` to **update** this project,
+even without checking whether Docker settings were changed,
+first do **MySQL db dump** and db dump **backup**,
+since this project is with a dockerized MYSQL DATABASE Instance.
 
 
-# JAISOCX TYPESCRIPT ENVIRONMENT
 
-**Sat Jan  3 14:34:37 CET 2026**
+The dockerized db services sometimes
+**can recreate a fresh and clean db instance**,
+when some Docker config file was changed,
+and after `git pull && docker compose restart`, too.
+
+*I leave the above warning here for good
+for js developers, first learned docker and databases.*
+
+This ver of the Project does not rely
+on examples obtaining data from `database` docker service here.
+**No worries for now**.
+I knew once this docker option, and still work with databases.
+
+We for sure will have here nice examples published,
+rendering data from database with our Sites Tools.
+
+---
 
 
-In reconstruction, not all examples do and bugfixed.
+
+
+
+![jaisocx.svg](cdn/www/media/images/software_labels/jaisocx.svg)
+
+> In reconstruction, not all examples do and bugfixed.
+
+# JAISOCX™ TYPESCRIPT ENVIRONMENT®
+
+**Sun Jan  4 03:52:12 CET 2026**
 
 One Typescript dockerized service `ts` needed to work with NodeJS for Javascript or Typescript development under local https endpoints.
 
@@ -53,32 +85,6 @@ The same link on local install:
 [console/JsInvoke/README.md](workspace/ts/Jaisocx_SitesTools/console/JsInvoke/README.md)
 
 
-
----
-### WARNING about "Database Lost Unattended" when runs under Docker and then Docker conf was updated.
-
-*This Project is with a dockerized MYSQL DATABASE Instance. 
-Before every git pull to update this project, 
-even without checking whether Docker settings were changed, 
-first do **MySQL db dump** and db dump **backup**.
-
-The dockerized db services sometimes 
-can recreate a fresh and clean db instance, 
-when some Docker config file was changed, 
-and after `git pull && docker compose restart`, too.*
-
-*I leave the above warning here for good 
-for js developers, first learned docker and databases.*
-
-This ver of the Project does not rely 
-on examples obtaining data from "database" docker service here. 
-**No worries for now**. 
-I knew once this docker option, and still work with databases.
-
-We for sure will have here nice examples published, 
-rendering data from database with our Sites Tools.
-
----
 
 
 
@@ -174,7 +180,14 @@ rendering data from database with our Sites Tools.
 
 #### G1) Bash example with node debug
 
+
+GitHub link:
+[console/JsInvoke/README.md](https://github.com/Jaisocx-Tools/Jaisocx_SitesTools/tree/main/console/JsInvoke/README.md)
+
+The same link on local install:
 [console/JsInvoke/README.md](workspace/ts/Jaisocx_SitesTools/console/JsInvoke/README.md)
+
+
 
 
 
