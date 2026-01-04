@@ -44,11 +44,11 @@ npmlib_example_html_path="${to_place_npm_package_folder_path}/node_modules/${npm
 
 if [[ "${is_installed_1}" != "${commandname_1}:" ]]; then
   # echo "matched expr with ${commandname_1}"
-  "$($commandname_1 "${npmlib_example_html_path}")"
+  bash -c "${commandname_2} "${npmlib_example_html_path}""
 
 elif  [[ "${is_installed_2}" != "${commandname_2}:" ]]; then
   # echo "matched expr with ${commandname_2}"
-  "$($commandname_2 "${npmlib_example_html_path}")"
+  bash -c "${commandname_2} "${npmlib_example_html_path}""
 
 else
   echo -e "Please open ${NPMLIB_EXAMPLE_HTML_FILENAME} in your browser at path:\n ${npmlib_example_html_path}\n"
