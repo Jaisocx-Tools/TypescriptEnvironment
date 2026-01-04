@@ -32,15 +32,16 @@ for the finer performance and user experience.
 ## Installation screenshots
 
 ### 1. install the preview via command line
-![terminal_invoke_install_preview.png](docs/md/images/command_line/size900/terminal_invoke_install_preview.png)
+![terminal_invoke_install_preview.png](./../../docs/md/images/command_line/size900/terminal_invoke_install_preview.png)
 
 
 ### 2. command infos in terminal after installation
-![terminal_after_install.png](docs/md/images/command_line/size900/terminal_after_install.png)
+![terminal_after_install.png](./../../docs/md/images/command_line/size900/terminal_after_install.png)
 
 
 ### 3. the preview opens in browser
-![preview_css_table_in_browser.png](docs/md/images/command_line/size900/preview_css_table_in_browser.png)
+![preview_css_table_in_browser.png](./../../docs/md/images/command_line/size900/preview_css_table_in_browser.png)
+
 
 
 ### 4. how the filesystem folder looks after the preview was installed
@@ -71,8 +72,7 @@ for the finer performance and user experience.
 > the preview script installs, but doesn't find the .html file neither shows the preview in browser, 
 > since the preview is installed there many levels higher in some another node_modules folder.
 
-![after_preview_install_screenshot_in_folder.png](docs/md/images/command_line/size900/after_preview_install_screenshot_in_folder.png)
-
+![after_preview_install_screenshot_in_folder.png](./../../docs/md/images/command_line/size900/after_preview_install_screenshot_in_folder.png)
 
 
 
