@@ -117,6 +117,6 @@ for eventually installed other docker services names, paths on host and in docke
 ```
 
 ```bash
-./cmd/install_and_view_sites_tool.sh "@jaisocx/css-clean-start-2" "latest" "/home/user/projects/preview" "other_preview_to_open.html"
+./cmd/install_and_view_sites_tool.sh "@jaisocx/css-clean-start-2" "1.2.5" "/home/user/projects/preview" "other_preview_to_open.html"
 ```
 
