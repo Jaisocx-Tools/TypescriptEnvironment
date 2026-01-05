@@ -3,6 +3,7 @@
     <conf-http>
         <servers>
             <server port="9445" alternative-port="9444" secure="true">
+
               <domain
                     name="workspace.brightday.email"
                     jks-path="/usr/lib/jaisocx-http/ssl/brightday.email.jks"
@@ -15,6 +16,7 @@
                            url="/${any}"
                            path="https://sandbox.brightday.email/" />
               </domain>
+
               <domain
                     name="cdn.brightday.email"
                     jks-path="/usr/lib/jaisocx-http/ssl/brightday.email.jks"
@@ -29,54 +31,7 @@
                            list="true"
                            each-folder-content-file-name="root.html" />
                 </domain>
-                <domain
-                        name="preview.brightday.email"
-                        jks-path="/usr/lib/jaisocx-http/ssl/brightday.email.jks"
-                        jks-alias="brightday.email"
-                        jks-passphrase="JW5MYPKHbdqetvr4yfshiFwwjvr4fakE43qJUtgh7A2hNEW"
-                        publish-charset="UTF-8" src-charset="UTF-8">
-                    <alias comment="typescript code"
-                           art="folder"
-                           url="/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
 
-                    <alias comment="php code"
-                           art="folder"
-                           url="/php/"
-                           path="/opt/jaisocx/sites_tools/workspace/php/"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="index.php" />
-
-                    <alias comment="cdn for data, fonts and media"
-                           art="folder"
-                           url="/cdn/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
-
-                    <alias comment="cdn for the entire node_modules subfolder. the fast to declare url, however not preferred, since node_modules can have very a lot of dependencies. then can't set cache mode, since many GB of RAM used. Here are @jaisocx/ sites js and css tools, installed via yarn install or npm install"
-                           art="folder"
-                           url="/cdn/jaisocx-tools-all/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/SitesTools/node_modules/@jaisocx/"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
-
-                    <alias comment="email secured"
-                           art="folder"
-                           url="/examples_html/emails/temp/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/examples_html/emails/temp/"
-                           cache="update"
-                           list="false"
-                           authorization="basic"
-                           each-folder-content-file-name="root.html" />
-
-                </domain>
                 <domain
                     name="cdn.sandbox.brightday.email"
                     jks-path="/usr/lib/jaisocx-http/ssl/brightday.email.jks"
@@ -92,6 +47,7 @@
                            each-folder-content-file-name="root.html" />
 
               </domain>
+
               <domain
                     name="sandbox.brightday.email"
                     jks-path="/usr/lib/jaisocx-http/ssl/brightday.email.jks"
@@ -99,6 +55,7 @@
                     jks-passphrase="JW5MYPKHbdqetvr4yfshiFwwjvr4fakE43qJUtgh7A2hNEW"
                     document-root="/opt/jaisocx/sites_tools/workspace/php"
                     publish-charset="UTF-8" src-charset="UTF-8">
+
                     <alias comment="typescript code"
                            art="folder"
                            url="/"
@@ -106,6 +63,7 @@
                            cache="update"
                            list="true"
                            each-folder-content-file-name="root.html" />
+
                     <alias comment="php code"
                            art="folder"
                            url="/php/"
@@ -121,6 +79,7 @@
                            cache="update"
                            list="true"
                            each-folder-content-file-name="root.html" />
+
                     <alias comment="cdn for data, secured with basic auth. On demand, You can set auth JWT"
                            art="folder"
                            url="/cdn/data_secured/"
@@ -145,6 +104,7 @@
                            cache="update"
                            list="true"
                            each-folder-content-file-name="root.html" />
+
                     <alias comment="preferred cdn url for one node_modules/MediaAndStyles subfolder of one tool, where are @jaisocx/ site js and css tool .css files and .css themes and mini-images"
                            art="folder"
                            url="/cdn/jaisocx-tools/css-code-snippet/MediaAndStyles/"
@@ -152,6 +112,7 @@
                            cache="update"
                            list="true"
                            each-folder-content-file-name="root.html" />
+
                     <alias comment="preferred cdn url for one node_modules/MediaAndStyles subfolder of one tool, where are @jaisocx/ site js and css tool .css files and .css themes and mini-images"
                            art="folder"
                            url="/cdn/jaisocx-tools/css-table/MediaAndStyles/"
@@ -159,6 +120,7 @@
                            cache="update"
                            list="true"
                            each-folder-content-file-name="root.html" />
+
                     <alias comment="preferred cdn url for one node_modules/MediaAndStyles subfolder of one tool, where are @jaisocx/ site js and css tool .css files and .css themes and mini-images"
                            art="folder"
                            url="/cdn/jaisocx-tools/tooltip/MediaAndStyles/"
@@ -166,6 +128,7 @@
                            cache="update"
                            list="true"
                            each-folder-content-file-name="root.html" />
+
                     <alias comment="preferred cdn url for one node_modules/MediaAndStyles subfolder of one tool, where are @jaisocx/ site js and css tool .css files and .css themes and mini-images"
                            art="folder"
                            url="/cdn/jaisocx-tools/tree/MediaAndStyles/"
@@ -192,24 +155,36 @@
                            each-folder-content-file-name="root.html" />
 
               </domain>
+
             </server>
+
+
+
             <server port="80" alternative-port="2289" secure="false">
+
               <domain
                     name="workspace.brightday.email"
                     publish-charset="UTF-8" src-charset="UTF-8">
+
                     <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
                            art="redirection"
                            url="/${any}"
                            path="https://sandbox.brightday.email:9445/" />
+
               </domain>
+
               <domain
                     name="sandbox.brightday.email">
+
                     <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
                            art="redirection"
                            url="/${any}"
                            path="https://sandbox.brightday.email:9445/" />
+
                 </domain>
+
             </server>
+
         </servers>
     </conf-http>
 </conf>
