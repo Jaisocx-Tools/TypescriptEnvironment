@@ -76,8 +76,6 @@ for the finer performance and user experience.
 
 
 
-
-
 ## Another fine feature
 
 The script works without referencing other .sh scripts.
@@ -90,17 +88,16 @@ You can just copy this script file standalone and install later by npm any sites
 
 ## Required
 1. NodeJS locally, not under Docker
-
-2. index.preview.html in the published npm package (for now, on npm in @jaisocx namespace just the css-clean-start-2, css-table and css-table-ordered)
-
+2. index.preview.html in the published npm package ( for now, on npm in `@jaisocx` namespace just the `css-clean-start-2`, `css-table` and `css-table-ordered` )
 
 
-The script can run if NodeJS is installed locally, not in the Dockerized ts service here,
+
+The script can run if NodeJS is installed locally, not in the Dockerized ts service,
 since the preview may be of great use when installing a sites tool for a preview and tests in another project too, not the Sandbox.
 
 Why without Docker: when at once writing the script for the dockerized node services,
 I don't have for now the idea of script args
-for eventually installed other docker services names, paths on host and in docker services, and when without docker.
+for eventually installed other docker services names, paths on host and in docker services, and if without docker.
 
 
 
@@ -113,10 +110,10 @@ for eventually installed other docker services names, paths on host and in docke
 4. example .html file name, if other than `index.preview.html`
 
 ```bash
-./cmd/install_and_view_sites_tool.sh "@jaisocx/css-clean-start-2" "latest" "/home/user/projects/preview"
+./cmd/install_and_view_sites_tool.sh "@jaisocx/css-clean-start-2" "1.2.5" "/home/user/projects/preview"
 ```
 
 ```bash
-./cmd/install_and_view_sites_tool.sh "@jaisocx/css-clean-start-2" "1.2.5" "/home/user/projects/preview" "other_preview_to_open.html"
+./cmd/install_and_view_sites_tool.sh "@jaisocx/css-clean-start-2" "1.2.5" "/home/user/projects/preview" "with_preloaded_fonts_node_modules__preview.html"
 ```
 
