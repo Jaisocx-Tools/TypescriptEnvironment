@@ -4,8 +4,8 @@
 /.env
 /workspace/ts/.env.dynamic
 /temp/
-/docs/md/temp
-/workspace/ts/Jaisocx_SitesTools/packages/CharcodeConverter/tmp_data
+/docs/md/temp/
+/workspace/ts/Jaisocx_SitesTools/packages/CharcodeConverter/tmp_data/
 
 
 
