@@ -9,16 +9,16 @@
 
 # SSL Command Line
 
-for SSL Certificates to secure site.
-
-
-**Installed Wildcard SSL** for [basetasks.site]() served by **Jaisocx**
-
-![PopupSiteSecured_Jaisocx](cmd/ssl/readme_images/PopupSiteSecured_Jaisocx_600.png)
-
-**Installed Wildcard SSL** for [basetasks.site]() served by **Node** and **Express Framework**
-
-![PopupSiteSecured_Node_https](cmd/ssl/readme_images/PopupSiteSecured_Node_https_600.png)
+  for SSL Certificates to secure site.
+  
+  
+  **Installed Wildcard SSL** for [basetasks.site]() served by **Jaisocx**
+  
+  ![PopupSiteSecured_Jaisocx](./readme_images/PopupSiteSecured_Jaisocx_600.png)
+  
+  **Installed Wildcard SSL** for [basetasks.site]() served by **Node** and **Express Framework**
+  
+  ![PopupSiteSecured_Node_https](./readme_images/PopupSiteSecured_Node_https_600.png)
 
 
 
@@ -27,22 +27,22 @@ for SSL Certificates to secure site.
 ## 1. For what
 
 ---
-
-For **security of data transport** in Inet,
-since 2010-ies the published sites
-are sent to browsers **encrypted** with **SSL** technology.
+  
+  For **security of data transport** in Inet,
+  since 2010-ies the published sites
+  are sent to browsers **encrypted** with **SSL** technology.
 
 
 
 ## 2. What is in this package
-
-For our new domain **basetasks.site** with the Wildcard Certificate for year 2026.
-
-2.1. **JKS** for **Jaisocx Sites Server** `2026_2027_basetasks_site.jks`
-
-2.2. **Bundle.crt** for **NodeJS HTTPS** and **Express Framework** `bundle_for_node_https_basetasks_site.crt`
-
-2.3. Two **scripts** for two **SSL tasks**:
+  
+  For our new domain **basetasks.site** with the Wildcard Certificate for year 2026.
+  
+  2.1. **JKS** for **Jaisocx Sites Server** `2026_2027_basetasks_site.jks`
+  
+  2.2. **Bundle.crt** for **NodeJS HTTPS** and **Express Framework** `bundle_for_node_https_basetasks_site.crt`
+  
+  2.3. Two **scripts** for two **SSL tasks**:
 
     2.3.1. Produce Private Key and CSR
     2.3.2. Install Certificates for Jaisocx and Node https
@@ -54,14 +54,14 @@ For our new domain **basetasks.site** with the Wildcard Certificate for year 202
 
 ---
 
-Two command line shell scripts, written in bash programming language in this library solve 2 tasks for the SSL:
+  Two command line shell scripts, written in bash programming language in this library solve 2 tasks for the SSL:
 
-2.3.1. When **ordering new SSL Cert**, produces:
+  2.3.1. When **ordering new SSL Cert**, produces:
   
     2.3.1.1. Private Key
     2.3.1.2. CSR (Certificate Sign Request)
 
-2.3.2. After **have obtained new SSL Cert** from a Provider, produces:
+  2.3.2. After **have obtained new SSL Cert** from a Provider, produces:
 
     2.3.2.1. `<domain_name>.jks` (Java Key Store file) for Jaisocx Sites Server Secure HTTPS Edpoints
     2.3.2.1. `bundle.crt` for both, Node and Express Framework, Secure HTTPS Edpoints
@@ -72,18 +72,18 @@ Two command line shell scripts, written in bash programming language in this lib
 
 ## 2.3.1. When **ordering new SSL** Certificate
 
-The script produces new **Private Key** and **CSR** (Certificate Sign Request).
+  The script produces new **Private Key** and **CSR** (Certificate Sign Request).
 
 
-**Example script** location: `cmd/ssl/Step1_CertificateRequestIssue/a_step1_scripts`
+  **Example script** location: `cmd/ssl/Step1_CertificateRequestIssue/a_step1_scripts`
 
-`Example_gen_private_key_with_certificate_request.sh`
+  `Example_gen_private_key_with_certificate_request.sh`
 
 
 
-**Example folder structure** for the **CSR** with **Private Key**
+  **Example folder structure** for the **CSR** with **Private Key**
 
-`cmd/ssl/Step1_CSR_n_PKey/b_produced_csr_with_private_key/Domain_name_csr_n_pkey/2026_2027_domain_name_csr_n_pkey`
+  `cmd/ssl/Step1_CSR_n_PKey/b_produced_csr_with_private_key/Domain_name_csr_n_pkey/2026_2027_domain_name_csr_n_pkey`
 
 
 
