@@ -50,6 +50,36 @@ On Your demand, feel free to remove comments in `${root}/docker-compose.yml` fro
 
 
 
+## News: 18th of January 2026
+
+### 1. Wildcard SSL for domain basetasks.site
+
+  I've purchased new domain name **basetasks.site** and wildcard SSL cert valid until end of **year 2026**.
+  
+  I've **installed** the SSL Cert for **Jaisocx** and **Node https** with **Express**.
+
+
+
+### 2. SSL Command line 
+
+  [./cmd/ssl/README.md](./cmd/ssl/README.md)
+
+### 3. Express with https and cors
+
+  Few js code snippets in 
+  [workspace/ts/express/src/secure_server.js](workspace/ts/express/src/secure_server.js):
+  1. Cors with allowed domain regexp in `.env.allow-origin`
+  2. Https
+  3. Json sent from local filesystem
+  4. Json sent compressed
+
+  Local link: 
+  [https://local.basetasks.site:9443/](https://local.basetasks.site:9443/)
+
+
+
+
+
 ## News: 03rd of January 2026
 
 ### 1. New example page for local preview.

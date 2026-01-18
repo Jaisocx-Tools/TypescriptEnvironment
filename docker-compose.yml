@@ -85,6 +85,10 @@ services:
         A_EXPRESS_PORT: "${EXPRESS_PORT}"
         A_NODE_HTTP_FLAT_PORT: "${NODE_HTTP_FLAT_PORT}"
         A_NODE_HTTPS_PORT: "${NODE_HTTPS_PORT}"
+    environment:
+      DOMAIN_NAME: "${DOMAIN_NAME}"
+      PREVIEW_DOMAIN_NAME: "${PREVIEW_DOMAIN_NAME}"
+      LOCAL_DOMAIN_NAME: "${LOCAL_DOMAIN_NAME}"
     volumes:
       - "${PROJECT_VOLUME}/:${IN_DOCKER_PROJECT_VOLUME}/"
     ports:
@@ -93,6 +97,7 @@ services:
       - "${NODE_HTTP_FLAT_PORT}:${NODE_HTTP_FLAT_PORT}"
       - "${NODE_HTTPS_PORT}:${NODE_HTTPS_PORT}"
       - "${EXPRESS_PORT}:${EXPRESS_PORT}"
+      - "${EXPRESS_SECURE_PORT}:${EXPRESS_SECURE_PORT}"
     networks:
       - jaisocx_typescript_environment_network
     extra_hosts:
@@ -122,28 +127,28 @@ services:
 # 127.0.0.1    sandbox.brightday.email
 # where 127.0.0.1 is the address of Your machine known by Your browser on Your machine.
 # works in MS Windows WSL, Unix and Linux OS, MacOS.
-#  jaisocx:
-#    build:
-#      context: ./docker/Jaisocx_SitesServer
-#    volumes:
-#      - ./docker/Jaisocx_SitesServer/conf/:/usr/lib/jaisocx-http/apps/congratulations/conf/
-#      - ./docker/Jaisocx_SitesServer/etc/:/usr/lib/jaisocx-http/etc/
-#      - ./docker/Jaisocx_SitesServer/ssl/:/usr/lib/jaisocx-http/ssl/
-#      - ./docker/Jaisocx_SitesServer/logs/:/usr/lib/jaisocx-http/logs/
-#      - ./workspace/ts/Jaisocx_SitesTools/:/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/
-#      - ./workspace/php/:/opt/jaisocx/sites_tools/workspace/php/
-#      - "./cdn/:${tsServicePathCdn}/"
-#    ports:
-#      # - 80:80
-#      # - 443:443
-#      - "${JAISOCX_HTTP_FLAT_PORT}:${JAISOCX_HTTP_FLAT_PORT}"
-#      - "${JAISOCX_HTTPS_PORT}:${JAISOCX_HTTPS_PORT}"
-#    networks:
-#      - jaisocx_typescript_environment_network
-#    environment:
-#      JAVA_XMS: "200m"
-#      JAVA_XMX: "200m"
-#      PHP_FPM_HOST: "php:9000"
+  jaisocx:
+    build:
+      context: ./docker/Jaisocx_SitesServer
+    volumes:
+      - ./docker/Jaisocx_SitesServer/conf/:/usr/lib/jaisocx-http/apps/congratulations/conf/
+      - ./docker/Jaisocx_SitesServer/etc/:/usr/lib/jaisocx-http/etc/
+      - ./docker/Jaisocx_SitesServer/ssl/:/usr/lib/jaisocx-http/ssl/
+      - ./docker/Jaisocx_SitesServer/logs/:/usr/lib/jaisocx-http/logs/
+      - ./workspace/ts/Jaisocx_SitesTools/:/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/
+      - ./workspace/php/:/opt/jaisocx/sites_tools/workspace/php/
+      - "./cdn/:${tsServicePathCdn}/"
+    ports:
+      # - 80:80
+      # - 443:443
+      - "${JAISOCX_HTTP_FLAT_PORT}:${JAISOCX_HTTP_FLAT_PORT}"
+      - "${JAISOCX_HTTPS_PORT}:${JAISOCX_HTTPS_PORT}"
+    networks:
+      - jaisocx_typescript_environment_network
+    environment:
+      JAVA_XMS: "200m"
+      JAVA_XMX: "200m"
+      PHP_FPM_HOST: "php:9000"
 #  #      php hostname like php service name="php", port from docker/php/conf/php-fpm.d/www.conf "listen" directive (listen = 127.0.0.1:9000)
 
 

@@ -417,50 +417,86 @@ export node_http_flat_publish_port
 export node_https_publish_folder
 export node_http_flat_publish_folder
 
+
+
 if [[ "${start_node_https}" == "true" ]]; then
 
+  echo -e "\n Node Secure Server starts ... "
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
-          echo -e "\n yarn --version "
-          yarn run https &
+          echo -e "\n yarn https & "
+          yarn https &
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
           echo -e "\n pnpm --version "
           pnpm --version
 
         else
+          echo -e "\n npm --prefix \"${IN_DOCKER_PROJECT_VOLUME}\" run https & "
           npm --prefix "${IN_DOCKER_PROJECT_VOLUME}" run https &
   fi
 
   # npm --prefix "${IN_DOCKER_PROJECT_VOLUME}" run https &      # @explained &: Start in background every process to be able to start also other processes, every with the ampersand sing
 fi
 
+
+
 if [[ "${start_node_http_flat}" == "true" ]]; then
 
+  echo -e "\n Node http starts ... "
   if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
           echo -e "\n yarn http_flat & "
-          yarn run http_flat &
+          yarn http_flat &
 
         elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
           echo -e "\n pnpm --version "
           pnpm --version
 
         else
+          echo -e "\n npm --prefix \"${IN_DOCKER_PROJECT_VOLUME}\" run http_flat & "
           npm --prefix "${IN_DOCKER_PROJECT_VOLUME}" run http_flat &
+
   fi
 
   # npm --prefix "${IN_DOCKER_PROJECT_VOLUME}" run http_flat &  # @explained without &: Starts and holds dockerized service working
 fi
 
-# npm --prefix "${IN_DOCKER_PROJECT_VOLUME}/express" run start  # @explained &: Start in background every process to be able to start also other processes, every with the ampersand sing
+
 
 cd "${IN_DOCKER_PROJECT_VOLUME}/express"
+
+if [[ "${start_express_secure}" == "true" ]]; then
+
+  echo -e "\n Express Framework Secure starts ... "
+  if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
+          echo -e "\n yarn secure_start & "
+          yarn secure_start &
+
+        elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
+          echo -e "\n pnpm --version "
+          pnpm --version
+
+        else
+          echo -e "\n npm --prefix \"${IN_DOCKER_PROJECT_VOLUME}/express\" run secure_start & "
+          npm --prefix "${IN_DOCKER_PROJECT_VOLUME}/express" run secure_start &
+
+  fi
+
+  # npm --prefix "${IN_DOCKER_PROJECT_VOLUME}/express" run secure_start  # @explained &: Start in background every process to be able to start also other processes, every with the ampersand sing
+fi
+
+
+
+echo -e "\n Express Framework starts ... "
 if [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "yarn" ]]; then
+        echo -e "\n yarn start "
         yarn run start
 
       elif [[ "${PROJECT_NODE_PACKAGE_MANAGER}" == "pnpm" ]]; then
-        pnpm run
+          echo -e "\n pnpm --version "
+          pnpm --version
 
       else
+        echo -e "\n npm --prefix \"${IN_DOCKER_PROJECT_VOLUME}/express\" run start "
         npm --prefix "${IN_DOCKER_PROJECT_VOLUME}/express" run start
 fi
 

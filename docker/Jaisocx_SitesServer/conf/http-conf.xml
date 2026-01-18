@@ -5,39 +5,12 @@
             <server port="9445" alternative-port="9444" secure="true">
 
               <domain
-                    name="workspace.brightday.email"
-                    jks-path="/usr/lib/jaisocx-http/ssl/brightday.email.jks"
-                    jks-alias="brightday.email"
-                    jks-passphrase="JW5MYPKHbdqetvr4yfshiFwwjvr4fakE43qJUtgh7A2hNEW"
-                    document-root="/opt/jaisocx/sites_tools/workspace/php"
+                    name="cdn.basetasks.site"
+                    jks-path="/usr/lib/jaisocx-http/ssl/2026_2027_basetasks_site.jks"
+                    jks-alias="basetasks.site"
+                    jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
                     publish-charset="UTF-8" src-charset="UTF-8">
-                    <alias comment="newer subdomain sandbox"
-                           art="redirection"
-                           url="/${any}"
-                           path="https://sandbox.brightday.email/" />
-              </domain>
 
-              <domain
-                    name="cdn.brightday.email"
-                    jks-path="/usr/lib/jaisocx-http/ssl/brightday.email.jks"
-                    jks-alias="brightday.email"
-                    jks-passphrase="JW5MYPKHbdqetvr4yfshiFwwjvr4fakE43qJUtgh7A2hNEW"
-                    publish-charset="UTF-8" src-charset="UTF-8">
-                    <alias comment="typescript code"
-                           art="folder"
-                           url="/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
-                </domain>
-
-                <domain
-                    name="cdn.sandbox.brightday.email"
-                    jks-path="/usr/lib/jaisocx-http/ssl/brightday.email.jks"
-                    jks-alias="brightday.email"
-                    jks-passphrase="JW5MYPKHbdqetvr4yfshiFwwjvr4fakE43qJUtgh7A2hNEW"
-                    publish-charset="UTF-8" src-charset="UTF-8">
                     <alias comment="typescript code"
                            art="folder"
                            url="/"
@@ -49,10 +22,10 @@
               </domain>
 
               <domain
-                    name="sandbox.brightday.email"
-                    jks-path="/usr/lib/jaisocx-http/ssl/brightday.email.jks"
-                    jks-alias="brightday.email"
-                    jks-passphrase="JW5MYPKHbdqetvr4yfshiFwwjvr4fakE43qJUtgh7A2hNEW"
+                    name="local.basetasks.site"
+                    jks-path="/usr/lib/jaisocx-http/ssl/2026_2027_basetasks_site.jks"
+                    jks-alias="basetasks.site"
+                    jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
                     document-root="/opt/jaisocx/sites_tools/workspace/php"
                     publish-charset="UTF-8" src-charset="UTF-8">
 
@@ -163,25 +136,50 @@
             <server port="80" alternative-port="2289" secure="false">
 
               <domain
-                    name="workspace.brightday.email"
+                    name="local.basetasks.site"
                     publish-charset="UTF-8" src-charset="UTF-8">
 
-                    <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
-                           art="redirection"
-                           url="/${any}"
-                           path="https://sandbox.brightday.email:9445/" />
+                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
+                       art="redirection"
+                       url="/"
+                       path="https://local.basetasks.site:9445/" />
+
+                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
+                       art="redirection"
+                       url="/${any}"
+                       path="https://local.basetasks.site:9445/" />
 
               </domain>
 
               <domain
-                    name="sandbox.brightday.email">
+                    name="cdn.basetasks.site">
 
-                    <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
-                           art="redirection"
-                           url="/${any}"
-                           path="https://sandbox.brightday.email:9445/" />
+                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
+                       art="redirection"
+                       url="/"
+                       path="https://cdn.basetasks.site:9445/" />
+
+                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
+                       art="redirection"
+                       url="/${any}"
+                       path="https://cdn.basetasks.site:9445/" />
 
                 </domain>
+
+              <domain
+                  name="preview.basetasks.site">
+
+                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
+                       art="redirection"
+                       url="/"
+                       path="https://preview.basetasks.site/" />
+
+                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
+                       art="redirection"
+                       url="/${any}"
+                       path="https://preview.basetasks.site/" />
+
+              </domain>
 
             </server>
 
