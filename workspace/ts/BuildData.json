@@ -202,7 +202,7 @@
       "path": "packages/CssImporter",
       "name": "css-importer",
       "update-published": "Sat Sep 27 15:28:55 CEST 2025",
-      "build": true,
+      "build": false,
       "build-simple-enable": false,
       "dependencies": [
         {
