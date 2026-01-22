@@ -236,7 +236,11 @@ USER_YARN_NAME=yarn
 ```bash
 
 ### workspace/ts/.env.dynamic
+
 start_node_https=true
+private_key_path="/opt/jaisocx/sites_tools/workspace/ts/ssl/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key"
+ssl_cert_path="/opt/jaisocx/sites_tools/workspace/ts/ssl/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt"
+
 node_https_publish_port=8445
 node_https_publish_folder="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools"
 
@@ -246,7 +250,9 @@ node_http_flat_publish_folder="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_Sit
 
 start_express_secure=true
 express_secure_publish_port=9443
+
 express_publish_port=3000
+
 ```
 
 ---

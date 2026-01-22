@@ -23,7 +23,7 @@
     "test": "vitest run",
     "test-watch": "vitest",
     "build": "vite build",
-    "https": "export NODE_OPTIONS=--openssl-legacy-provider && http-server -U -d -S -C /opt/jaisocx/sites_tools/workspace/ts/ssl/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt -K /opt/jaisocx/sites_tools/workspace/ts/ssl/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key -p \"${node_https_publish_port}\" \"${node_https_publish_folder}\"",
+    "https": "export NODE_OPTIONS=--openssl-legacy-provider && http-server -U -d -S -C \"${ssl_cert_path}\" -K \"${private_key_path}\" -p \"${node_https_publish_port}\" \"${node_https_publish_folder}\"",
     "http_flat": "http-server -U -d -p \"${node_http_flat_publish_port}\" \"${node_http_flat_publish_folder}\""
   },
   "keywords": [],
