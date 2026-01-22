@@ -8,11 +8,12 @@
     {
       "type": "node",
       "request": "attach",
-      "protocol": "launch",
-      "address": "ws://0.0.0.0:9229/500f9211-41b6-43f8-aeff-590414354283",
-      "name": "Debug Workspace js server side",
-      "localRoot": "${workspaceFolder}/workspace/ts",
-      "remoteRoot": "/opt/jaisocx/sites_tools/workspace/ts",
+      "protocol": "inspector",
+      "address": "127.0.0.1",
+      "port": 9229,
+      "name": "JS Docker Server Side",
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "/opt/jaisocx/sites_tools",
       "skipFiles": [
         "<node_internals>/**"
       ]
