@@ -39,7 +39,29 @@ rendering data from database with our Sites Tools.
 
 # JAISOCX™ TYPESCRIPT ENVIRONMENT®
 
-**Sun Jan 18 13:04:58 CET 2026**
+**Sat Jan 24 12:14:32 CET 2026**
+
+Dockerized service `ts` updated.
+
+After new ts starts **the first time**, 
+it **takes several minutes** to install js packages 
+for transpiler and other libraries to `workspace/ts/node_modules`
+
+```bash
+
+docker compose stop ts
+
+### cleans up previous install and caches in docker volumes of ts service
+docker compose rm ts --volumes
+
+### builds
+docker compose build ts
+
+### starts ts
+docker compose up ts -d
+
+```
+
 
 
 
