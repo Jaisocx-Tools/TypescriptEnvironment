@@ -4,6 +4,7 @@
 /.env
 /.cpanel.yml
 /workspace/ts/.env.dynamic
+/workspace/ts/express/.env.allow-origin
 /temp/
 /docs/md/temp/
 /workspace/ts/Jaisocx_SitesTools/packages/CharcodeConverter/tmp_data/
