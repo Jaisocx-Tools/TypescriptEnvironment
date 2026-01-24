@@ -411,14 +411,6 @@ fi
 export NODE_HTTP_FLAT_PORT
 export NODE_HTTPS_PORT
 
-export node_https_publish_port
-export node_http_flat_publish_port
-
-export node_https_publish_folder
-export node_http_flat_publish_folder
-
-
-
 if [[ "${start_node_https}" == "true" ]]; then
 
   echo -e "\n Node Secure Server starts ... "

@@ -51,12 +51,12 @@ fi
 
 
 "${jsInvokePath}" "$commandLineArgs" \
-  --packagePath="www/packages/SitesToolAutomation" \
+  --packagePath="Jaisocx_SitesTools/packages/SitesToolAutomation" \
   --script="main/produceSitesTool_MediaAndStyles.js" \
       --cssOrJsTool="css" \
-      --sitesToolName="Test123" \
+      --sitesToolName="CssCleanStart_Lite" \
       --sitesTool_ThemeName="theme_base" \
-      --templatePath="data/templates/css/responsive/responsive_size__mini.css.template" \
+      --templatePath="data/templates/css/responsive/responsive_size__CssCleanStart_Lite.css.template" \
       --withSizesCssConstants="no" \
       --justTheme="no" \
       --justThemeResponsiveDataset="no"

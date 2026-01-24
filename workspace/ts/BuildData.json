@@ -436,6 +436,20 @@
       "build-files": []
     },
     {
+      "path": "sites_tools/css_tools/CssCleanStart_Lite",
+      "name": "css_clean_start_lite",
+      "update-published": "Sat Jan 24 11:06:58 CET 2026",
+      "build": false,
+      "build-simple-enable": false,
+      "css-importer": {
+        "build": true,
+        "cssFilePath": "MediaAndStyles/CssCleanStart_Lite_main_Webpack.css",
+        "cssTargetFilePath": "MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      },
+      "dependencies": [],
+      "build-files": []
+    },
+    {
       "path": "sites_tools/css_tools/CssToolTemplate",
       "name": "css-tool-template",
       "update-published": "Tue Aug 26 00:30:34 CEST 2025",

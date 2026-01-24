@@ -50,7 +50,7 @@ fi
 
 
 "${jsInvokePath}" "$commandLineArgs" \
-  --packagePath="www/packages/SitesToolAutomation" \
+  --packagePath="Jaisocx_SitesTools/packages/SitesToolAutomation" \
   --script="main/produceSitesTool_MediaAndStyles.js" \
       --cssOrJsTool="css" \
       --sitesToolName="CssCleanStart_3" \

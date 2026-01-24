@@ -3,12 +3,12 @@ const https = require('node:https');
 const zlib = require('node:zlib');
 const { pipeline } = require('node:stream');
 const express = require('express');
-// const { TextDecoder, TextEncoder } = require('node:util');
+const { TextDecoder, TextEncoder } = require('node:util');
 
 
 
 const https_port = 9443;
-// const textDecoder = new TextDecoder();
+const textDecoder = new TextDecoder();
 // const textEncoder = new TextEncoder();
 // const compressionGgip = zlib.createGzip();
 

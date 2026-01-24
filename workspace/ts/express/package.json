@@ -8,12 +8,5 @@
   },
   "dependencies": {
     "express": "~5.1.0"
-  },
-  "engines": {
-    "node": ">= 18"
-  },
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/express"
   }
 }
