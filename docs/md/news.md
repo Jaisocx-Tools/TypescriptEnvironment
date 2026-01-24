@@ -4,7 +4,47 @@
 
 [README.md HOME](./../../README.md)
 
-**Sun Jan 18 13:04:58 CET 2026**
+**Sat Jan 24 12:29:30 CET 2026**
+
+## News: 24th of January 2026
+
+Dockerized service `ts` updated. Needs cleanup and new start.
+
+
+workspace/ts/**.env.dynamic**
+
+```bash
+
+export   start_node_https=true
+export ...
+...
+...
+
+```
+
+---
+
+
+
+After new ts starts **the first time**,
+it **takes several minutes** to install js packages
+for transpiler and other libraries to `workspace/ts/node_modules`
+
+```bash
+
+docker compose stop ts
+
+### cleans up previous install and caches in docker volumes of ts service
+docker compose rm ts --volumes
+
+### builds
+docker compose build ts
+
+### starts ts
+docker compose up ts -d
+
+```
+
 
 
 

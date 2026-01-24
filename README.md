@@ -41,7 +41,34 @@ rendering data from database with our Sites Tools.
 
 **Sat Jan 24 12:14:32 CET 2026**
 
-Dockerized service `ts` updated.
+One Typescript dockerized service `ts` needed to work with NodeJS for Javascript or Typescript development under local https endpoints.
+
+On Your demand, feel free to remove comments in `${root}/docker-compose.yml` from dockerized services confs to enable for command `docker compose start`:
+1. `PHP` server side interpreting programming language,
+2. `Jaisocx` Sites Server,
+3. `MySQL Database`.
+
+
+
+## News: 24th of January 2026
+
+Dockerized service `ts` updated. Needs cleanup and new start.
+
+
+workspace/ts/**.env.dynamic**
+
+```bash
+
+export   start_node_https=true
+export ...
+...
+...
+
+```
+
+---
+
+
 
 After new ts starts **the first time**, 
 it **takes several minutes** to install js packages 
@@ -63,14 +90,6 @@ docker compose up ts -d
 ```
 
 
-
-
-One Typescript dockerized service `ts` needed to work with NodeJS for Javascript or Typescript development under local https endpoints.
-
-On Your demand, feel free to remove comments in `${root}/docker-compose.yml` from dockerized services confs to enable for command `docker compose start`:
-1. `PHP` server side interpreting programming language,
-2. `Jaisocx` Sites Server,
-3. `MySQL Database`.
 
 
 
