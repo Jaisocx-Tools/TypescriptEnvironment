@@ -144,7 +144,7 @@ via `docker compose up -d`, but before have to:
 
 1. **copy** `.env.example` => `.env`
 2. **copy** `workspace/ts/.env.example.dynamic` => `workspace/ts/.env.dynamic`
-
+3. **copy** `workspace/ts/express/.env.example.allow-origin` => `workspace/ts/express/.env.allow-origin`
 
 
 **.env.example**
@@ -252,6 +252,20 @@ start_express_secure=true
 express_secure_publish_port=9443
 
 express_publish_port=3000
+
+```
+
+---
+
+
+
+**.env.example.allow-origin**
+
+```bash
+
+### workspace/ts/express/.env.example.allow-origin
+
+^https:\/\/([a-z0-9]+\.)*basetasks\.site(:[0-9]{2,5})*$
 
 ```
 

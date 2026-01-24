@@ -20,7 +20,7 @@ const corsHeadersMiddleware = function (req, resp, next) {
 
       let envCors = '/opt/jaisocx/sites_tools/workspace/ts/express/.env.allow-origin';
       let readEnvCorsContents = fs.readFileSync( envCors );
-      let allowOriginRe = textDecoder.decode( readEnvCorsContents );
+      let allowOriginRe = textDecoder.decode( readEnvCorsContents ).trim();
       // console.log( allowOriginRe );
 
       // let re = /^https:\/\/([a-z0-9]+\.)*basetasks\.site(:[0-9]{2,5})*$/;
