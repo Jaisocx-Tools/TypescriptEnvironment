@@ -1,4 +1,5 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/ts-tools",
   "version": "1.3.1",
   "private": false,
@@ -27,8 +28,6 @@
     "http_flat": "http-server -U -d -p \"${node_http_flat_publish_port}\" \"${node_http_flat_publish_folder}\""
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@jaisocx/css-clean-start-2": "~1.2.5",
     "axios": "^1.12.2",
@@ -45,7 +44,7 @@
     "braces": "^3.0.3",
     "core-js": "^3.44.0",
     "eslint": "^9.32.0",
-    "eslint-plugin-jaisocx": "file:transpiled_tools/EslintPlugins/EslintPluginJaisocxJS",
+    "eslint-plugin-jaisocx": "file:build_tools/EslintPlugins/EslintPluginJaisocxJS",
     "less": "^4.4.0",
     "sass": "^1.89.2",
     "ts-node": "^10.9.2",
