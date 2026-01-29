@@ -131,58 +131,6 @@
 
             </server>
 
-
-
-            <server port="80" alternative-port="2289" secure="false">
-
-              <domain
-                    name="local.basetasks.site"
-                    publish-charset="UTF-8" src-charset="UTF-8">
-
-                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
-                       art="redirection"
-                       url="/"
-                       path="https://local.basetasks.site:9445/" />
-
-                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
-                       art="redirection"
-                       url="/${any}"
-                       path="https://local.basetasks.site:9445/" />
-
-              </domain>
-
-              <domain
-                    name="cdn.basetasks.site">
-
-                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
-                       art="redirection"
-                       url="/"
-                       path="https://cdn.basetasks.site:9445/" />
-
-                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
-                       art="redirection"
-                       url="/${any}"
-                       path="https://cdn.basetasks.site:9445/" />
-
-                </domain>
-
-              <domain
-                  name="preview.basetasks.site">
-
-                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
-                       art="redirection"
-                       url="/"
-                       path="https://preview.basetasks.site/" />
-
-                <alias comment="on the plain port 80 without TLS, this alias will redirect all requests to normal https:// url, defined above in server node port 443, secure=true"
-                       art="redirection"
-                       url="/${any}"
-                       path="https://preview.basetasks.site/" />
-
-              </domain>
-
-            </server>
-
         </servers>
     </conf-http>
 </conf>
