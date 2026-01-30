@@ -1,10 +1,32 @@
-![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
 # NEWS
 
 [README.md HOME](./../../README.md)
 
-**Sat Jan 24 12:29:30 CET 2026**
+**Fri Jan 30 13:23:37 CET 2026**
+
+---
+
+## News: 30th of January 2026
+
+Dockerized service Jaisocx_SitesServer gitignored conf for published folders.
+
+copy **http-conf.example.xml** to **http-conf.xml**
+
+```bash
+
+  cd "./docker/Jaisocx_SitesServer/conf"
+  cp "http-conf.example.xml" "http-conf.xml"
+  
+```
+
+
+Later in plan same for **server.properties** at `docker/Jaisocx_SitesServer/etc/server.properties`
+
+---
+
+
 
 ## News: 24th of January 2026
 

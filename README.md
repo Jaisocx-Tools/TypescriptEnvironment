@@ -1,4 +1,7 @@
-![jaisocx.svg](cdn/www/media/images/software_labels/jaisocx.svg)
+
+![./cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+
+
 
 ---
 
@@ -33,7 +36,11 @@ rendering data from database with our Sites Tools.
 
 
 
-![jaisocx.svg](cdn/www/media/images/software_labels/jaisocx.svg)
+![./cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+![./cdn/www/media/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./cdn/www/media/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
+![./cdn/www/media/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./cdn/www/media/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
+
+
 
 > In reconstruction, not all examples do and bugfixed.
 
@@ -47,6 +54,28 @@ On Your demand, feel free to remove comments in `${root}/docker-compose.yml` fro
 1. `PHP` server side interpreting programming language,
 2. `Jaisocx` Sites Server,
 3. `MySQL Database`.
+
+
+
+---
+
+## News: 30th of January 2026
+
+  Dockerized service Jaisocx_SitesServer gitignored conf for published folders.
+
+  copy **http-conf.example.xml** to **http-conf.xml**
+
+```bash
+
+  cd "./docker/Jaisocx_SitesServer/conf"
+  cp "http-conf.example.xml" "http-conf.xml"
+  
+```
+
+
+  Later in plan same for **server.properties** at `docker/Jaisocx_SitesServer/etc/server.properties`
+
+---
 
 
 

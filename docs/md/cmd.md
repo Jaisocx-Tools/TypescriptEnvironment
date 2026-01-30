@@ -1,4 +1,7 @@
-![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+![../../cdn/www/media/images/software_labels/Jaisocx/serverside/js_serverside_jaisocx_command_line.svg](../../cdn/www/media/images/software_labels/Jaisocx/serverside/js_serverside_jaisocx_command_line.svg)
+
+
 
 # Command line tools in this Project
 

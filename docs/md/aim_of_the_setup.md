@@ -1,4 +1,4 @@
-![jaisocx.svg](../../cdn/www/media/images/software_labels/jaisocx.svg)
+![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
 # The Aim Of The Setup
 
