@@ -51,9 +51,9 @@ rendering data from database with our Sites Tools.
 One Typescript dockerized service `ts` needed to work with NodeJS for Javascript or Typescript development under local https endpoints.
 
 On Your demand, feel free to remove comments in `${root}/docker-compose.yml` from dockerized services confs to enable for command `docker compose start`:
-1. `PHP` server side interpreting programming language,
-2. `Jaisocx` Sites Server,
-3. `MySQL Database`.
+1. `PHP` server side interpreting programming language
+2. `Jaisocx` Sites Server
+3. `MySQL Database`
 
 
 

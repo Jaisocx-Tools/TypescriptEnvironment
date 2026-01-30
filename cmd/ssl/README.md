@@ -1,5 +1,6 @@
 
-![software_tm_label_jaisocx](./readme_images/software_labels/software_tm_label_jaisocx.svg)
+![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+![../../cdn/www/media/images/software_labels/Jaisocx/serverside/js_serverside_jaisocx_command_line.svg](../../cdn/www/media/images/software_labels/Jaisocx/serverside/js_serverside_jaisocx_command_line.svg)
 
 `bash command line`
 
@@ -63,8 +64,8 @@
 
   2.3.2. After **have obtained new SSL Cert** from a Provider, produces:
 
-    2.3.2.1. `<domain_name>.jks` (Java Key Store file) for Jaisocx Sites Server Secure HTTPS Edpoints
-    2.3.2.1. `bundle.crt` for both, Node and Express Framework, Secure HTTPS Edpoints
+    2.3.2.1. `<domain_name>.jks` (Java Key Store file) for Jaisocx Sites Server Secure HTTPS Endpoints
+    2.3.2.1. `bundle.crt` for both, Node and Express Framework, Secure HTTPS Endpoints
 
 
 
