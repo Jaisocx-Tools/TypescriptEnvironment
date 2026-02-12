@@ -442,7 +442,7 @@
       "build": false,
       "build-simple-enable": false,
       "css-importer": {
-        "build": true,
+        "build": false,
         "cssFilePath": "MediaAndStyles/CssCleanStart_Lite_main_Webpack.css",
         "cssTargetFilePath": "MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
       },
@@ -639,7 +639,7 @@
       "build": false,
       "build-simple-enable": true,
       "css-importer": {
-        "build": false,
+        "build": true,
         "cssFilePath": "MediaAndStyles/CssTableOrdered_main_Webpack.css",
         "cssTargetFilePath": "MediaAndStyles/CssTableOrdered_main_resolved.css"
       },

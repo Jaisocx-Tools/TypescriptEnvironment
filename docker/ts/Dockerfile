@@ -20,6 +20,7 @@ WORKDIR /opt/jaisocx/sites_tools/workspace/ts
 ### Obtain buildtime variables from .env noted in docker-compose.yml
 
 ARG   A_TIME_ZONE
+ARG   A_CPU_ARCHITECTURE
 
 ARG   A_SOFTWARE_NAMESPACE
 ARG   A_PROGRAM_NAME
@@ -89,6 +90,7 @@ ARG   A_NODE_HTTPS_PORT
 ### on demand decomment, then these variables are exported like after bash instruction: export variable_name
 
 ENV TIME_ZONE="${A_TIME_ZONE}"
+ENV CPU_ARCHITECTURE="${A_CPU_ARCHITECTURE}"
 
 ENV SOFTWARE_NAMESPACE="${A_SOFTWARE_NAMESPACE}"
 ENV PROGRAM_NAME="${A_PROGRAM_NAME}"
@@ -275,7 +277,8 @@ ENV yarn_install_home="${YARN_HOME}/${YARN_VERSION}"
 
 # ARG cpu_architecture="loong64"
 # ARG cpu_architecture="x64"
-ARG cpu_architecture="arm64"
+# ARG cpu_architecture="arm64"
+ARG cpu_architecture="${CPU_ARCHITECTURE}"
 
 # ARG node_tarball_link="https://nodejs.org/dist/v25.0.0/node-v25.0.0-darwin-arm64.tar.gz"
 # ARG node_tarball_link="https://nodejs.org/dist/v${A_NODE_VERSION}/node-v${A_NODE_VERSION}-linux-arm64.tar.xz"

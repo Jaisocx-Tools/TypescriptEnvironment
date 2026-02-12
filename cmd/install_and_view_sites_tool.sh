@@ -24,7 +24,7 @@ npm_package_name_and_ver="${npm_package_name}@${npm_package_ver}"
 
 
 cd "${to_place_npm_package_folder_path}"
-npm install -S  --install-strategy=hoisted  --include=optional  "${npm_package_name_and_ver}"
+npm install -S  --install-strategy=hoisted  --omit=dev  "${npm_package_name_and_ver}"
 
 
 
