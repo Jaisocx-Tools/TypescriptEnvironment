@@ -10,7 +10,6 @@ USER root
 ###   of the mounted volume in docker-compose.yml
 ###   set in .env.example
 ###   IN_DOCKER_PROJECT_VOLUME
-WORKDIR /opt/jaisocx/sites_tools/workspace/ts
 
 
 
@@ -169,7 +168,7 @@ ENV NODE_HTTPS_PORT="${A_NODE_HTTPS_PORT}"
 
 
 
-
+WORKDIR "${A_IN_DOCKER_PROJECT_VOLUME}"
 
 
 
@@ -222,11 +221,11 @@ RUN addgroup "${A_USER_NAME}" "${A_GROUP_NODE_SOFTWARE_NAME}"
 ### reader user to set later chown on a folder u+r u-wx
 RUN adduser  -u "${A_USER_READER_ID}"  -G "${A_GROUP_READER_NAME}" -HD "${A_USER_READER_NAME}"
 
-RUN adduser  -u "${A_USER_NODE_ID}"  -G "${GROUP_NODE_SOFTWARE_NAME}" -HD "${A_USER_NODE_NAME}"
-RUN adduser  -u "${A_USER_NPX_ID}"   -G "${GROUP_NODE_SOFTWARE_NAME}" -HD "${A_USER_NPX_NAME}"
-RUN adduser  -u "${A_USER_NPM_ID}"   -G "${GROUP_NODE_SOFTWARE_NAME}" -HD "${A_USER_NPM_NAME}"
-RUN adduser  -u "${A_USER_PNPM_ID}"  -G "${GROUP_NODE_SOFTWARE_NAME}" -HD "${A_USER_PNPM_NAME}"
-RUN adduser  -u "${A_USER_YARN_ID}"  -G "${GROUP_NODE_SOFTWARE_NAME}" -HD "${A_USER_YARN_NAME}"
+RUN adduser  -u "${A_USER_NODE_ID}"  -G "${A_GROUP_NODE_SOFTWARE_NAME}" -HD "${A_USER_NODE_NAME}"
+RUN adduser  -u "${A_USER_NPX_ID}"   -G "${A_GROUP_NODE_SOFTWARE_NAME}" -HD "${A_USER_NPX_NAME}"
+RUN adduser  -u "${A_USER_NPM_ID}"   -G "${A_GROUP_NODE_SOFTWARE_NAME}" -HD "${A_USER_NPM_NAME}"
+RUN adduser  -u "${A_USER_PNPM_ID}"  -G "${A_GROUP_NODE_SOFTWARE_NAME}" -HD "${A_USER_PNPM_NAME}"
+RUN adduser  -u "${A_USER_YARN_ID}"  -G "${A_GROUP_NODE_SOFTWARE_NAME}" -HD "${A_USER_YARN_NAME}"
 
 RUN addgroup "${A_USER_NODE_NAME}" "${A_GROUP_READER_NAME}"
 RUN addgroup "${A_USER_NPX_NAME}"  "${A_GROUP_READER_NAME}"
@@ -244,7 +243,7 @@ RUN addgroup "${A_USER_YARN_NAME}" "${A_GROUP_READER_NAME}"
 ### FILESYSTEM PATHS
 
 ENV USER_HOME="/home/${A_USER_NAME}"
-ENV PROFILE="${USER_HOME}/.bashrc"
+ENV PROFILE="${A_USER_HOME}/.bashrc"
 
 ENV COMPANY_SOFTWARE_DIR="/opt/${SOFTWARE_NAMESPACE}"
 ENV COMPANY_SOFTWARE_CONF_PATH="/etc/${SOFTWARE_NAMESPACE}"
@@ -264,7 +263,7 @@ ENV TSVM_JSC_RUN_SH="${TSVM_JSC_COMMANDS}/run_${PROGRAM_NAME}.sh"
 ENV node_modules_installed_marker_path="/entrypoint/npm-installed.mark"
 
 ENV NODEJS_HOME="${TSVM_JSC_HOME}/node_v${NODE_VERSION}"
-ENV yarn_conf_home="${USER_HOME}/.yarn"
+ENV yarn_conf_home="${A_USER_HOME}/.yarn"
 ENV yarn_install_home="${YARN_HOME}/${YARN_VERSION}"
 
 
@@ -334,24 +333,24 @@ COPY   "./templates/example.template"       "${templates}/example.template"
 
 ### SETS FILESYSTEM PRIVILEGS
 ### for user home folder set fs privilegs
-RUN chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${USER_HOME}"
-RUN chmod -R u+rwx  "${USER_HOME}"
-RUN chmod -R go-rwx "${USER_HOME}"
+RUN chown -R "${A_USER_NAME}:${A_GROUP_USERS_NAME}" "${A_USER_HOME}"
+RUN chmod -R u+rwx  "${A_USER_HOME}"
+RUN chmod -R go-rwx "${A_USER_HOME}"
 
 
 
 ### bash profile
 RUN touch   "${PROFILE}"
-RUN chown   "${USER_NAME}:${GROUP_USERS_NAME}"   "${PROFILE}"
+RUN chown   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "${PROFILE}"
 RUN chmod   u+rwx    "${PROFILE}"
 RUN chmod   go-rwx   "${PROFILE}"
 
 
 
 ### for Companie's Software Namespace folder set fs privilegs
-RUN chown -R "${USER_NODE_NAME}:${GROUP_NODE_SOFTWARE_NAME}" "${COMPANY_SOFTWARE_DIR}"
-RUN chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${COMPANY_SOFTWARE_CONF_PATH}"
-RUN chown -R "${USER_NODE_NAME}:${GROUP_NODE_SOFTWARE_NAME}" "${COMPANY_SOFTWARE_CACHE_PATH}"
+RUN chown -R "${A_USER_NODE_NAME}:${A_GROUP_NODE_SOFTWARE_NAME}" "${COMPANY_SOFTWARE_DIR}"
+RUN chown -R "${A_USER_NAME}:${A_GROUP_USERS_NAME}" "${COMPANY_SOFTWARE_CONF_PATH}"
+RUN chown -R "${A_USER_NODE_NAME}:${A_GROUP_NODE_SOFTWARE_NAME}" "${COMPANY_SOFTWARE_CACHE_PATH}"
 
 RUN chmod -R ug+rwx "${COMPANY_SOFTWARE_DIR}"
 RUN chmod -R o-rwx  "${COMPANY_SOFTWARE_DIR}"
@@ -368,23 +367,28 @@ RUN chmod -R o-rwx  "${COMPANY_SOFTWARE_CACHE_PATH}"
 RUN chmod -R ug+rwx "${yarn_conf_home}"
 RUN chmod -R ug+rwx "${YARN_HOME}"
 
-RUN chown -R "${USER_YARN_NAME}:${GROUP_NODE_SOFTWARE_NAME}" "${yarn_conf_home}"
-RUN chown -R "${USER_YARN_NAME}:${GROUP_NODE_SOFTWARE_NAME}" "${YARN_HOME}"
+RUN chown -R "${A_USER_YARN_NAME}:${A_GROUP_NODE_SOFTWARE_NAME}" "${yarn_conf_home}"
+RUN chown -R "${A_USER_YARN_NAME}:${A_GROUP_NODE_SOFTWARE_NAME}" "${YARN_HOME}"
 
 
 ### @entrypoint
-RUN chown -R   "${USER_NAME}:${GROUP_USERS_NAME}"   "/entrypoint"
+RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "/entrypoint"
 RUN chmod -R a+rwx   "/entrypoint"
 
 ### @templates @fs
-RUN chown -R   "${USER_NAME}:${GROUP_USERS_NAME}"   "${templates}"
+RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "${templates}"
 RUN chmod -R u+rx    "${templates}"
 RUN chmod -R og-wx   "${templates}"
 
 ### @privilegs_fs Node install
-RUN chown -R   "${USER_NAME}:${GROUP_USERS_NAME}"   "${TSVM_JSC_HOME}"
+RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "${TSVM_JSC_HOME}"
 
 ### @privilegs_fs Volume
+RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "${A_IN_DOCKER_PROJECT_VOLUME}"
+RUN chmod -R ug+rwx   "${A_IN_DOCKER_PROJECT_VOLUME}"
+RUN chmod -R o-wx     "${A_IN_DOCKER_PROJECT_VOLUME}"
+
+
 
 ### @mark_npm_i removes mark about npm have been installed.
 ###           The mark prevents npm install every time on docker restart/start
@@ -409,7 +413,7 @@ EXPOSE 9229
 
 
 
-USER "${USER_NAME}"
+USER "${A_USER_NAME}"
 
 ENTRYPOINT [ "/entrypoint/entrypoint.sh" ]
 
