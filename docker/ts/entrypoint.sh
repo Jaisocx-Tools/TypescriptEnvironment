@@ -11,7 +11,7 @@
 templates="/templates"
 
 # chown -R "${USER_NAME}:${GROUP_NODE_SOFTWARE_NAME}" "${IN_DOCKER_PROJECT_VOLUME}"
-# chmod -R ug+rwx "${IN_DOCKER_PROJECT_VOLUME}"
+chmod -R a+rwx "${IN_DOCKER_PROJECT_VOLUME}"
 # chmod -R o-rwx  "${IN_DOCKER_PROJECT_VOLUME}"
 
 if [ ! -e "${tarballs_folder}" ]; then
@@ -19,10 +19,8 @@ if [ ! -e "${tarballs_folder}" ]; then
   ### for tarball store folder set fs privilegs
   ###;;; chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${tarballs_folder}"
   chmod -R ug+rwx "${tarballs_folder}"
-  chmod -R o-rwx  "${tarballs_folder}"
+  ### chmod -R o-rwx  "${tarballs_folder}"
 fi
-
-
 
 
 

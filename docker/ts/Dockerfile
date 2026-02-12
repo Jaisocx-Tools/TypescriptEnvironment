@@ -381,8 +381,7 @@ RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "${TSVM_JSC_HOME}"
 
 ### @privilegs_fs Volume
 RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "${A_IN_DOCKER_PROJECT_VOLUME}"
-RUN chmod -R ug+rwx   "${A_IN_DOCKER_PROJECT_VOLUME}"
-RUN chmod -R o-wx     "${A_IN_DOCKER_PROJECT_VOLUME}"
+RUN chmod -R a+rwx   "${A_IN_DOCKER_PROJECT_VOLUME}"
 
 
 
