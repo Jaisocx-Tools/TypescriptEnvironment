@@ -3,6 +3,7 @@
 # the .env file in .gitignore isn't published then in Your git repo.
 /.env
 /.cpanel.yml
+/docker-compose.yml
 /docker/Jaisocx_SitesServer/conf/http-conf.xml
 /workspace/ts/.env.dynamic
 /workspace/ts/express/.env.allow-origin
