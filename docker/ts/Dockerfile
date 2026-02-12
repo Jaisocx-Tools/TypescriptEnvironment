@@ -243,7 +243,7 @@ RUN addgroup "${A_USER_YARN_NAME}" "${A_GROUP_READER_NAME}"
 ### FILESYSTEM PATHS
 
 ENV USER_HOME="/home/${A_USER_NAME}"
-ENV PROFILE="${A_USER_HOME}/.bashrc"
+ENV PROFILE="${USER_HOME}/.bashrc"
 
 ENV COMPANY_SOFTWARE_DIR="/opt/${SOFTWARE_NAMESPACE}"
 ENV COMPANY_SOFTWARE_CONF_PATH="/etc/${SOFTWARE_NAMESPACE}"
@@ -263,7 +263,7 @@ ENV TSVM_JSC_RUN_SH="${TSVM_JSC_COMMANDS}/run_${PROGRAM_NAME}.sh"
 ENV node_modules_installed_marker_path="/entrypoint/npm-installed.mark"
 
 ENV NODEJS_HOME="${TSVM_JSC_HOME}/node_v${NODE_VERSION}"
-ENV yarn_conf_home="${A_USER_HOME}/.yarn"
+ENV yarn_conf_home="${USER_HOME}/.yarn"
 ENV yarn_install_home="${YARN_HOME}/${YARN_VERSION}"
 
 
@@ -322,20 +322,16 @@ RUN mkdir   "${templates}"
 
 
 
-
-
 COPY   "./entrypoint.sh"   "/entrypoint/entrypoint.sh"
 COPY   "./templates/example.template"       "${templates}/example.template"
 
 
 
-
-
 ### SETS FILESYSTEM PRIVILEGS
 ### for user home folder set fs privilegs
-RUN chown -R "${A_USER_NAME}:${A_GROUP_USERS_NAME}" "${A_USER_HOME}"
-RUN chmod -R u+rwx  "${A_USER_HOME}"
-RUN chmod -R go-rwx "${A_USER_HOME}"
+RUN chown -R "${A_USER_NAME}:${A_GROUP_USERS_NAME}" "${USER_HOME}"
+RUN chmod -R u+rwx  "${USER_HOME}"
+RUN chmod -R go-rwx "${USER_HOME}"
 
 
 
