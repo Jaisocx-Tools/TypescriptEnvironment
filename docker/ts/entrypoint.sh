@@ -10,7 +10,11 @@
 # NODEJS_HOME="${TSVM_JSC_HOME}/node_v${NODE_VERSION}"
 templates="/templates"
 
-# chown -R "${USER_NAME}:${GROUP_NODE_SOFTWARE_NAME}" "${IN_DOCKER_PROJECT_VOLUME}"
+
+whoami
+ls -lahrtsi "${IN_DOCKER_PROJECT_VOLUME}"
+
+#chown -R "${USER_NAME}:${GROUP_NODE_SOFTWARE_NAME}" "${IN_DOCKER_PROJECT_VOLUME}"
 chmod -R a+rwx "${IN_DOCKER_PROJECT_VOLUME}"
 # chmod -R o-rwx  "${IN_DOCKER_PROJECT_VOLUME}"
 

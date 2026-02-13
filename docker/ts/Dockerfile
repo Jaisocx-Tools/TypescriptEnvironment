@@ -344,7 +344,7 @@ RUN chmod   go-rwx   "${PROFILE}"
 
 
 ### for Companie's Software Namespace folder set fs privilegs
-RUN chown -R "${A_USER_NODE_NAME}:${A_GROUP_NODE_SOFTWARE_NAME}" "${COMPANY_SOFTWARE_DIR}"
+RUN chown -R "${A_USER_NODE_NAME}:${A_GROUP_USERS_NAME}" "${COMPANY_SOFTWARE_DIR}"
 RUN chown -R "${A_USER_NAME}:${A_GROUP_USERS_NAME}" "${COMPANY_SOFTWARE_CONF_PATH}"
 RUN chown -R "${A_USER_NODE_NAME}:${A_GROUP_NODE_SOFTWARE_NAME}" "${COMPANY_SOFTWARE_CACHE_PATH}"
 
@@ -380,8 +380,8 @@ RUN chmod -R og-wx   "${templates}"
 RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "${TSVM_JSC_HOME}"
 
 ### @privilegs_fs Volume
-RUN chown -R   "${A_USER_NAME}:${A_GROUP_USERS_NAME}"   "${A_IN_DOCKER_PROJECT_VOLUME}"
-RUN chmod -R a+rwx   "${A_IN_DOCKER_PROJECT_VOLUME}"
+RUN chown -R ${A_USER_NAME}:${A_GROUP_USERS_NAME} "${A_IN_DOCKER_PROJECT_VOLUME}"
+RUN chmod -R a+rwx "${A_IN_DOCKER_PROJECT_VOLUME}"
 
 
 
