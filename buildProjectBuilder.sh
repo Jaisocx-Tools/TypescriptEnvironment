@@ -9,45 +9,48 @@
 # the npm dependencies (javascript libraries) supported, are already of another their versions,
 # and then could be not doing.
 
-thisPath="$(dirname "$(realpath "$0")")"
-pathToEnv="${thisPath}/.env"
+  commandLineArgs="$@"
+  thisPath="$(dirname "$(realpath "$0")")"
+  fodlerName="$(basename "$thisPath")"
+  projectPath=""
+
+  if [[ "${fodlerName}" == "cmd" ]]; then
+    projectPath="$(realpath "${thisPath}/..")"
+  else
+    projectPath="$(realpath "${thisPath}")"
+  fi
+
+  pathToEnv="${thisPath}/.env"
 
 
 
-# when there is the .env
-if [ -e "${pathToEnv}" ]; then
-  # Obtaining the Project's settings from the .env
-  source "${pathToEnv}"
+  if [[ ! -e "${pathToEnv}" ]]; then
+
+    # when no .env is in the Project,
+    # this Exception text is written in the command line.
+    exceptionNoticeLines=(
+      ".env file is not set,"
+      "\n   the example of the .env file is the .env.example,"
+      "\n   in order to invoke PackageBuilder, You need copy the .env.example and rename to .env,"
+      "\n   then to set in the new .env the for Your Project other constants for the sensitive infos."
+      "\n"
+    )
+
+    echo -e "${exceptionNoticeLines[$'\052']}"
+
+    exit 3;
+
+  fi;
 
 
-  # the constants from the .env, pleae don't use there hardcoed, the best to set in the .env file :
-  # tsconfigVersion="ESNext"
-  # PROJECT_VOLUME="./workspace/ts"
-  # IN_DOCKER_PROJECT_VOLUME="/opt/jaisocx/sites_tools/workspace/ts"
 
-  # the command line tool PackageBuilder.ts is best to invoke in the dockerized node service,
-  # since the node ver. 23 and npm ver. are fixed in Your setup,
-  # until changed in ./docker/ts/Dockerfile in the first line:
-  # FROM node:23-alpine3.19
-  # this line invokes the .sh command to call the ProjectBuilder.ts the desired way.
+cd "${projectPath}"
+# Obtaining the Project's settings from the .env
+set -a
+. "${pathToEnv}"
 
-  docker compose exec ts bash -c "${IN_DOCKER_PROJECT_VOLUME}/build_tools/command/buildProjectBuilder.sh "${IN_DOCKER_PROJECT_VOLUME}""
+docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && /bin/bash "${IN_DOCKER_PROJECT_VOLUME}/build_tools/command/buildProjectBuilder.sh" "${IN_DOCKER_PROJECT_VOLUME}""
 
-else
-  # when no .env is in the Project,
-  # this Exception text is written in the command line.
-  exceptionNoticeLines=(
-    ".env file is not set,"
-    "\n   the example of the .env file is the .env.example,"
-    "\n   in order to invoke PackageBuilder, You need copy the .env.example and rename to .env,"
-    "\n   then to set in the new .env the for Your Project other constants for the sensitive infos."
-    "\n"
-  )
-
-  echo -e "${exceptionNoticeLines[$'\052']}"
-
-fi;
-
-
+exit 0;
 
 

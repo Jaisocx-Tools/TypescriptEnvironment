@@ -9,40 +9,10 @@
 # the npm dependencies (javascript libraries) supported, are already of another their versions,
 # and then could be not doing.
 
-commandLineArgs="$@"
-thisPath="$(dirname "$(realpath "$0")")"
-fodlerName="$(basename "$thisPath")"
-projectPath="$(realpath "${thisPath}")"
-pathToEnv="${thisPath}/.env"
-
-
-
-# when there is the .env
-if [ -e "${pathToEnv}" ]; then
-  # Obtaining the Project's settings from the .env
-  set -a
-  source "${pathToEnv}"
-
-
-  # the constants from the .env, pleae don't use there hardcoed, the best to set in the .env file :
-  # tsconfigVersion="ESNext"
-  # relativeProjectPathWithTsCode="./workspace/ts"
-  # IN_DOCKER_PROJECT_VOLUME="/opt/jaisocx/sites_tools/workspace/ts"
-
-  # the command line tool PackageBuilder.ts is best to invoke in the dockerized node service,
-  # since the node ver. 23 and npm ver. are fixed in Your setup,
-  # until changed in ./docker/ts/Dockerfile in the first line:
-  # FROM node:23-alpine3.19
-  # this line invokes the .sh command to call the ProjectBuilder.ts the desired way.
-
-
-
-  ###------------------------------------------
-  ## start block
-  ## checks and validations
-
-
-projectPath=""
+  commandLineArgs="$@"
+  thisPath="$(dirname "$(realpath "$0")")"
+  fodlerName="$(basename "$thisPath")"
+  projectPath=""
 
   if [[ "${fodlerName}" == "cmd" ]]; then
     projectPath="$(realpath "${thisPath}/..")"
@@ -50,45 +20,61 @@ projectPath=""
     projectPath="$(realpath "${thisPath}")"
   fi
 
+  pathToEnv="${thisPath}/.env"
+
+
+
+  if [[ ! -e "${pathToEnv}" ]]; then
+
+    # when no .env is in the Project,
+    # this Exception text is written in the command line.
+    exceptionNoticeLines=(
+      ".env file is not set,"
+      "\n   the example of the .env file is the .env.example,"
+      "\n   in order to invoke PackageBuilder, You need copy the .env.example and rename to .env,"
+      "\n   then to set in the new .env the for Your Project other constants for the sensitive infos."
+      "\n"
+    )
+
+    echo -e "${exceptionNoticeLines[$'\052']}"
+
+    exit 3;
+
+  fi;
+
+
+
+  # the constants from the .env, please don't use there hardcoed, the best to set in the .env file :
+  # tsconfigVersion="ESNext"
+  # relativeProjectPathWithTsCode="./workspace/ts"
+  # IN_DOCKER_PROJECT_VOLUME="/opt/jaisocx/sites_tools/workspace/ts"
+
+  # the command line tool ProjectBuilder.ts is best to invoke in the dockerized node service,
+
   jsInvokePath="${projectPath}/cmd/base/js_invoke.sh"
 
-
-
-  # "${tsconfigVersion}" "${tsServicePathInDockerVolume}"
-
-  # echo "jsInvokePath: ${jsInvokePath}"
-
   if [[ ! -e "${jsInvokePath}" ]]; then
-    echo "Error: call this script in the root of this project or in the folder command."
-    exit 2;
+    echo "Error: calling this script not in the root of this project."
+    exit 4;
   fi
 
-  ## finish block
-  ## checks and validations
   ###------------------------------------------
 
 
-  "${jsInvokePath}" "$commandLineArgs" \
+
+cd "${projectPath}"
+# Obtaining the Project's settings from the .env
+set -a
+. "${pathToEnv}"
+
+
+  bash "${jsInvokePath}" "$commandLineArgs" \
     --packagePath="build_tools/ProjectBuilder" \
     --script="cli/run.js" \
     --ProjectRoot="${IN_DOCKER_PROJECT_VOLUME}" \
     --BuildData="${IN_DOCKER_PROJECT_VOLUME}/BuildData.json" \
     --PackagesPath="${IN_DOCKER_PROJECT_VOLUME}/Jaisocx_SitesTools/"
 
-else
-  # when no .env is in the Project,
-  # this Exception text is written in the command line.
-  exceptionNoticeLines=(
-    ".env file is not set,"
-    "\n   the example of the .env file is the .env.example,"
-    "\n   in order to invoke PackageBuilder, You need copy the .env.example and rename to .env,"
-    "\n   then to set in the new .env the for Your Project other constants for the sensitive infos."
-    "\n"
-  )
-
-  echo -e "${exceptionNoticeLines[$'\052']}"
-
-fi;
-
+exit 0;
 
 

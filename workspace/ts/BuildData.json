@@ -635,9 +635,9 @@
     {
       "path": "sites_tools/js_tools/CssTableOrdered",
       "name": "css-table-ordered",
-      "update-published": "Wed Aug 20 03:19:33 UTC 2025",
+      "update-published": "Sat Feb 14 16:07:48 UTC 2026",
       "build": false,
-      "build-simple-enable": true,
+      "build-simple-enable": false,
       "css-importer": {
         "build": true,
         "cssFilePath": "MediaAndStyles/CssTableOrdered_main_Webpack.css",
