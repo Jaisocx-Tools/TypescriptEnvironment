@@ -1,0 +1,18 @@
+<conf-idm>
+
+  <!--  <user id="Loader" password="5" granted-roles="READER" />-->
+  <user id="Loader" password="fgdfjkglkjfngjk" granted-roles="READER"></user>
+
+  <role id="READER">
+    <!-- in the http-conf.xml, the port number is the port number in docker (:443), and not the outer port on host OS -->
+
+    <granted-alias
+        url="auth-required.basetasks.site:8445/"
+        methods="GET,HEAD,OPTIONS">
+    </granted-alias>
+
+  </role>
+
+</conf-idm>
+
+

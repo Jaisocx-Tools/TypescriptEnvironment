@@ -1,10 +1,15 @@
 # in the .env file in the root of this project are Your project's settings,
 # and therefore it is advised not to keep in open source repositories.
 # the .env file in .gitignore isn't published then in Your git repo.
-/.env
 /.cpanel.yml
+
+/.env
 /docker-compose.yml
+
+/docker/Jaisocx_SitesServer/conf/idm-conf.xml
 /docker/Jaisocx_SitesServer/conf/http-conf.xml
+/docker/Jaisocx_SitesServer/etc/server.properties
+
 /workspace/ts/.env.dynamic
 /workspace/ts/express/.env.allow-origin
 /temp/
