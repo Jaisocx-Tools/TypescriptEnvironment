@@ -305,7 +305,6 @@ ready to use, however the SitesToolAutomation will gen later normally the new cs
 ## News: 13th of May 2025
 
 #### 1. To apply new npm tools:
-**Vite Framework**,
 **SASS** and **LESS** Styles preprocessors and
 **Vitest Testing Framework**,
 You need to update in Your project ts dockerized service and
@@ -321,71 +320,6 @@ docker compose exec ts bash
 cd /opt/jaisocx/sites_tools/workspace/ts
 npm install
 ```
-
-
-
-#### 2. Vite Framework applied in this project
-
-the template package to copy-paste to start a new package with Vite:
-
-`workspace/ts/Jaisocx_SitesTools/templates/ViteWithSassAndLess`
-
-To start watching with Vite in dev mode:
-
-```
-docker compose exec ts bash
-cd /opt/jaisocx/sites_tools/workspace/ts
-npx vite --config www/templates/ViteWithSassAndLess/vite.config.ts
-```
-
-navigate to <http://localhost:5173/>
-
-
-To build with Vite:
-```
-docker compose exec ts bash
-cd /opt/jaisocx/sites_tools/workspace/ts
-npx vite build --config www/templates/ViteWithSassAndLess/vite.config.ts
-```
-
-navigate to <https://sandbox.brightday.email/templates/ViteWithSassAndLess/dist/>
-
-
-
-#### 3. Vitest Testing Framework applied in this project.
-
-*The very very nice user experience at the first site. Installed via npm like a charm, first test written ran at once, no need no project rebuild. Found the bug thanks to the Vitest test ran, and bugfixed then. The very very nice testing framework.*
-
-A test example available: `workspace/ts/Jaisocx_SitesTools/packages/JPath/test/JPath.test.ts`
-
-
-![Vitest test ran](./images/tests/Vitest_test_ran.jpg)
-
-
-
-2. To run tests:
-
-```
-docker compose exec ts bash
-cd /opt/jaisocx/sites_tools/workspace/ts
-
-## via script in package.json:
-##   why good: when didn't know instruction "npx vitest run",
-##   the normal way to lookup for scripts in package.json for sure))
-npm run test
-
-## or, in watch mode:
-npm run test-watch
-
-
-## via npx command line tool:
-# npx vitest run
-
-## or, in watch mode:
-# npx vitest
-```
-
-
 
 
 
