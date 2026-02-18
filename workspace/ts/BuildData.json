@@ -176,7 +176,7 @@
     {
       "path": "packages/EventEmitter",
       "name": "event-emitter",
-      "update-published": "Mon Jun 02 22:02:01 GMT 2025",
+      "update-published": "Wed Feb 18 04:53:34 CET 202",
       "build": true,
       "build-simple-enable": true,
       "build-files": [
@@ -364,7 +364,7 @@
     {
       "path": "packages/TemplateRenderer",
       "name": "template-renderer",
-      "update-published": "",
+      "update-published": "Wed Feb 18 04:53:34 CET 202",
       "build": true,
       "build-simple-enable": true,
       "dependencies": [
@@ -527,7 +527,7 @@
     {
       "path": "sites_tools/js_tools/Tree",
       "name": "tree",
-      "update-published": "",
+      "update-published": "Wed Feb 18 04:53:34 CET 202 ",
       "build": false,
       "build-simple-enable": true,
       "css-importer": {

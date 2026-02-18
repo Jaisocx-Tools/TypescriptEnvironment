@@ -1,138 +1,67 @@
 <conf>
-    <conf-idm path="/usr/lib/jaisocx-http/apps/congratulations/conf/idm-conf.xml" />
-    <conf-http>
-        <servers>
-            <server port="9445" alternative-port="9444" secure="true">
+  <conf-idm path="/usr/lib/jaisocx-http/apps/congratulations/conf/idm-conf.xml" />
+  <conf-http>
+    <servers>
 
-              <domain
-                    name="cdn.basetasks.site"
-                    jks-path="/usr/lib/jaisocx-http/ssl/2026_2027_basetasks_site.jks"
-                    jks-alias="basetasks.site"
-                    jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
-                    publish-charset="UTF-8" src-charset="UTF-8">
+      <server port="9445" alternative-port="9444" secure="true">
 
-                    <alias comment="typescript code"
-                           art="folder"
-                           url="/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
+        <domain
+            name="cdn.basetasks.site"
+            jks-path="/usr/lib/jaisocx-http/ssl/2026_2027_basetasks_site.jks"
+            jks-alias="basetasks.site"
+            jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
+            publish-charset="UTF-8" src-charset="UTF-8">
 
-              </domain>
+          <alias comment="typescript code"
+                 art="folder"
+                 url="/"
+                 path="/opt/jaisocx/sites_tools/workspace/ts/cdn/"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
 
-              <domain
-                    name="local.basetasks.site"
-                    jks-path="/usr/lib/jaisocx-http/ssl/2026_2027_basetasks_site.jks"
-                    jks-alias="basetasks.site"
-                    jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
-                    document-root="/opt/jaisocx/sites_tools/workspace/php"
-                    publish-charset="UTF-8" src-charset="UTF-8">
+        </domain>
 
-                    <alias comment="typescript code"
-                           art="folder"
-                           url="/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
+        <domain
+            name="local.basetasks.site"
+            jks-path="/usr/lib/jaisocx-http/ssl/2026_2027_basetasks_site.jks"
+            jks-alias="basetasks.site"
+            jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
+            document-root="/opt/jaisocx/sites_tools/workspace/php"
+            publish-charset="UTF-8" src-charset="UTF-8">
 
-                    <alias comment="php code"
-                           art="folder"
-                           url="/php/"
-                           path="/opt/jaisocx/sites_tools/workspace/php/"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="index.php" />
+          <alias comment="typescript code"
+                 art="folder"
+                 url="/"
+                 path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
 
-                    <alias comment="cdn for data, fonts and media"
-                           art="folder"
-                           url="/cdn/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
+          <alias comment="typescript code"
+                 art="folder"
+                 url="/previews/"
+                 path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/previews/"
+                 cache="cache"
+                 list="true"
+                 each-folder-content-file-name="root.html" />
 
-                    <alias comment="cdn for data, secured with basic auth. On demand, You can set auth JWT"
-                           art="folder"
-                           url="/cdn/data_secured/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/data_secured/"
-                           authorization="basic"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
+          <alias comment="php code"
+                 art="folder"
+                 url="/php/"
+                 path="/opt/jaisocx/sites_tools/workspace/php/"
+                 cache="update"
+                 list="true"
+                 each-folder-content-file-name="index.php" />
 
-                    <alias comment="cdn for the entire node_modules subfolder. the fast to declare url, however not preferred, since node_modules can have very a lot of dependencies. then can't set cache mode, since many GB of RAM used. Here are @jaisocx/ sites js and css tools, installed via yarn install or npm install"
-                           art="folder"
-                           url="/cdn/jaisocx-tools-all/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/SitesTools/node_modules/@jaisocx/"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
 
-                    <alias comment="preferred cdn url for one node_modules/MediaAndStyles subfolder of one tool, where are @jaisocx/ site js and css tool .css files and .css themes and mini-images"
-                           art="folder"
-                           url="/cdn/jaisocx-tools/css-clean-start/MediaAndStyles/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/SitesTools/node_modules/@jaisocx/css-clean-start/MediaAndStyles"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
 
-                    <alias comment="preferred cdn url for one node_modules/MediaAndStyles subfolder of one tool, where are @jaisocx/ site js and css tool .css files and .css themes and mini-images"
-                           art="folder"
-                           url="/cdn/jaisocx-tools/css-code-snippet/MediaAndStyles/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/SitesTools/node_modules/@jaisocx/css-code-snippet/MediaAndStyles"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
+        </domain>
 
-                    <alias comment="preferred cdn url for one node_modules/MediaAndStyles subfolder of one tool, where are @jaisocx/ site js and css tool .css files and .css themes and mini-images"
-                           art="folder"
-                           url="/cdn/jaisocx-tools/css-table/MediaAndStyles/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/SitesTools/node_modules/@jaisocx/css-table/MediaAndStyles"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
+      </server>
 
-                    <alias comment="preferred cdn url for one node_modules/MediaAndStyles subfolder of one tool, where are @jaisocx/ site js and css tool .css files and .css themes and mini-images"
-                           art="folder"
-                           url="/cdn/jaisocx-tools/tooltip/MediaAndStyles/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/SitesTools/node_modules/@jaisocx/tooltip/MediaAndStyles"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
-
-                    <alias comment="preferred cdn url for one node_modules/MediaAndStyles subfolder of one tool, where are @jaisocx/ site js and css tool .css files and .css themes and mini-images"
-                           art="folder"
-                           url="/cdn/jaisocx-tools/tree/MediaAndStyles/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/cdn/SitesTools/node_modules/@jaisocx/tree/MediaAndStyles"
-                           cache="update"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
-
-                    <alias comment="caching fonts hardcoded in order to set caching response headers so that browsers don't request fonts more than once, saving up megabytes of traffic on each load or reload of all pages, having fine-tuned font-family styles, by @font-face styles and link preload for fonts))."
-                           art="folder"
-                           url="/sites_tools/media_tools/JscFonts_base/MediaAndStyles/fonts/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/sites_tools/media_tools/JscFonts_base/MediaAndStyles/fonts"
-                           cache="cache"
-                           list="true"
-                           each-folder-content-file-name="root.html" />
-
-                    <alias comment="email secured"
-                           art="folder"
-                           url="/examples_html/emails/temp/"
-                           path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/examples_html/emails/temp/"
-                           cache="update"
-                           list="false"
-                           authorization="basic"
-                           each-folder-content-file-name="root.html" />
-
-              </domain>
-
-            </server>
-
-        </servers>
-    </conf-http>
+    </servers>
+  </conf-http>
 </conf>
 
 
