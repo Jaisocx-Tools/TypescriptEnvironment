@@ -177,7 +177,7 @@
       "path": "packages/EventEmitter",
       "name": "event-emitter",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "build-files": [
         "EventEmitter.js",
@@ -365,7 +365,7 @@
       "path": "packages/TemplateRenderer",
       "name": "template-renderer",
       "update-published": "",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -670,7 +670,7 @@
     {
       "path": "examples/ExampleTemplateRenderer",
       "name": "example-template-renderer",
-      "build": false,
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [
         {
@@ -809,13 +809,13 @@
       "name": "responsive-sizes",
       "update-published": "",
       "build": false,
-      "build-simple-enable": true,
-      "dependencies": [],
+      "build-simple-enable": false,
       "build-files": [
         "ResponsiveSizesConstants.js",
         "ResponsiveSizesConstantsCssCleanStart.js",
         "ResponsiveSizes.js"
-      ]
+      ],
+      "dependencies": []
     },
     {
       "path": "sites_tools/css_tools/CssToolTemplate",

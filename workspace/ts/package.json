@@ -24,15 +24,11 @@
     "http_flat": "http-server -U -d -p \"${node_http_flat_publish_port}\" \"${node_http_flat_publish_folder}\""
   },
   "dependencies": {
-    "@jaisocx/css_clean_start_lite": "1.0.3",
-    "http-server": "14.1.1"
-  },
-  "devDependencies": {
-    "'": "file:typescript-eslint/eslint-plugin@latest",
     "@jaisocx/eslint-plugins": "1.3.2",
     "@typescript-eslint/eslint-plugin": "^8.55.0",
+    "@types/node": "^25.2.3",
     "eslint": "9.0.0",
-    "sass": "1.97.3",
+    "http-server": "14.1.1",
     "typescript": "5.9.3"
   }
 }
