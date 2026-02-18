@@ -392,6 +392,15 @@ RUN if [ -e "${node_modules_installed_marker_path}" ]; then rm "${node_modules_i
 
 
 
+ENV USER_NAME="${A_USER_NAME}"
+
+RUN mkdir -p "${A_IN_DOCKER_PROJECT_VOLUME}"
+RUN chmod -R ug+rwx "${A_IN_DOCKER_PROJECT_VOLUME}"
+RUN chown -Rh "${A_USER_ID}:${A_GROUP_USERS_ID}" "${A_IN_DOCKER_PROJECT_VOLUME}"
+VOLUME [ "${A_PROJECT_VOLUME}", "${A_IN_DOCKER_PROJECT_VOLUME}" ]
+
+USER "${A_USER_NAME}"
+
 
 
 # Expose the application's port
@@ -406,9 +415,6 @@ EXPOSE 9229
 # EXPOSE $A_NODE_HTTP_FLAT_PORT
 # EXPOSE $A_NODE_HTTPS_PORT
 
-
-
-USER "${A_USER_NAME}"
 
 ENTRYPOINT [ "/entrypoint/entrypoint.sh" ]
 

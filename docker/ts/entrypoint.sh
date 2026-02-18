@@ -14,11 +14,11 @@ templates="/templates"
 whoami
 ls -lahrtsi "${IN_DOCKER_PROJECT_VOLUME}"
 
-#chown -R "${USER_NAME}:${GROUP_NODE_SOFTWARE_NAME}" "${IN_DOCKER_PROJECT_VOLUME}"
-chmod -R a+rwx "${IN_DOCKER_PROJECT_VOLUME}"
+# chown -R -hn "${USER_ID}:${GROUP_USERS_ID}" "${IN_DOCKER_PROJECT_VOLUME}"
+# chmod -R a+rwx "${IN_DOCKER_PROJECT_VOLUME}"
 # chmod -R o-rwx  "${IN_DOCKER_PROJECT_VOLUME}"
 
-if [ ! -e "${tarballs_folder}" ]; then
+if [[ ! -e "${tarballs_folder}" ]]; then
   mkdir -p "${tarballs_folder}";
   ### for tarball store folder set fs privilegs
   ###;;; chown -R "${USER_NAME}:${GROUP_USERS_NAME}" "${tarballs_folder}"
@@ -28,8 +28,8 @@ fi
 
 
 
-### set -e to load .env.tmp
-set -e
+### set -a to load .env.tmp
+set -a
 
 ### You may load a node installation tarball to cache it for later.
 ### The script with urls of tarballs resides in docker service context:
@@ -264,9 +264,6 @@ npx --version
 
 echo -e "\n npm --version "
 npm --version
-
-
-
 
 
 
