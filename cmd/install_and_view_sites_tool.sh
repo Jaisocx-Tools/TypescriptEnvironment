@@ -24,7 +24,22 @@ npm_package_name_and_ver="${npm_package_name}@${npm_package_ver}"
 
 
 cd "${to_place_npm_package_folder_path}"
-npm install -S  --install-strategy=hoisted  --omit=dev  "${npm_package_name_and_ver}"
+
+
+
+if [ ! -e "${to_place_npm_package_folder_path}/package.json" ]; then
+
+  echo -e "new package.json, then You need to invoke the script again.\n"
+  echo -e "New place where js libs are installed, new package.json in folder "${to_place_npm_package_folder_path}"\n"
+
+  npm init
+
+  echo -e "Exits script without have installed ...\n"
+  exit 2;
+
+fi
+
+npm install -S  --install-strategy=hoisted  --omit=dev  --save-optional=true  "${npm_package_name_and_ver}"
 
 
 

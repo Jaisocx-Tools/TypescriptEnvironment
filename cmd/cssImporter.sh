@@ -57,9 +57,9 @@ fi
   --BuildData="${IN_DOCKER_PROJECT_VOLUME}/BuildData.json" \
   --packagePath="Jaisocx_SitesTools/console/JsInvoke" \
   --script="invokeCssImporter.js" \
-      --sitesToolPath="Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart_2" \
-      --cssFilePath="MediaAndStyles/CssCleanStart_2_main_Webpack.css" \
-      --cssTargetFilePath="MediaAndStyles/CssCleanStart_2_543_resolved.css"
+      --sitesToolPath="Jaisocx_SitesTools/sites_tools/css_tools/css_flat/CssTable" \
+      --cssFilePath="MediaAndStyles/CssTable_main_Webpack.css" \
+      --cssTargetFilePath="MediaAndStyles/CssTable_resolved.css"
 
 
 
