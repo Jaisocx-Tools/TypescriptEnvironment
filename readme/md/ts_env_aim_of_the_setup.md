@@ -8,7 +8,7 @@
 
 #### QA Notice
 
-The live install to test whether one can profit in development and the feedback already have shown:
+The live install for tests, whether one can profit in development and the feedback already have shown:
 
 1. the need to rename and align similarly methods and props, in order to rename once and to keep same for the longer period, and later, when starting a new tool, to align the new tools to the already proved development patterns in this project. 
 
