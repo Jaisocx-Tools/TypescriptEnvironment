@@ -31,7 +31,7 @@ Building Project to keep availble reusable ts | js packages for good. You are fr
 #### Legacy CommonJS
 #### ESNext
 #### Webpack bundle.js
-#### Simple ( script src="SitesTool.js" )
+#### Simple ( &lt;script src="SitesTool.js"&gt; )
 
 
 ### Prettifier

@@ -34,8 +34,22 @@
 > In reconstruction, not all examples do and bugfixed.
 
 # TYPESCRIPT ENVIRONMENT®
-
   > **Local link**: [https://local.basetasks.site:9445/](https://local.basetasks.site:9445/)
+
+## 💡 Aim Of The SetUp
+  > The configured workspace, templates and examples, for sites tools in typescript or javascript
+
+### Configured
+  - Nodejs
+  - Typescript
+  - Code Prettifier ESLint
+  - Webpack
+  - Sites Servers
+  - SSL for the Sites Servers
+
+
+
+
 
 ## News
 
@@ -70,10 +84,15 @@
 ### Theory Docs
 
   - `theory` **Alpine Image**: [📙  readme/md/theory_Alpine_Directories.md](./readme/md/theory_Alpine_Directories.md)
+
   - `theory` **Arts Of Javascript**: [📙  readme/md/theory_ArtsOfJavascript.md](./readme/md/theory_ArtsOfJavascript.md)
+
   - `theory` **Computer And Data Types**: [📙  readme/md/theory_Computer_and_data_types.md](./readme/md/theory_Computer_and_data_types.md)
+
   - `theory` **HTTPS Timeline**: [📙  readme/md/theory_https_timeline.md](./readme/md/theory_https_timeline.md)
+
   - `theory` **URL**: [📙  readme/md/theory_urls.md](./readme/md/theory_urls.md)
+
   - `theory` **versions in package.json**: [📙  readme/md/theory_versions_package_json.md](./readme/md/theory_versions_package_json.md)
 
 

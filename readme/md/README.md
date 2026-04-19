@@ -10,7 +10,7 @@
 
   - **News**: [📙  ts_env_news.md](./ts_env_news.md)
 
-  - **💡 Aim Of The Setup**: [📙  ts_env_aim_of_the_setup.md](./ts_env_aim_of_the_setup.md)
+  - **💡 Aim Of The SetUp**: [📙  ts_env_aim_of_the_setup.md](./ts_env_aim_of_the_setup.md)
   - **Features**: [📙  ts_env_features.md](./ts_env_features.md)
   - **INSTALL**: [📙  ts_env_install.md](./ts_env_install.md)
 
