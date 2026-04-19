@@ -52,23 +52,6 @@ usage of this `bundle.js` in a static `.html` page:
 
 
 
-
-## To Enable Webpack Feature in a package
-
-The relevant Readme file in the example package for this theme
-
-[workspace/ts/Jaisocx_SitesTools/templates/ResponsiveAndValidForWebpackWhenNpmInstall/README_WEBPACK.md](workspace/ts/Jaisocx_SitesTools/templates/ResponsiveAndValidForWebpackWhenNpmInstall/README_WEBPACK.md)
-
-
-## To Build with Webpack a bundle.js with installed packages.
-
-The relevant Readme file in the example package for this theme
-
-[https://github.com/Jaisocx-Tools/Workspace/blob/main/workspace/ts/Jaisocx_SitesTools/templates/BuiltWithWebpackYarnInstalledPackage/README.md](https://github.com/Jaisocx-Tools/Workspace/blob/main/workspace/ts/Jaisocx_SitesTools/templates/BuiltWithWebpackYarnInstalledPackage/README.md)
-
-
-
-
 ## CDN, Styles and Themes
 
 The bundle.js may be published on Your cdn endpoint on Your demand for CSS themes of CSS and JS tools, too.
