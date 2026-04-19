@@ -39,7 +39,7 @@
 
 ## News
 
-  - **News**: [./readme/md/ts_env_news.md(./readme/md/ts_env_news.md)
+  - **News**: [./readme/md/ts_env_news.md](./readme/md/ts_env_news.md)
 
   - **[18 April 2026] Software_Labels Preview**: [./cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
 
@@ -72,7 +72,7 @@
   - `theory` **Alpine Image**: [📙  readme/md/theory_Alpine_Directories.md](./readme/md/theory_Alpine_Directories.md)
   - `theory` **Arts Of Javascript**: [📙  readme/md/theory_ArtsOfJavascript.md](./readme/md/theory_ArtsOfJavascript.md)
   - `theory` **Computer And Data Types**: [📙  readme/md/theory_Computer_and_data_types.md](./readme/md/theory_Computer_and_data_types.md)
-  - `theory` **Timeline of the Protocol HTTP for Sites Browsers and Servers**: [📙  readme/md/theory_http_timeline.md](./readme/md/theory_http_timeline.md)
+  - `theory` **HTTPS Timeline**: [📙  readme/md/theory_https_timeline.md](./readme/md/theory_https_timeline.md)
   - `theory` **URL**: [📙  readme/md/theory_urls.md](./readme/md/theory_urls.md)
   - `theory` **versions in package.json**: [📙  readme/md/theory_versions_package_json.md](./readme/md/theory_versions_package_json.md)
 
