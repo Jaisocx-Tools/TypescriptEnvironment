@@ -39,7 +39,7 @@
 
 ## News
 
-  - **News**: [./docs/md/news.md](./docs/md/news.md)
+  - **News**: [./readme/md/news.md](./readme/md/news.md)
 
   - **[18 April 2026] Software_Labels Preview**: [./cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
 
