@@ -1,13 +1,10 @@
+
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-`Theory`
+[README.md HOME](./README.md)
 
 # URL 
-
-### URL ( Unified Ressource Link ) types. For Navigation and Loading on Site.
-
-[README.md HOME](./../../README.md)
-
+  > URL ( Unified Ressource Link ) types. For Navigation and Loading on Site.
 
 
 ## 1. Types Of URLs

@@ -1,9 +1,9 @@
+
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
+[README.md HOME](./README.md)
+
 # Workaround in this project to align Your projects with npm, github, webpack.
-
-[README.md HOME](./../../README.md)
-
 
 
 ## 1. npm and github resources usage save up

@@ -1,12 +1,14 @@
-`Theory`
 
-# NPM
+![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-[README.md HOME](./../../README.md)
+[README.md HOME](./README.md)
+
+`theory`
+
+# Versions numbers in package.json
 
 
-
-## Understanding NPM Version Symbols
+## Understanding Version Symbols
 
 ### For what:
 When You wish:

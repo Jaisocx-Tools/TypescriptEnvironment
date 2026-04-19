@@ -1,8 +1,9 @@
+
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-# DEBUG NODE JS
+[README.md HOME](./README.md)
 
-[README.md HOME](./../../README.md)
+# DEBUG NODE JS
 
 
 

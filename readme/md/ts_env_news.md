@@ -1,8 +1,9 @@
+
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-# NEWS
+[README.md HOME](./README.md)
 
-[README.md HOME](./../../README.md)
+# NEWS
 
 **Fri Jan 30 13:23:37 CET 2026**
 

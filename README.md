@@ -3,7 +3,7 @@
 ![./cdn/www/media/images/software_labels/php/software_tm_label_php.svg](./cdn/www/media/images/software_labels/php/software_tm_label_php.svg)
 ![./cdn/www/media/images/software_labels/Node/nodejs_2.svg](./cdn/www/media/images/software_labels/Node/nodejs_2.svg)
 ![./cdn/www/media/images/software_labels/Typescript/typescript_2_5_9_3.svg](./cdn/www/media/images/software_labels/Typescript/typescript_2_5_9_3.svg)
-![./cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+![./cdn/www/media/images/software_labels/Jaisocx/software_sites_server_tm_label_jaisocx_3_0_16.svg](./cdn/www/media/images/software_labels/Jaisocx/software_sites_server_tm_label_jaisocx_3_0_16.svg)
 
 
 
@@ -49,45 +49,36 @@
 
 ## Other READMEs
 
-  > **TS Environment Docs**: 📙 [./readme/md/README.md](./readme/md/README.md)
+  > **TS Environment Docs**:  [📙 ./readme/md/README.md](./readme/md/README.md)
 
 
 
 ### TS Environment Docs
 
-  - `ts_environment` **SSL**: 📙 [./cmd/ssl/README.md](./cmd/ssl/README.md)
-  - `ts_environment` **Express Node Framework**: 📙 [./workspace/ts/express/README.md](./workspace/ts/express/README.md)
+  - `ts_environment` **SSL**: [📙 cmd/ssl/README.md](./cmd/ssl/README.md)
 
-  - `ts_environment` **Software_Labels**: 📙 [./cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
+  - `ts_environment` **Express Node Framework**: [📙 workspace/ts/express/README.md](./workspace/ts/express/README.md)
 
-  - `ts_environment` **READMEs**: 📙 [./readme/md/README.md](./readme/md/README.md)
+  - `ts_environment` **Software_Labels**: [📙 cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
 
-  - `ts_environment` **Features**: 📙 [./readme/md/features.md](./readme/md/features.md)
+  - `ts_environment` **READMEs**: [📙 readme/md/README.md](./readme/md/README.md)
 
-  - `ts_environment` **Infrastructure**: 📙 [./readme/md/howto.md](./readme/md/howto.md)
+  - `ts_environment` **Features**: [📙 readme/md/features.md](./readme/md/features.md)
+
+  - `ts_environment` **Infrastructure**: [📙 readme/md/howto.md](./readme/md/howto.md)
 
 
 
 ### Theory Docs
-  > I shall build later normal eBook ( .md | .html | .mht | .pdf ).
-  > 
-  > I liked most of all `For Dummies`, books by this Company, and this way of writing books by other Companies. 
-  > 
-  > The best advice when learning any new technology, reread several times just the base book during a month or several.
 
-  - `theory` **Arts Of Javascript**
-    > 📙 [./readme/md/ArtsOfJavascript.md](./readme/md/ArtsOfJavascript.md)
+  - `theory` **Arts Of Javascript**: [📙 readme/md/ArtsOfJavascript.md](./readme/md/ArtsOfJavascript.md)
 
-  - `theory` **Types of URL**
-    > 📙 [./readme/md/urls.md](./readme/md/urls.md)
+  - `theory` **Types of URL**: [📙 readme/md/urls.md](./readme/md/urls.md)
 
-  - `theory` **Computer Calculations and Data Types**
-    > 📙 [./readme/md/Computer_calculations_and_data_types.md](./readme/md/Computer_calculations_and_data_types.md)
+  - `theory` **Computer Calculations and Data Types**: [📙 readme/md/Computer_calculations_and_data_types.md](./readme/md/Computer_calculations_and_data_types.md)
 
-  - `theory` **Timeline of the Protocol HTTP for Sites Browsers and Servers**
-    > 📙 [./readme/md/http_timeline.md](./readme/md/http_timeline.md)
+  - `theory` **Timeline of the Protocol HTTP for Sites Browsers and Servers**: [📙 readme/md/http_timeline.md](./readme/md/http_timeline.md)
 
-  - `theory` **Versions numbers in package.json**
-    > 📙 [./readme/md/npm.md](./readme/md/npm.md)
+  - `theory` **Versions in package.json**: [📙 readme/md/npm.md](./readme/md/npm.md)
 
 

@@ -1,11 +1,11 @@
+
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-`Theory`
+[README.md HOME](./README.md)
+
+`theory`
 
 # Arts Of Javascript
-
-[README.md HOME](./../../README.md)
-
 
 
 ## 1. Arts of Javascript, by JS Synthax Dialect
