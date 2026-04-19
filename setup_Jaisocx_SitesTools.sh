@@ -7,7 +7,8 @@ NC="\033[0m"
 echo -e "$(date): ${GREEN}On line 8 encomment temp exit instruction after this echo. New docker setup started..., Cloning repo with${NC} ${GREEN}${BOLD}Jaisocx Site Tools${NC} ${GREEN}coded in TypeScript programming language ... ${NC}"
 exit 2
 
-
+docker compose stop ts
+docker compose rm ts
 
 cd "./workspace/ts"
 
@@ -15,13 +16,28 @@ git clone "ssh://git@github.com/Jaisocx-Tools/Jaisocx_SitesTools.git"
 
 cd -
 
-### .env file is not on the GitRepo. decomment this line,
-###     or just copy .env.example to .env, if You don't have.
-###; cp "./.env.example" "./.env"
-###; cp "./workspace/ts/.env.example.dynamic" "./workspace/ts/.env.dynamic"
 
-docker compose stop ts
-docker compose rm ts
+
+### .env files aren't on the GitRepo. copies the example envs to .envs
+
+if [ -e "./.env" ]; then
+  cp "./.env" "./backup_envs/.env"
+  rm "./.env"
+fi
+cp "./.env.example" "./.env"
+
+
+if [ -e "./workspace/ts/.env.dynamic" ]; then
+  cp "./workspace/ts/.env.dynamic" "./backup_envs/workspace_ts.env.dynamic"
+  rm "./workspace/ts/.env.dynamic"
+fi
+cp cp "./workspace/ts/.env.example.dynamic" "./workspace/ts/.env.dynamic"
+
+echo -e "please, review saved .env files in folder backup_envs\n.env files have been updated\n    .env\n    workspace/ts/.env.dynamic\n"
+exit 2
+
+
+
 docker compose build ts
 
 ### `docker compose up ts` without -d to see the infos of ts dockerized service start.
