@@ -1,31 +1,15 @@
 
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-# Tree json tool examples
+# How to develop with ts or js and build with webpack
 
   [README.md HOME](./README.md)
 
 
 
-1. [https://sandbox.brightday.email/webpack_builds/ExampleTree/example-from-readme.html](https://sandbox.brightday.email/webpack_builds/ExampleTree/example-from-readme.html)
+## Tree json tool examples
 
 
-2. [https://sandbox.brightday.email/](https://sandbox.brightday.email/)
-
-
-3. [https://sandbox.brightday.email/webpack_builds/ExampleTree/](https://sandbox.brightday.email/webpack_builds/ExampleTree/)
-
-
-4. [https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTree](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTree)
-
-
-5. [https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/js_tools/Tree](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/js_tools/Tree)
-
-
-
-
-
-## how to develop with ts or js and build with webpack
 
 ```
 npm install @jaisocx/tree

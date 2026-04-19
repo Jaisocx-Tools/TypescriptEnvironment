@@ -7,11 +7,11 @@
 
 
 
-## THE WEBPACK BUILD EXAMPLE
+## THE WEBPACK EXAMPLE
 
 `workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTree`
 
-## Status of webpack build feature support in this project
+## Status of webpack support in this project
 
 - Under development, however the example is working well.
 - Centrally it is **not enabled**, the `build-webpack/bundle.js` is **not** being produced now by **ProjectBuilder** in each example module.
@@ -19,7 +19,8 @@
 - It seems, `index.ts` for import statements in other `.ts` files must be different, than `bundle.ts` file, used to build a webpack's `bundle.js` to include in a `.html` page in `<script src="..../bundle.js">`.
 
 
-### what is Webpack build result?
+
+### what does Webpack produce?
 
 `workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTree/transpiled/webpack/bundle.js`
 
