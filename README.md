@@ -31,15 +31,15 @@
 
 
 
-> In reconstruction, not all examples do and bugfixed.
-
 # TYPESCRIPT ENVIRONMENT®
   > **Local link**: [https://local.basetasks.site:9445/](https://local.basetasks.site:9445/)
+
 
 ## 💡 Aim Of The SetUp
   > The configured workspace, templates and examples, for sites tools in typescript or javascript
 
-### Configured
+
+### Set Up
   - Nodejs
   - Typescript
   - Code Prettifier ESLint
@@ -69,15 +69,17 @@
 
 ### TS Environment Docs
 
-  - `ts_environment` **Software_Labels**: [📙 cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
+  - **Software_Labels**: [📙 cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
 
-  - `ts_environment` **SSL**: [📙 cmd/ssl/README.md](./cmd/ssl/README.md)
+  - **SSL**: [📙 cmd/ssl/README.md](./cmd/ssl/README.md)
 
-  - `ts_environment` **Express Node Framework**: [📙 workspace/ts/express/README.md](./workspace/ts/express/README.md)
+  - **Express Node Framework**: [📙 workspace/ts/express/README.md](./workspace/ts/express/README.md)
 
-  - `ts_environment` **Features**: [📙 readme/md/ts_env_features.md](./readme/md/ts_env_features.md)
+  - **💡 Aim Of The SetUp**: [📙  readme/md/ts_env_aim_of_the_setup.md](./readme/md/ts_env_aim_of_the_setup.md)
 
-  - `ts_environment` **Infrastructure**: [📙 readme/md/ts_env_project_builder.md](./readme/md/ts_env_project_builder.md)
+  - **Features**: [📙  readme/md/ts_env_features.md](./readme/md/ts_env_features.md)
+
+  - **INSTALL**: [📙  readme/md/ts_env_install.md](./readme/md/ts_env_install.md)
 
 
 
