@@ -1,9 +1,10 @@
 
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-[README.md HOME](./README.md)
-
 # WEBPACK
+
+  [README.md HOME](./README.md)
+
 
 
 ## THE WEBPACK BUILD EXAMPLE

@@ -1,10 +1,9 @@
 
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-[README.md HOME](./README.md)
-
-
 ## Install Jaisocx Typescript Environment
+
+  [README.md HOME](./README.md)
 
 
 via `docker compose up -d`, but before have to:

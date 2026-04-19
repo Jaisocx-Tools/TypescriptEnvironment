@@ -1,10 +1,9 @@
 
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-[README.md HOME](./README.md)
-
 # HOW TO develop in typescript with ProjectBuilder
 
+  [README.md HOME](./README.md)
 
 
 *Notice to code prettifier*

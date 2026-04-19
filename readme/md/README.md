@@ -1,9 +1,9 @@
 
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-[HOME](./../../README.md)
-
 # Typescript Environment Documentation
+  [HOME](./../../README.md)
+
   > ✅ reviewed in Spring 2026
 
 

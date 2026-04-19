@@ -1,9 +1,10 @@
 
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-[README.md HOME](./README.md)
-
 # 2 npm packages were built with webpack to bundle.js
+
+  [README.md HOME](./README.md)
+
 
 ### Watch site in action
 

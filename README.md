@@ -39,7 +39,7 @@
 
 ## News
 
-  - **News**: [./readme/md/news.md](./readme/md/news.md)
+  - **News**: [./readme/md/ts_env_news.md(./readme/md/ts_env_news.md)
 
   - **[18 April 2026] Software_Labels Preview**: [./cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
 
@@ -55,30 +55,25 @@
 
 ### TS Environment Docs
 
+  - `ts_environment` **Software_Labels**: [📙 cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
+
   - `ts_environment` **SSL**: [📙 cmd/ssl/README.md](./cmd/ssl/README.md)
 
   - `ts_environment` **Express Node Framework**: [📙 workspace/ts/express/README.md](./workspace/ts/express/README.md)
 
-  - `ts_environment` **Software_Labels**: [📙 cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
+  - `ts_environment` **Features**: [📙 readme/md/ts_env_features.md](./readme/md/ts_env_features.md)
 
-  - `ts_environment` **READMEs**: [📙 readme/md/README.md](./readme/md/README.md)
-
-  - `ts_environment` **Features**: [📙 readme/md/features.md](./readme/md/features.md)
-
-  - `ts_environment` **Infrastructure**: [📙 readme/md/howto.md](./readme/md/howto.md)
+  - `ts_environment` **Infrastructure**: [📙 readme/md/ts_env_project_builder.md](./readme/md/ts_env_project_builder.md)
 
 
 
 ### Theory Docs
 
-  - `theory` **Arts Of Javascript**: [📙 readme/md/ArtsOfJavascript.md](./readme/md/ArtsOfJavascript.md)
-
-  - `theory` **Types of URL**: [📙 readme/md/urls.md](./readme/md/urls.md)
-
-  - `theory` **Computer Calculations and Data Types**: [📙 readme/md/Computer_calculations_and_data_types.md](./readme/md/Computer_calculations_and_data_types.md)
-
-  - `theory` **Timeline of the Protocol HTTP for Sites Browsers and Servers**: [📙 readme/md/http_timeline.md](./readme/md/http_timeline.md)
-
-  - `theory` **Versions in package.json**: [📙 readme/md/npm.md](./readme/md/npm.md)
+  - `theory` **Alpine Image**: [📙  readme/md/theory_Alpine_Directories.md](./readme/md/theory_Alpine_Directories.md)
+  - `theory` **Arts Of Javascript**: [📙  readme/md/theory_ArtsOfJavascript.md](./readme/md/theory_ArtsOfJavascript.md)
+  - `theory` **Computer And Data Types**: [📙  readme/md/theory_Computer_and_data_types.md](./readme/md/theory_Computer_and_data_types.md)
+  - `theory` **Timeline of the Protocol HTTP for Sites Browsers and Servers**: [📙  readme/md/theory_http_timeline.md](./readme/md/theory_http_timeline.md)
+  - `theory` **URL**: [📙  readme/md/theory_urls.md](./readme/md/theory_urls.md)
+  - `theory` **versions in package.json**: [📙  readme/md/theory_versions_package_json.md](./readme/md/theory_versions_package_json.md)
 
 

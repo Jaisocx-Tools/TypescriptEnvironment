@@ -1,12 +1,9 @@
 
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-[README.md HOME](./README.md)
-
-`theory`
-
 # Versions numbers in package.json
 
+  [README.md HOME](./README.md)
 
 ## Understanding Version Symbols
 

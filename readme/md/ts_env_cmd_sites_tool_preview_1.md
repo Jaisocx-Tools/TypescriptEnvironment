@@ -1,10 +1,9 @@
 
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-[README.md HOME](./README.md)
-
 # INSTALL SITES TOOL WITH THE PREVIEW
 
+  [README.md HOME](./README.md)
 
 
 ## For what the preview command line bash script tool
