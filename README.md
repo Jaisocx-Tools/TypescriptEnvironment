@@ -1,8 +1,9 @@
 
-![./cdn/www/media/images/software_labels/docker/software_tm_label_docker.svg](./cdn/www/media/images/software_labels/docker/software_tm_label_docker.svg) 
-![./cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg) 
-![./cdn/www/media/images/software_labels/Node/nodejs_2.svg](./cdn/www/media/images/software_labels/Node/nodejs_2.svg) 
-![./cdn/www/media/images/software_labels/Typescript/typescript_2.svg](./cdn/www/media/images/software_labels/Typescript/typescript_2.svg) 
+![./cdn/www/media/images/software_labels/docker/software_tm_label_docker.svg](./cdn/www/media/images/software_labels/docker/software_tm_label_docker.svg)
+![./cdn/www/media/images/software_labels/php/software_tm_label_php.svg](./cdn/www/media/images/software_labels/php/software_tm_label_php.svg)
+![./cdn/www/media/images/software_labels/Node/nodejs_2.svg](./cdn/www/media/images/software_labels/Node/nodejs_2.svg)
+![./cdn/www/media/images/software_labels/Typescript/typescript_2_5_9_3.svg](./cdn/www/media/images/software_labels/Typescript/typescript_2_5_9_3.svg)
+![./cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
 
 
