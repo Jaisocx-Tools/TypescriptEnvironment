@@ -32,7 +32,7 @@
 
 > In reconstruction, not all examples do and bugfixed.
 
-# JAISOCX™ TYPESCRIPT ENVIRONMENT®
+# TYPESCRIPT ENVIRONMENT®
 
   > **Local link**: [https://local.basetasks.site:9445/](https://local.basetasks.site:9445/)
 
