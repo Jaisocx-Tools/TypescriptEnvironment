@@ -39,9 +39,9 @@
 
 ## News
 
-  - **News**: [./readme/md/ts_env_news.md](./readme/md/ts_env_news.md)
+  - **News**: [readme/md/ts_env_news.md](./readme/md/ts_env_news.md)
 
-  - **[18 April 2026] Software_Labels Preview**: [./cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
+  - **[18 April 2026] Software_Labels Preview**: [cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
 
 ---
 
@@ -49,7 +49,7 @@
 
 ## Other READMEs
 
-  > **TS Environment Docs**:  [📙 ./readme/md/README.md](./readme/md/README.md)
+  > **TS Environment Docs**:  [📙 readme/md/README.md](./readme/md/README.md)
 
 
 
