@@ -27,6 +27,7 @@
 /**/.DS_Store
 /.idea
 
+/.github
 
 
 /cypress/cypress/screenshots
