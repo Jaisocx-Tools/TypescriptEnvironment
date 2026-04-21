@@ -64,7 +64,7 @@
 
 
 
-### 💡 A.2. Documentation look-and-feel quality
+### A.2. 💡 Documentation look-and-feel quality
 
   1. ❎ **Mini images of Unicode symbols are supported in UTF-8 charset encoding**: [ ✨ https://jaisocx-tools.github.io/jaisocx_sites_tools/examples_html/Unicode_Symbols/unicode_icons.html](https://jaisocx-tools.github.io/jaisocx_sites_tools/examples_html/Unicode_Symbols/unicode_icons.html)
 
@@ -82,7 +82,17 @@
 
 
 
+### A.3. Ease deployments later, keeping in mind rules on local previews developments
 
+  > rules for local **CDN** folder, **links**, **images** formats, **docs** formats
+
+  1. **local previews published with a base slug**: example : `https://local.basetasks.site:9445/any_base_slug/examples_html/Unicode_Symbols/unicode_icons.html`
+  > references in the local previews have to be relative, and work with a base slug, or without.
+
+  2. **local previews don't relay on node_modules**
+  > the simpliest deployments 
+  > without installs to node_modules in deploy time, 
+  > are in free plans and are easier to configure.
 
 
 
