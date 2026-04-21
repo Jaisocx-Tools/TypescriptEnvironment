@@ -1,6 +1,6 @@
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
-# Publishing Libraries
+# Publishing Bibliotheques
 
 [README.md HOME](./README.md)
 

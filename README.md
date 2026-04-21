@@ -55,6 +55,8 @@
 
   - **News**: [readme/md/ts_env_news.md](./readme/md/ts_env_news.md)
 
+  - **[21 April 2026] README about Deployments and README's**: workarounds, tips and tricks: [readme/md/ts_env_workarounds_publishing_libraries.md](./readme/md/ts_env_workarounds_publishing_libraries.md)
+
   - **[18 April 2026] Software_Labels Preview**: [cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
 
 ---
