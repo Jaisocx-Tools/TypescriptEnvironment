@@ -27,7 +27,7 @@
 
   - `optimization` **💡Preloader To Load Once**: [📙  ts_env_preloader_font_loading_once.md](./ts_env_preloader_font_loading_once.md)
   - `optimization` **💡Pushing libraries**: [📙  ts_env_workarounds_pushing_libraries.md](./ts_env_workarounds_pushing_libraries.md)
-  - `optimization` **Publishing Libraries**: [📙  ts_env_workarounds_publishing_libraries.md](./ts_env_workarounds_publishing_libraries.md)
+  - `optimization` **💡README about Deployments and README's**: workarounds, tips and tricks: [📙  ts_env_workarounds_publishing_bibliotheques.md](./ts_env_workarounds_publishing_bibliotheques.md)
 
 
   - `webpack` **Webpack 1**: [📙  ts_env_webpack_1.md](./ts_env_webpack_1.md)
