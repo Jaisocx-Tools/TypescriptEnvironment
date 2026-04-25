@@ -1,8 +1,6 @@
 # in the .env file in the root of this project are Your project's settings,
 # and therefore it is advised not to keep in open source repositories.
 # the .env file in .gitignore isn't published then in Your git repo.
-/.cpanel.yml
-
 /.env
 /docker-compose.yml
 
@@ -16,18 +14,56 @@
 /readme/md/temp/
 /workspace/ts/Jaisocx_SitesTools/packages/CharcodeConverter/tmp_data/
 
+/.idea
 
 
+
+# -- ENVs --
+/.env
+/**/.env
+
+/.env*
+/**/.env*
+
+
+# -- TEMPORARY FOLDERS --
+/temp
+/**/temp
+
+/tmp
+/**/tmp
+
+
+# -- LOGS --
+/log
+/**/log
+
+/logs
+/**/logs
+
+/*.log
+/**/*.log
+
+
+# -- 3rd PARTIES SOFTWARE --
+# -- Javascript 3rd parties packs --
 /node_modules
 /**/node_modules
+
+# -- php 3rd parties packs --
 /vendor
 /**/vendor
 
+
+
 /.DS_Store
 /**/.DS_Store
-/.idea
 
-/.github
+
+# -- Linux OS Process IDs --
+/*.pid
+/**/*.pid
+
 
 
 /cypress/cypress/screenshots
