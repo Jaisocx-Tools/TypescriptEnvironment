@@ -7,7 +7,8 @@
   env_test_start="/"
 
   env_links_published=(
-    "favicon/flaticon_com_flowers_ico/012_snowdrop.ico"
+    "favicon/flaticon_com_flowers_ico/022_lily.ico"
+    "favicon/flaticon_com_flowers_ico/042_pea.ico"
   )
 
 
