@@ -117,6 +117,10 @@ packagePath="Jaisocx_SitesTools/sites_tools/js_tools/Tree"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
+packagePath="Jaisocx_SitesTools/cdn/previews"
+commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}"; if [ ! -e "./package.json" ]; then cp "./example_package_json"  "./package.json" && npm init; fi; npm install -S  --install-strategy=hoisted  --include=optional --omit=dev"
+docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
+
 
 
 echo -e "$(date): ${GREEN}Done install ${GREEN}${BOLD}Jaisocx Site Tools${NC}${GREEN}.${NC}"
