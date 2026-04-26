@@ -76,13 +76,13 @@ You may **set the authorization** rule for this endpoint, if the resources are p
 `@jaisocx/css-clean-start`
 
 
-3. path: [./../../workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart/README.md](./../../workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart/README.md)
+3. path: [./../../workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_Lite/README.md](./../../workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_Lite/README.md)
 
 
 4. cdn folder example: [./../../cdn](./../../cdn)
 
 
-5. conf for sites server example: [./../../docker/https/conf/http-conf.xml](./../../docker/https/conf/http-conf.xml)
+5. conf for sites server example: [./../../docker/Jaisocx_SitesServer/conf/http-conf_example.xml](./../../docker/Jaisocx_SitesServer/conf/http-conf_example.xml)
 
 
 ```

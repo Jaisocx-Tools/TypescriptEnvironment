@@ -15,7 +15,7 @@
           <alias comment="typescript code"
                  art="folder"
                  url="/"
-                 path="/opt/jaisocx/sites_tools/workspace/ts/cdn/"
+                 path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/cdn/"
                  cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
@@ -40,9 +40,9 @@
 
           <alias comment="typescript code"
                  art="folder"
-                 url="/previews/"
-                 path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/previews/"
-                 cache="cache"
+                 url="/jaisocx/"
+                 path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/cdn/node_cdn_installs/node_modules/@jaisocx/"
+                 cache="update"
                  list="true"
                  each-folder-content-file-name="root.html" />
 
@@ -53,8 +53,6 @@
                  cache="update"
                  list="true"
                  each-folder-content-file-name="index.php" />
-
-
 
         </domain>
 

@@ -2,16 +2,24 @@
 ![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
 # NEWS
+  > **🗓 Updated**: Sun. 26 apr. 2026 03:35:43
 
-  [HOME](./../../README.md)
-
-
-
-**Fri Jan 30 13:23:37 CET 2026**
+  [📙 HOME](./../../README.md)
 
 ---
 
-## News: 30th of January 2026
+
+  - 🗓 26 April 2026 **Sites Tools updated**
+
+  - 🗓 21 April 2026 **README about Deployments and README's**: workarounds, tips and tricks: [📙 readme/md/ts_env_workarounds_publishing_bibliotheques.md](./ts_env_workarounds_publishing_bibliotheques.md)
+
+  - 🗓 18 April 2026 **Software_Labels Preview**: [📙 cdn/www/media/images/software_labels/README.md](./../../cdn/www/media/images/software_labels/README.md)
+
+
+
+---
+
+## News: 🗓 30th of January 2026
 
 Dockerized service Jaisocx_SitesServer gitignored conf for published folders.
 
@@ -31,7 +39,7 @@ Later in plan same for **server.properties** at `docker/Jaisocx_SitesServer/etc/
 
 
 
-## News: 24th of January 2026
+## News: 🗓 24th of January 2026
 
 Dockerized service `ts` updated. Needs cleanup and new start.
 
@@ -73,19 +81,19 @@ docker compose up ts -d
 
 
 
-## News: 18th of January 2026
+## News: 🗓 18th of January 2026
 
-### 1. Wildcard SSL for domain basetasks.site
+### 1. Wildcard TLS for domain [basetasks.site](https://basetasks.site/)
 
-  I've purchased new domain name **basetasks.site** and wildcard SSL cert valid until end of **year 2026**.
+  I've purchased new domain name **basetasks.site** and wildcard TLS cert valid until end of **year 2026**.
 
-  **Installed** the SSL Cert for **Jaisocx** and **Node https** with **Express**.
+  **Installed** the TLS Cert for **Jaisocx** and **Node https** with **Express**.
 
 
 
-### 2. SSL Command line
+### 2. TLS Command line
 
-  [./cmd/ssl/README.md](./../../cmd/ssl/README.md)
+  [📙 ./cmd/ssl/README.md](./../../cmd/ssl/README.md)
 
 
 
