@@ -13,6 +13,13 @@
 
 /workspace/ts/.env.dynamic
 /workspace/ts/express/.env.allow-origin
+
+/cdn/node_cdn_installs/package.json
+/cdn/node_cdn_installs/package-lock.json
+/cdn/node_cdn_installs/yarn.lock
+
+
+
 /temp/
 /readme/md/temp/
 /workspace/ts/Jaisocx_SitesTools/packages/CharcodeConverter/tmp_data/
