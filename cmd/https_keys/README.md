@@ -76,7 +76,7 @@
   The script produces new **Private Key** and **CSR** (Certificate Sign Request).
 
 
-  **Example script** location: `cmd/ssl/Step1_CertificateRequestIssue/a_step1_scripts`
+  **Example script** location: `cmd/https_keys/Step1_CertificateRequestIssue/a_step1_scripts`
 
   `Example_gen_private_key_with_certificate_request.sh`
 
@@ -84,7 +84,7 @@
 
   **Example folder structure** for the **CSR** with **Private Key**
 
-  `cmd/ssl/Step1_CSR_n_PKey/b_produced_csr_with_private_key/Domain_name_csr_n_pkey/2026_2027_domain_name_csr_n_pkey`
+  `cmd/https_keys/Step1_CSR_n_PKey/b_produced_csr_with_private_key/Domain_name_csr_n_pkey/2026_2027_domain_name_csr_n_pkey`
 
 
 
@@ -141,7 +141,7 @@ Script:
 
   ### 2.3.2.3. Example scripts in the folder
 
-  `cmd/ssl/Step2_JavaKeyStore/a_step2_scripts/Example_step2_cert_gen_scripts/2026_2027_Example_jks_gen.sh`
+  `cmd/https_keys/Step2_JavaKeyStore/a_step2_scripts/Example_step2_cert_gen_scripts/2026_2027_Example_jks_gen.sh`
 
 
 ```fs
@@ -164,7 +164,7 @@ Script:
 
 
   #### 3.1.1. JKS location:
-  `docker/Jaisocx_SitesServer/ssl/2026_2027_basetasks_site.jks`
+  `docker/Jaisocx_SitesServer/https_keys/2026_2027_basetasks_site.jks`
 
   #### 3.1.2. Conf for Jaisocx:
   `docker/Jaisocx_SitesServer/conf/http-conf.xml`
@@ -175,7 +175,7 @@ Script:
     <server port="9445" alternative-port="9444" secure="true">
       <domain
         name="cdn.basetasks.site"
-        jks-path="/usr/lib/jaisocx-http/ssl/2026_2027_basetasks_site.jks"
+        jks-path="/usr/lib/jaisocx-http/https_keys/2026_2027_basetasks_site.jks"
         jks-alias="basetasks.site"
         jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
         publish-charset="UTF-8" src-charset="UTF-8">
@@ -186,7 +186,7 @@ Script:
     
       <domain
         name="local.basetasks.site"
-        jks-path="/usr/lib/jaisocx-http/ssl/2026_2027_basetasks_site.jks"
+        jks-path="/usr/lib/jaisocx-http/https_keys/2026_2027_basetasks_site.jks"
         jks-alias="basetasks.site"
         jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
         document-root="/opt/jaisocx/sites_tools/workspace/php"
@@ -209,7 +209,7 @@ Script:
     Secured HTTPS Endpoints.
 
   **Bundle.crt and Private Key** location:
-    `workspace/ts/ssl/Basetasks_site/2026_2027_Basetasks_site`
+    `workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site`
 
   3.2.1. **Installed** for **Node https** in `package.json` location: 
     `workspace/ts/package.json`

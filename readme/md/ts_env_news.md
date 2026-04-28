@@ -93,7 +93,7 @@ docker compose up ts -d
 
 ### 2. TLS Command line
 
-  [📙 ./cmd/ssl/README.md](./../../cmd/ssl/README.md)
+  [📙 ./cmd/https_keys/README.md](./../../cmd/https_keys/README.md)
 
 
 
@@ -123,7 +123,7 @@ GitHub link:
 [sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html](https://github.com/Jaisocx-Tools/Jaisocx_SitesTools/tree/main/sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html)
 
 The same link on local install:
-[sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html](workspace/ts/Jaisocx_SitesTools/sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html)
+[sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html](workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/unicode.preview.html)
 
 
 

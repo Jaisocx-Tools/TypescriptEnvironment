@@ -7,24 +7,25 @@
 
         <domain
             name="cdn.basetasks.site"
-            jks-path="/usr/lib/jaisocx-http/ssl/2026_2027_basetasks_site.jks"
+            comment="published the cdn of the Jaisocx Sites Tools: workspace/ts/Jaisocx_SitesTools/cdn"
+            jks-path="/usr/lib/jaisocx-http/https_keys/2026_2027_basetasks_site.jks"
             jks-alias="basetasks.site"
             jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
             publish-charset="UTF-8" src-charset="UTF-8">
 
-          <alias comment="typescript code"
-                 art="folder"
-                 url="/"
-                 path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/cdn/"
-                 cache="update"
-                 list="true"
-                 each-folder-content-file-name="root.html" />
+          <alias
+              art="folder"
+              url="/"
+              path="/opt/jaisocx/sites_tools/workspace/ts/cdn/"
+              cache="update"
+              list="true"
+              each-folder-content-file-name="root.html" />
 
         </domain>
 
         <domain
             name="local.basetasks.site"
-            jks-path="/usr/lib/jaisocx-http/ssl/2026_2027_basetasks_site.jks"
+            jks-path="/usr/lib/jaisocx-http/https_keys/2026_2027_basetasks_site.jks"
             jks-alias="basetasks.site"
             jks-passphrase="72vNSMvK3YdgphVwUA34DgrbApK9DgDM4koDA42AK7VmYYaAckivmvhMogCPPXh"
             document-root="/opt/jaisocx/sites_tools/workspace/php"
@@ -42,7 +43,7 @@
                  art="folder"
                  url="/jaisocx/"
                  path="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/cdn/node_cdn_installs/node_modules/@jaisocx/"
-                 cache="update"
+                 cache="cache"
                  list="true"
                  each-folder-content-file-name="root.html" />
 
@@ -59,9 +60,9 @@
       </server>
 
     </servers>
+
   </conf-http>
+
 </conf>
-
-
 
 

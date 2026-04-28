@@ -134,7 +134,7 @@ services:
     volumes:
       - ./docker/Jaisocx_SitesServer/conf/:/usr/lib/jaisocx-http/apps/congratulations/conf/
       - ./docker/Jaisocx_SitesServer/etc/:/usr/lib/jaisocx-http/etc/
-      - ./docker/Jaisocx_SitesServer/ssl/:/usr/lib/jaisocx-http/ssl/
+      - ./docker/Jaisocx_SitesServer/https_keys/:/usr/lib/jaisocx-http/https_keys/
       - ./docker/Jaisocx_SitesServer/logs/:/usr/lib/jaisocx-http/logs/
       - ./workspace/ts/Jaisocx_SitesTools/:/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/
       - ./workspace/php/:/opt/jaisocx/sites_tools/workspace/php/

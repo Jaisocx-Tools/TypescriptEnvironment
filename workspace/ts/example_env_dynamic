@@ -10,8 +10,8 @@
 
 
 export   start_node_https=true
-export   private_key_path="/opt/jaisocx/sites_tools/workspace/ts/ssl/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key"
-export   ssl_cert_path="/opt/jaisocx/sites_tools/workspace/ts/ssl/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt"
+export   private_key_path="/opt/jaisocx/sites_tools/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key"
+export   ssl_cert_path="/opt/jaisocx/sites_tools/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt"
 
 export   node_https_publish_port=8445
 export   node_https_publish_folder="/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools"

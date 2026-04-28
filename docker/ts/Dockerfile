@@ -1,6 +1,6 @@
 ### docker/ts/tarball/load_tarball.sh
 ### workspace/ts/build_tools/command/tsvm/node_tarballs
-FROM alpine:3.22.2
+FROM alpine:3.23
 
 
 
@@ -173,7 +173,7 @@ WORKDIR "${A_IN_DOCKER_PROJECT_VOLUME}"
 
 
 ### @install @libraries_core
-RUN echo "https://dl-cdn.alpinelinux.org/alpine/v3.22/main" >> /etc/apk/repositories
+# RUN echo "https://dl-cdn.alpinelinux.org/alpine/v3.23/main" >> /etc/apk/repositories
 RUN apk update
 ### No apk upgrade here since we relay here in dockerized service on versions number values,
 ### that was the sence of this Dockerized setup.
@@ -405,11 +405,14 @@ USER "${A_USER_NAME}"
 
 # Expose the application's port
 EXPOSE 3000
+
 # EXPOSE 80
 # EXPOSE 443
 EXPOSE 8085
 EXPOSE 8445
 EXPOSE 9229
+EXPOSE 9443
+
 
 # EXPOSE $A_EXPRESS_PORT
 # EXPOSE $A_NODE_HTTP_FLAT_PORT

@@ -19,7 +19,7 @@
 
 ## SSL Command line
 
-[cmd/ssl/README.md](./../../cmd/ssl/README.md)
+[cmd/https_keys/README.md](./../../cmd/https_keys/README.md)
 
 
 

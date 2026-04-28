@@ -106,7 +106,7 @@ You may **set the authorization** rule for this endpoint, if the resources are p
 
 
 8. code of the CssCodeSnippet css sites tool on GitHub
-[https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart)
+[https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart)
 
 
 9. code on sandbox.brightday.email

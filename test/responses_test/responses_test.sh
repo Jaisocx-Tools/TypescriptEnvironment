@@ -1,7 +1,12 @@
 #!/bin/bash
 
+script="$(realpath "$0")"
+folder="$(realpath "$(dirname "${script}")")"
+
+
+
 set -a
-. "./.env"
+. "${folder}/.env"
 
 
 
@@ -47,7 +52,7 @@ for link in "${overloc_env_links_published}"; do
   loc_link="${loc_test_address}${link}"
   echo -e "requesting: ${loc_link}\n"
 
-  curl -s -i "${loc_link}"
+  curl -i "${loc_link}";
 
 done;
 

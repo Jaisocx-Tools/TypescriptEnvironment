@@ -69,51 +69,51 @@ packagePath="Jaisocx_SitesTools"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart_2"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssCleanStart_2"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/css_tools/css_flat/CssCodeSnippet"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/css_tools/css_flat/CssCodeSnippet"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/css_tools/css_flat/CssTable"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/css_tools/css_flat/CssTable"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/css_tools/CssToolTemplate"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/css_tools/CssToolTemplate"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/media_tools/JscFonts_base"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscFonts_base"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/media_tools/JscFonts_Orbitron"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscFonts_Orbitron"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/media_tools/JscImages_mini_datatypes_base"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscImages_mini_datatypes_base"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/media_tools/JscImages_mini_freepic_kawaii"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscImages_mini_freepic_kawaii"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/media_tools/JscImages_mini_mimetypes_base"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/media_tools/JscImages_mini_mimetypes_base"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/js_tools/CssTableOrdered"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/js_tools/CssTableOrdered"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/js_tools/EmailHtmlInliner"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/js_tools/EmailHtmlInliner"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 
-packagePath="Jaisocx_SitesTools/sites_tools/js_tools/Tree"
+packagePath="Jaisocx_SitesTools/libraries/sites_tools/js_tools/Tree"
 commandToRun="cd "${IN_DOCKER_PROJECT_VOLUME}/${packagePath}" && npm install -S  --install-strategy=hoisted  --include=optional "
 docker compose exec ts bash -c ". "/home/${USER_NAME}/.bashrc" && ${commandToRun}"
 

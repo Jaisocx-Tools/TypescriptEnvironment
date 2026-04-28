@@ -69,7 +69,7 @@
 
   - **💡 Aim Of The SetUp**: [📙  readme/md/ts_env_aim_of_the_setup.md](./readme/md/ts_env_aim_of_the_setup.md)
 
-  - **TLS**: [📙 cmd/ssl/README.md](./cmd/ssl/README.md)
+  - **TLS**: [📙 cmd/https_keys/README.md](./cmd/https_keys/README.md)
 
   - **Express Node Framework**: [📙 workspace/ts/express/README.md](./workspace/ts/express/README.md)
 

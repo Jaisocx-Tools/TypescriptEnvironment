@@ -147,7 +147,7 @@ const readAndSendFileCompressed = function (
 
 app.get ('/', (req, resp) => {
 
-    let filePath = '/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/index.preview.html';
+    let filePath = '/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/index_preview.html';
     let contentType = 'text/html; charset=utf8';
 
     readAndSendFileCompressed (
@@ -180,7 +180,7 @@ app.get (
   '/json/data/table-conf-by-express.json',
   (req, resp) => {
 
-    let filePathJson = '/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/sites_tools/js_tools/jstable/www/data/table-conf.json';
+    let filePathJson = '/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/json_styling_tools/jstable/www/data/table-conf.json';
     let contentType = 'application/json; charset=utf8';
 
     readAndSendFileCompressed (
@@ -198,7 +198,7 @@ app.get (
   '/json/data/table-records-by-express.json',
   (req, resp) => {
 
-    let filePathJson = '/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/sites_tools/js_tools/jstable/www/data/table-records.json';
+    let filePathJson = '/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/libraries/sites_tools/json_styling_tools/jstable/www/data/table-records.json';
     let contentType = 'application/json; charset=utf8';
 
     readAndSendFileCompressed (
@@ -215,8 +215,8 @@ app.get (
 https
   .createServer (
     {
-      key:  fs.readFileSync( '/opt/jaisocx/sites_tools/workspace/ts/ssl/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key' ),
-      cert: fs.readFileSync( '/opt/jaisocx/sites_tools/workspace/ts/ssl/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt' ),
+      key:  fs.readFileSync( '/opt/jaisocx/sites_tools/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_basetasks_site.key' ),
+      cert: fs.readFileSync( '/opt/jaisocx/sites_tools/workspace/ts/https_keys/Basetasks_site/2026_2027_Basetasks_site/2026_2027_bundle_for_node_basetasks_site.crt' ),
     },
     app
   ).listen( https_port );
