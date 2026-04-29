@@ -1,5 +1,5 @@
-![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
-![../../cdn/www/media/images/software_labels/Jaisocx/serverside/js_serverside_jaisocx_command_line.svg](../../cdn/www/media/images/software_labels/Jaisocx/serverside/js_serverside_jaisocx_command_line.svg)
+![../../cdn/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+![../../cdn/images/software_labels/Jaisocx/serverside/js_serverside_jaisocx_command_line.svg](../../cdn/images/software_labels/Jaisocx/serverside/js_serverside_jaisocx_command_line.svg)
 
 
 
@@ -30,7 +30,7 @@
   on line 55 set path to file in the ts dockerized service like this:
 
   ```bash
-    --filePath="/opt/jaisocx/sites_tools/cdn/www/media/images/favicon/Icon_Sandbox_Brightday.ico" \
+    --filePath="/opt/jaisocx/sites_tools/cdn/images/favicon/Icon_Sandbox_Brightday.ico" \
   ```
 
 
@@ -47,7 +47,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="https://sandbox.brightday.email/cdn/www/media/images/favicon/Icon_Sandbox_Brightday.ico"
+      href="https://sandbox.brightday.email/cdn/images/favicon/Icon_Sandbox_Brightday.ico"
       href-fallback="favicon/Icon_Sandbox_Brightday.ico"
       integrity="sha512-t3XuLqNXUNFqkrdBlRf4me63watpaFBd8TZzcCAvxUMG4msGTx2/k6OFQdEl0wUj3iKDK9z2Z9h+YQF71i8S+Q=="
       onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"

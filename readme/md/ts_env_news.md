@@ -1,5 +1,5 @@
 
-![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+![../../cdn/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
 # NEWS
   > **🗓 Updated**: Sun. 26 apr. 2026 03:35:43
@@ -13,7 +13,7 @@
 
   - 🗓 21 April 2026 **README about Deployments and README's**: workarounds, tips and tricks: [📙 readme/md/ts_env_workarounds_publishing_bibliotheques.md](./ts_env_workarounds_publishing_bibliotheques.md)
 
-  - 🗓 18 April 2026 **Software_Labels Preview**: [📙 cdn/www/media/images/software_labels/README.md](./../../cdn/www/media/images/software_labels/README.md)
+  - 🗓 18 April 2026 **Software_Labels Preview**: [📙 cdn/images/software_labels/README.md](./../../cdn/images/software_labels/README.md)
 
 
 

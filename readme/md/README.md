@@ -1,5 +1,5 @@
 
-![../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/www/media/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+![../../cdn/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](../../cdn/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
 # Typescript Environment Documentation
   > **🗓 Updated**: Sun. 26 apr. 2026 03:35:43
@@ -32,7 +32,7 @@
 
 
 
-  - **Software_Labels**: [📙 cdn/www/media/images/software_labels/README.md](./../../cdn/www/media/images/software_labels/README.md)
+  - **Software_Labels**: [📙 cdn/images/software_labels/README.md](./../../cdn/images/software_labels/README.md)
 
 
 

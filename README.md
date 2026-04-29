@@ -1,9 +1,9 @@
 
-![./cdn/www/media/images/software_labels/docker/software_tm_label_docker.svg](./cdn/www/media/images/software_labels/docker/software_tm_label_docker.svg)
-![./cdn/www/media/images/software_labels/php/software_tm_label_php.svg](./cdn/www/media/images/software_labels/php/software_tm_label_php.svg)
-![./cdn/www/media/images/software_labels/Node/nodejs_2.svg](./cdn/www/media/images/software_labels/Node/nodejs_2.svg)
-![./cdn/www/media/images/software_labels/Typescript/typescript_2_5_9_3.svg](./cdn/www/media/images/software_labels/Typescript/typescript_2_5_9_3.svg)
-![./cdn/www/media/images/software_labels/Jaisocx/software_sites_server_tm_label_jaisocx_3_0_16.svg](./cdn/www/media/images/software_labels/Jaisocx/software_sites_server_tm_label_jaisocx_3_0_16.svg)
+![./cdn/images/software_labels/docker/software_tm_label_docker.svg](./cdn/images/software_labels/docker/software_tm_label_docker.svg)
+![./cdn/images/software_labels/php/software_tm_label_php.svg](./cdn/images/software_labels/php/software_tm_label_php.svg)
+![./cdn/images/software_labels/Node/nodejs_2.svg](./cdn/images/software_labels/Node/nodejs_2.svg)
+![./cdn/images/software_labels/Typescript/typescript_2_5_9_3.svg](./cdn/images/software_labels/Typescript/typescript_2_5_9_3.svg)
+![./cdn/images/software_labels/Jaisocx/software_sites_server_tm_label_jaisocx_3_0_16.svg](./cdn/images/software_labels/Jaisocx/software_sites_server_tm_label_jaisocx_3_0_16.svg)
 
   > **🗓 Updated**: Sun. 26 Apr. 2026 03:35:43
 
@@ -28,15 +28,15 @@
 
 ---
 
-![./cdn/www/media/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./cdn/www/media/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
-![./cdn/www/media/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./cdn/www/media/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
+![./cdn/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./cdn/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
+![./cdn/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./cdn/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
 
 
 
 # TYPESCRIPT ENVIRONMENT®
   > **Local link**: [🌐 https://local.basetasks.site:9445/](https://local.basetasks.site:9445/)
   > 
-  > **Software_Labels**: [cdn/www/media/images/software_labels/README.md](./cdn/www/media/images/software_labels/README.md)
+  > **Software_Labels**: [cdn/images/software_labels/README.md](./cdn/images/software_labels/README.md)
 
 
 ## Aim Of The SetUp
