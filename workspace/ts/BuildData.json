@@ -3,7 +3,7 @@
   "prettify-typescript": true,
   "packages": [
     {
-      "path": "packages/CssJsHtmlConstants",
+      "path": "libraries/base_packs/CssJsHtmlConstants",
       "name": "css-js-html-constants",
       "update-published": "Mon Sep 22 08:06:10 CEST 2025",
       "build": false,
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "path": "packages/CommandLine",
+      "path": "libraries/base_packs/CommandLine",
       "name": "command-line",
       "update-published": "Sat Aug 30 18:16:38 CEST 2025",
       "build": false,
@@ -38,7 +38,7 @@
       "build-files": []
     },
     {
-      "path": "packages/LinkedResourcesIntegrity",
+      "path": "libraries/base_packs/LinkedResourcesIntegrity",
       "name": "linked-resources-integrity",
       "update-published": "Sat Aug 30 18:20:26 CEST 2025",
       "build": false,
@@ -46,13 +46,13 @@
       "dependencies": [
         {
           "name": "@jaisocx/command-line",
-          "path": "packages/CommandLine"
+          "path": "libraries/base_packs/CommandLine"
         }
       ],
       "build-files": []
     },
     {
-      "path": "sites_tools/media_tools/JscFonts_base",
+      "path": "libraries/sites_tools/media_tools/JscFonts_base",
       "name": "media_tools_fonts_base",
       "update-published": "Thu Sep 25 11:40:28 CEST 2025",
       "build": false,
@@ -66,7 +66,7 @@
       "build-files": []
     },
     {
-      "path": "sites_tools/media_tools/JscFonts_Orbitron",
+      "path": "libraries/sites_tools/media_tools/JscFonts_Orbitron",
       "name": "media_tools_fonts_orbitron",
       "update-published": "Thu Sep 25 11:40:28 CEST 2025",
       "build": false,
@@ -80,7 +80,7 @@
       "build-files": []
     },
     {
-      "path": "sites_tools/media_tools/JscImages_mini_datatypes_base",
+      "path": "libraries/sites_tools/media_tools/JscImages_mini_datatypes_base",
       "name": "media_tools_images_mini_datatypes_base",
       "update-published": "Sat Sep 27 14:14:17 UTC 2025",
       "build": false,
@@ -89,7 +89,7 @@
       "build-files": []
     },
     {
-      "path": "sites_tools/media_tools/JscImages_mini_freepic_kawaii",
+      "path": "libraries/sites_tools/media_tools/JscImages_mini_freepic_kawaii",
       "name": "media_tools_images_mini_freepic_kawaii",
       "update-published": "Sat Sep 27 16:57:02 CEST 2025",
       "build": false,
@@ -98,7 +98,7 @@
       "build-files": []
     },
     {
-      "path": "sites_tools/media_tools/JscImages_mini_mimetypes_base",
+      "path": "libraries/sites_tools/media_tools/JscImages_mini_mimetypes_base",
       "name": "media_tools_images_mini_mimetypes_base",
       "update-published": "Tue Nov 18 07:17:07 CET 2025",
       "build": false,
@@ -107,7 +107,7 @@
       "build-files": []
     },
     {
-      "path": "packages/TokensParser",
+      "path": "libraries/base_packs/TokensParser",
       "name": "tokens-parser",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
       "build": false,
@@ -118,10 +118,10 @@
       ]
     },
     {
-      "path": "packages/JPath",
+      "path": "libraries/base_packs/JPath",
       "name": "jpath",
-      "update-published": "Mon Jun 02 22:02:01 GMT 2025",
-      "build": false,
+      "update-published": "3 mai 2026 20:24:20 UTC",
+      "build": true,
       "build-simple-enable": true,
       "dependencies": [],
       "build-files": [
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "path": "packages/ObjData",
+      "path": "libraries/base_packs/ObjData",
       "name": "objdata",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
       "build": false,
@@ -148,7 +148,7 @@
       ]
     },
     {
-      "path": "packages/Text",
+      "path": "libraries/base_packs/Text",
       "name": "text",
       "update-published": "Sat Sep  6 04:14:24 CEST 2025",
       "build": false,
@@ -162,7 +162,7 @@
       ]
     },
     {
-      "path": "packages/CssHtml",
+      "path": "libraries/base_packs/CssHtml",
       "name": "css-html",
       "update-published": "Wed Oct  1 01:37:16 CEST 2025",
       "build": false,
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "path": "packages/EventEmitter",
+      "path": "libraries/base_packs/EventEmitter",
       "name": "event-emitter",
       "update-published": "Wed Feb 18 04:53:34 CET 202",
       "build": false,
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "path": "packages/FileWriter",
+      "path": "libraries/base_packs/FileWriter",
       "name": "file-writer",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
       "build": false,
@@ -193,13 +193,13 @@
       "dependencies": [
         {
           "name": "@jaisocx/event-emitter",
-          "path": "packages/EventEmitter"
+          "path": "libraries/base_packs/EventEmitter"
         }
       ],
       "build-files": []
     },
     {
-      "path": "packages/CssImporter",
+      "path": "libraries/base_packs/CssImporter",
       "name": "css-importer",
       "update-published": "Sat Sep 27 15:28:55 CEST 2025",
       "build": false,
@@ -207,17 +207,17 @@
       "dependencies": [
         {
           "name": "@jaisocx/file-writer",
-          "path": "packages/FileWriter"
+          "path": "libraries/base_packs/FileWriter"
         },
         {
           "name": "@jaisocx/tokens-parser",
-          "path": "packages/TokensParser"
+          "path": "libraries/base_packs/TokensParser"
         }
       ],
       "build-files": []
     },
     {
-      "path": "packages/CdnDatasetsBase",
+      "path": "libraries/base_packs/CdnDatasetsBase",
       "name": "cdn-datasets-base",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
       "build": false,
@@ -225,7 +225,7 @@
       "dependencies": [
         {
           "name": "@jaisocx/jpath",
-          "path": "packages/JPath"
+          "path": "libraries/base_packs/JPath"
         }
       ],
       "build-files": [
@@ -235,7 +235,7 @@
       ]
     },
     {
-      "path": "packages/MimeType",
+      "path": "libraries/base_packs/MimeType",
       "name": "mime-type",
       "update-published": "Wed Sep 10 01:59:37 UTC 2025",
       "build": false,
@@ -248,7 +248,7 @@
       ]
     },
     {
-      "path": "packages/CharcodeConverter",
+      "path": "libraries/base_packs/CharcodeConverter",
       "name": "charcode-converter",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
       "build": false,
@@ -256,11 +256,11 @@
       "dependencies": [
         {
           "name": "@jaisocx/jpath",
-          "path": "packages/JPath"
+          "path": "libraries/base_packs/JPath"
         },
         {
           "name": "@jaisocx/cdn-datasets-base",
-          "path": "packages/CdnDatasetsBase"
+          "path": "libraries/base_packs/CdnDatasetsBase"
         }
       ],
       "build-files": [
@@ -273,7 +273,7 @@
       ]
     },
     {
-      "path": "sites_tools/css_tools/CssCleanStart",
+      "path": "libraries/sites_tools/css_tools/CssCleanStart",
       "name": "css-clean-start",
       "update-published": "Sun Aug 17 01:22:34 UTC 2025",
       "build": false,
@@ -292,7 +292,7 @@
       ]
     },
     {
-      "path": "sites_tools/css_tools/css_flat/CssCodeSnippet",
+      "path": "libraries/sites_tools/css_tools/css_flat/CssCodeSnippet",
       "name": "css-code-snippet",
       "update-published": "Sun Nov 23 04:43:15 CET 2025",
       "build": false,
@@ -308,13 +308,13 @@
       ]
     },
     {
-      "path": "sites_tools/css_tools/css_flat/CssTable",
+      "path": "libraries/sites_tools/css_tools/css_flat/CssTable",
       "name": "css-table",
       "update-published": "Fri Nov 21 04:20:10 CET 2025",
       "build": false,
       "build-simple-enable": false,
       "css-importer": {
-        "build": true,
+        "build": false,
         "cssFilePath": "MediaAndStyles/CssTable_main_Webpack.css",
         "cssTargetFilePath": "MediaAndStyles/CssTable_main_resolved.css"
       },
@@ -322,7 +322,7 @@
       "build-files": []
     },
     {
-      "path": "packages/Preloader",
+      "path": "libraries/base_packs/Preloader",
       "name": "preloader",
       "update-published": "",
       "build": false,
@@ -330,15 +330,15 @@
       "dependencies": [
         {
           "name": "@jaisocx/text",
-          "path": "packages/Text"
+          "path": "libraries/base_packs/Text"
         },
         {
           "name": "@jaisocx/mime-type",
-          "path": "packages/MimeType"
+          "path": "libraries/base_packs/MimeType"
         },
         {
           "name": "@jaisocx/template-renderer",
-          "path": "packages/TemplateRenderer"
+          "path": "libraries/base_packs/TemplateRenderer"
         }
       ],
       "build-files": [
@@ -348,7 +348,7 @@
       ]
     },
     {
-      "path": "sites_tools/css_tools/pages/responses/exception_responses/https_404_exception",
+      "path": "libraries/sites_tools/css_tools/pages/responses/exception_responses/https_404_exception",
       "name": "https_404_exception",
       "update-published": "Tue Aug 26 00:19:19 CEST 2025",
       "build": false,
@@ -362,7 +362,7 @@
       "build-files": []
     },
     {
-      "path": "packages/TemplateRenderer",
+      "path": "libraries/base_packs/TemplateRenderer",
       "name": "template-renderer",
       "update-published": "Wed Feb 18 04:53:34 CET 202",
       "build": false,
@@ -370,11 +370,11 @@
       "dependencies": [
         {
           "name": "@jaisocx/event-emitter",
-          "path": "packages/EventEmitter"
+          "path": "libraries/base_packs/EventEmitter"
         },
         {
           "name": "@jaisocx/tokens-parser",
-          "path": "packages/TokensParser"
+          "path": "libraries/base_packs/TokensParser"
         }
       ],
       "build-files": [
@@ -382,7 +382,7 @@
       ]
     },
     {
-      "path": "packages/FileProducerByTemplate",
+      "path": "libraries/base_packs/FileProducerByTemplate",
       "name": "file-producer-by-template",
       "update-published": "",
       "build": false,
@@ -390,17 +390,17 @@
       "dependencies": [
         {
           "name": "@jaisocx/template-renderer",
-          "path": "packages/TemplateRenderer"
+          "path": "libraries/base_packs/TemplateRenderer"
         },
         {
           "name": "@jaisocx/file-writer",
-          "path": "packages/FileWriter"
+          "path": "libraries/base_packs/FileWriter"
         }
       ],
       "build-files": []
     },
     {
-      "path": "packages/SitesToolAutomation",
+      "path": "libraries/base_packs/SitesToolAutomation",
       "name": "sites-tool-automation",
       "update-published": "Wed Oct  1 01:32:57 UTC 2025",
       "build": false,
@@ -408,21 +408,21 @@
       "dependencies": [
         {
           "name": "@jaisocx/file-writer",
-          "path": "packages/FileWriter"
+          "path": "libraries/base_packs/FileWriter"
         },
         {
           "name": "@jaisocx/template-renderer",
-          "path": "packages/TemplateRenderer"
+          "path": "libraries/base_packs/TemplateRenderer"
         },
         {
           "name": "@jaisocx/file-producer-by-template",
-          "path": "packages/FileProducerByTemplate"
+          "path": "libraries/base_packs/FileProducerByTemplate"
         }
       ],
       "build-files": []
     },
     {
-      "path": "sites_tools/css_tools/CssCleanStart_2",
+      "path": "libraries/sites_tools/css_tools/CssCleanStart_2",
       "name": "css-clean-start-2",
       "update-published": "",
       "build": false,
@@ -436,7 +436,7 @@
       "build-files": []
     },
     {
-      "path": "sites_tools/css_tools/CssCleanStart_Lite",
+      "path": "libraries/sites_tools/css_tools/CssCleanStart_Lite",
       "name": "css_clean_start_lite",
       "update-published": "Sat Jan 24 11:06:58 CET 2026",
       "build": false,
@@ -450,7 +450,7 @@
       "build-files": []
     },
     {
-      "path": "sites_tools/css_tools/CssToolTemplate",
+      "path": "libraries/sites_tools/css_tools/CssToolTemplate",
       "name": "css-tool-template",
       "update-published": "Tue Aug 26 00:30:34 CEST 2025",
       "build": false,
@@ -465,7 +465,7 @@
     },
     {
       "ready-to-use": false,
-      "path": "packages/WorkspaceTreeWalker",
+      "path": "libraries/base_packs/WorkspaceTreeWalker",
       "name": "workspace-tree-walker",
       "build": false,
       "build-simple-enable": true,
@@ -480,22 +480,22 @@
     },
     {
       "ready-to-use": false,
-      "path": "packages/ImprovedTemplateRenderer",
+      "path": "libraries/base_packs/ImprovedTemplateRenderer",
       "name": "improved-template-renderer",
       "build": false,
       "build-simple-enable": true,
       "dependencies": [
         {
           "name": "@jaisocx/event-emitter",
-          "path": "packages/EventEmitter"
+          "path": "libraries/base_packs/EventEmitter"
         },
         {
           "name": "@jaisocx/charcode-converter",
-          "path": "packages/CharcodeConverter"
+          "path": "libraries/base_packs/CharcodeConverter"
         },
         {
           "name": "@jaisocx/workspace-tree-walker",
-          "path": "packages/WorkspaceTreeWalker"
+          "path": "libraries/base_packs/WorkspaceTreeWalker"
         }
       ],
       "build-files": [
@@ -509,7 +509,7 @@
       ]
     },
     {
-      "path": "packages/Api",
+      "path": "libraries/base_packs/Api",
       "name": "api",
       "update-published": "Mon Jun 02 22:02:01 GMT 2025",
       "build": false,
@@ -517,7 +517,7 @@
       "dependencies": [
         {
           "name": "@jaisocx/objdata",
-          "path": "packages/ObjData"
+          "path": "libraries/base_packs/ObjData"
         }
       ],
       "build-files": [
@@ -525,7 +525,7 @@
       ]
     },
     {
-      "path": "sites_tools/js_tools/Tree",
+      "path": "libraries/sites_tools/json_styling_tools/Tree",
       "name": "tree",
       "update-published": "Wed Feb 18 04:53:34 CET 202 ",
       "build": false,
@@ -551,52 +551,52 @@
       "dependencies": [
         {
           "name": "@jaisocx/css-clean-start-2",
-          "path": "packages/CssCleanStart_2"
+          "path": "libraries/base_packs/CssCleanStart_2"
         },
         {
           "name": "@jaisocx/jpath",
-          "path": "packages/JPath"
+          "path": "libraries/base_packs/JPath"
         },
         {
           "name": "@jaisocx/event-emitter",
-          "path": "packages/EventEmitter"
+          "path": "libraries/base_packs/EventEmitter"
         },
         {
           "name": "@jaisocx/template-renderer",
-          "path": "packages/TemplateRenderer"
+          "path": "libraries/base_packs/TemplateRenderer"
         },
         {
           "name": "@jaisocx/theme-turn-on",
-          "path": "packages/ThemeTurnOn"
+          "path": "libraries/base_packs/ThemeTurnOn"
         },
         {
           "name": "@jaisocx/mime-type",
-          "path": "packages/MimeType"
+          "path": "libraries/base_packs/MimeType"
         },
         {
           "name": "@jaisocx/text",
-          "path": "packages/Text"
+          "path": "libraries/base_packs/Text"
         },
         {
           "name": "@jaisocx/preloader",
-          "path": "packages/Preloader"
+          "path": "libraries/base_packs/Preloader"
         }
       ]
     },
     {
       "ready-to-use": false,
-      "path": "sites_tools/js_tools/Table",
+      "path": "libraries/sites_tools/json_styling_tools/Table",
       "name": "table",
       "build": false,
       "build-simple-enable": true,
       "dependencies": [
         {
           "name": "@jaisocx/event-emitter",
-          "path": "packages/EventEmitter"
+          "path": "libraries/base_packs/EventEmitter"
         },
         {
           "name": "@jaisocx/template-renderer",
-          "path": "packages/TemplateRenderer"
+          "path": "libraries/base_packs/TemplateRenderer"
         }
       ],
       "build-files": [
@@ -604,7 +604,7 @@
       ]
     },
     {
-      "path": "sites_tools/js_tools/Tooltip",
+      "path": "libraries/sites_tools/js_tools/Tooltip",
       "name": "tooltip",
       "update-published": "Tue Jun  3 00:23:40 GMT 2025",
       "build": false,
@@ -612,11 +612,11 @@
       "dependencies": [
         {
           "name": "@jaisocx/event-emitter",
-          "path": "packages/EventEmitter"
+          "path": "libraries/base_packs/EventEmitter"
         },
         {
           "name": "@jaisocx/template-renderer",
-          "path": "packages/TemplateRenderer"
+          "path": "libraries/base_packs/TemplateRenderer"
         }
       ],
       "build-files": [
@@ -633,7 +633,7 @@
       ]
     },
     {
-      "path": "sites_tools/js_tools/CssTableOrdered",
+      "path": "libraries/sites_tools/js_tools/CssTableOrdered",
       "name": "css-table-ordered",
       "update-published": "Sun Feb 22 07:24:27 CET 2026",
       "build": false,
@@ -646,7 +646,7 @@
       "dependencies": [
         {
           "name": "@jaisocx/css-table",
-          "path": "sites_tools/css_tools/CssTable"
+          "path": "libraries/sites_tools/css_tools/CssTable"
         }
       ],
       "build-files": [
@@ -662,7 +662,7 @@
       "dependencies": [
         {
           "name": "@jaisocx/css-clean-start",
-          "path": "sites_tools/css_tools/CssCleanStart"
+          "path": "libraries/sites_tools/css_tools/CssCleanStart"
         }
       ],
       "build-files": []
@@ -675,11 +675,11 @@
       "dependencies": [
         {
           "name": "@jaisocx/event-emitter",
-          "path": "packages/EventEmitter"
+          "path": "libraries/base_packs/EventEmitter"
         },
         {
           "name": "@jaisocx/template-renderer",
-          "path": "packages/TemplateRenderer"
+          "path": "libraries/base_packs/TemplateRenderer"
         }
       ],
       "build-files": [
@@ -694,7 +694,7 @@
       "dependencies": [
         {
           "name": "@jaisocx/tree",
-          "path": "sites_tools/js_tools/Tree"
+          "path": "libraries/sites_tools/js_tools/Tree"
         }
       ],
       "build-files": [
@@ -727,7 +727,7 @@
       "dependencies": [
         {
           "name": "@jaisocx/table",
-          "path": "sites_tools/js_tools/Table"
+          "path": "libraries/sites_tools/json_styling_tools/Table"
         }
       ],
       "build-files": [
@@ -742,7 +742,7 @@
       "dependencies": [
         {
           "name": "@jaisocx/tooltip",
-          "path": "sites_tools/js_tools/Tooltip"
+          "path": "libraries/sites_tools/js_tools/Tooltip"
         }
       ],
       "build-files": [
@@ -770,17 +770,17 @@
       "dependencies": [
         {
           "name": "@jaisocx/css-clean-start",
-          "path": "sites_tools/css_tools/CssCleanStart"
+          "path": "libraries/sites_tools/css_tools/CssCleanStart"
         },
         {
           "name": "@jaisocx/tooltip",
-          "path": "sites_tools/js_tools/Tooltip"
+          "path": "libraries/sites_tools/js_tools/Tooltip"
         }
       ],
       "build-files": []
     },
     {
-      "path": "sites_tools/js_tools/EmailHtmlInliner",
+      "path": "libraries/sites_tools/js_tools/EmailHtmlInliner",
       "name": "email-html-inliner",
       "update-published": "Tue Jun  3 00:36:34 GMT 2025",
       "build": false,
@@ -788,11 +788,11 @@
       "dependencies": [
         {
           "name": "@jaisocx/text",
-          "path": "packages/Text"
+          "path": "libraries/base_packs/Text"
         },
         {
           "name": "@jaisocx/css-html",
-          "path": "packages/CssHtml"
+          "path": "libraries/base_packs/CssHtml"
         }
       ],
       "build-files": [
@@ -805,7 +805,7 @@
       ]
     },
     {
-      "path": "packages/ResponsiveSizes",
+      "path": "libraries/base_packs/ResponsiveSizes",
       "name": "responsive-sizes",
       "update-published": "",
       "build": false,
@@ -818,7 +818,7 @@
       "dependencies": []
     },
     {
-      "path": "sites_tools/css_tools/CssToolTemplate",
+      "path": "libraries/sites_tools/css_tools/CssToolTemplate",
       "name": "css-tool-template",
       "update-published": "Mon Jun 16 02:02:01 GMT 2025",
       "build": false,
@@ -848,7 +848,7 @@
       ]
     },
     {
-      "path": "packages/ThemeTurnOn",
+      "path": "libraries/base_packs/ThemeTurnOn",
       "name": "theme-turn-on",
       "update-published": "",
       "build": false,
@@ -868,11 +868,11 @@
       "dependencies": [
         {
           "name": "@jaisocx/command-line",
-          "path": "packages/CommandLine"
+          "path": "libraries/base_packs/CommandLine"
         },
         {
           "name": "@jaisocx/css-importer",
-          "path": "packages/CssImporter"
+          "path": "libraries/base_packs/CssImporter"
         }
       ],
       "build-files": []
