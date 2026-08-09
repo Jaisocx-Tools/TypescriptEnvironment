@@ -5,6 +5,17 @@
 ![./cdn/images/software_labels/Typescript/software_tm_label_typescript_2_593.svg](./cdn/images/software_labels/Typescript/software_tm_label_typescript_2_593.svg)
 ![./cdn/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./cdn/images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
 
+
+🗓   Summer  🌼  in year 2026 Anno Domini, 09th of month August.
+
+In development, however development does in [https://github.com/Jaisocx-Dockerized-Examples/Sites-Docker-Environment](https://github.com/Jaisocx-Dockerized-Examples/Sites-Docker-Environment)
+
+The Sites Docker Environment doesn't have for now Databases or Testing Frameworks examples for Docker by Compose plugin.
+
+Another thing is, our sites tools are installing without docker, too.
+
+
+
   > **🗓 Updated**: Sun. 26 Apr. 2026 03:35:43
 
 ---
