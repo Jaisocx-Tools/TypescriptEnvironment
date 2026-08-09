@@ -12,8 +12,6 @@ In development, however development does in [https://github.com/Jaisocx-Dockeriz
 
 The Sites Docker Environment doesn't have for now Databases or Testing Frameworks examples for Docker by Compose plugin.
 
-Another thing is, our sites tools are installing without docker, too.
-
 
 
   > **🗓 Updated**: Sun. 26 Apr. 2026 03:35:43
